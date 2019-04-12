@@ -16,7 +16,7 @@ elixir.config.publicPath = './';
  */
 
 elixir(function(mix) {
-    mix.sass('main.scss', 'css/' + theme + '.css');
+    mix.sass('main.scss', './css/' + theme + '.css');
 
     mix.scripts(
     	[
