@@ -1,8 +1,8 @@
-app_key: JFA9WiK218zSCMUokuZOJnyop6hOB50K
+app_key: WMiZgz2UFeUBtUSR3iTwkqup6rD9ZEwk
 yaml_parser: symfony
 locales:
   en:
     full: en_US
     name: English
-    url: 'http://bba-web.test/'
-timezone: America/New_York
+    url: 'http://localhost:8888/'
+timezone: UTC
