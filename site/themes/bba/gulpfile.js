@@ -24,8 +24,4 @@ elixir(function(mix) {
         'main.js'
     	], 
     './js/bba.js');
-
-    mix.browserSync({
-        proxy: 'bba-web.test'
-    });
 });
