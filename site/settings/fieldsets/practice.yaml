@@ -1,0 +1,55 @@
+sections:
+  intro:
+    display: Intro
+    fields:
+      practice_title:
+        type: text
+        instructions: 'Enter the company''s name'
+        display: 'Practice Title'
+      intro_text:
+        restrict_assets: false
+        type: redactor
+        display: 'Intro Text'
+  founder:
+    display: Founder
+    fields:
+      founder_name:
+        type: textarea
+        instructions: 'Founder''s name as you want it to appear on the page'
+        display: 'Founder Name'
+      founder_photo:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Founder photo'
+      founder_bio:
+        restrict_assets: false
+        type: redactor
+        display: 'Founder Bio'
+  studio:
+    display: Studio
+    fields:
+      studio_members:
+        sets:
+          member:
+            display: Member
+            fields:
+              name:
+                type: text
+                display: Name
+              photo:
+                container: main
+                folder: /
+                restrict: false
+                type: assets
+                display: Photo
+              bio:
+                restrict_assets: false
+                type: redactor
+                display: Bio
+        type: replicator
+        display: 'Studio Members'
+taxonomies: true
+hide: true
+title: Practice

@@ -1,2 +1,31 @@
-<h1>{{ title }}</h1>
-Just beans
+<h1>{{title}}</h1>
+<p>---</p>
+<h2>{{practice_title}}</h2>
+
+{{intro_text}}
+
+<p>---</p>
+
+<h2>{{founder_name}}</h2>
+
+{{founder_photo}}
+	<img src="{{value}}" alt="{{founder_name}}">
+{{/founder_photo}}
+
+{{founder_bio}}
+
+<h2>Studio</h2>
+
+{{ studio_members }}
+
+	<p>---</p>
+
+	<h3>{{name}}</h3>
+
+	{{photo}}
+		<img src="{{value}}" alt="{{founder_name}}">
+	{{/photo}}
+
+	{{bio}}
+
+{{ /studio_members }}
