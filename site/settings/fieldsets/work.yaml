@@ -33,7 +33,7 @@ sections:
       content_blocks:
         sets:
           carousel:
-            display: 'Image/Caption Carousel'
+            display: Carousel
             fields:
               carousel_item:
                 sets:
@@ -72,6 +72,18 @@ sections:
               things_we_learned:
                 type: list
                 display: 'Things We Learned'
+          multi_photo:
+            display: 'Multi-Photo + Caption'
+            fields:
+              image:
+                container: main
+                folder: /
+                restrict: false
+                type: assets
+                display: image
+              text:
+                type: textarea
+                display: text
         type: replicator
         display: 'Content Blocks'
 taxonomies: false
