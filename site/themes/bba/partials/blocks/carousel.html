@@ -1,3 +1,14 @@
+{{ carousel_item }}
+
 <p>---</p>
 
-<h3>I'm a carousel!</h3>
+	<figure>
+		{{image}}
+			<img src="{{value}}" alt="{{founder_name}}">
+		{{/image}}
+		<p>{{text}}</p>
+	</figure>
+
+	{{bio}}
+
+{{ /carousel_item }}
