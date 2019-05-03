@@ -1,0 +1,32 @@
+sections:
+  main:
+    display: Main
+    fields:
+      location:
+        type: text
+        display: Location
+      tags:
+        taxonomy: tags
+        mode: tags
+        type: taxonomy
+        display: Tags
+      year:
+        type: text
+        display: Year
+      thumbnail_img:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        instructions: 'The smaller image used to represent the project on the Work landing page'
+        display: 'Thumbnail Image'
+      hero_img:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        instructions: 'The large main image on the project page itself'
+        display: 'Hero Image'
+taxonomies: false
+hide: true
+title: Work
