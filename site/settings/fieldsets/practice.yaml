@@ -10,9 +10,6 @@ sections:
         restrict_assets: false
         type: redactor
         display: 'Intro Text'
-  founder:
-    display: Founder
-    fields:
       founder_name:
         type: textarea
         instructions: 'Founder''s name as you want it to appear on the page'
