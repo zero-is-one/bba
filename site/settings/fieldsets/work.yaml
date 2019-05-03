@@ -27,6 +27,53 @@ sections:
         type: assets
         instructions: 'The large main image on the project page itself'
         display: 'Hero Image'
+  content_blocks:
+    display: 'Content Blocks'
+    fields:
+      content_blocks:
+        sets:
+          carousel:
+            display: 'Image/Caption Carousel'
+            fields:
+              carousel_item:
+                sets:
+                  carousel_item:
+                    display: 'Carousel Item'
+                    fields:
+                      image:
+                        container: main
+                        folder: /
+                        restrict: false
+                        type: assets
+                        display: Image
+                      text:
+                        type: text
+                        display: Text
+                type: replicator
+                display: 'Carousel Item'
+          inline_image:
+            display: 'Inline Image'
+            fields:
+              inline_image:
+                container: main
+                folder: /
+                restrict: false
+                type: assets
+                display: 'Inline Image'
+          inline_text:
+            display: 'Inline Text'
+            fields:
+              inline_text:
+                type: text
+                display: 'Inline Text'
+          things_we_learned:
+            display: 'Things We Learned'
+            fields:
+              things_we_learned:
+                type: list
+                display: 'Things We Learned'
+        type: replicator
+        display: 'Content Blocks'
 taxonomies: false
 hide: true
 title: Work

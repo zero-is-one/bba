@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
-<p>---</p>
+<p>------------------------------------------------------------</p>
 
 <h2>{{location}}</h2>
 
@@ -11,18 +11,10 @@
 
 <h3>{{year}}</h3>
 
-<p>---</p>
+<p>------------------------------------------------------------</p>
 
-{{ studio_members }}
+{{ content_blocks }}
 
-	<p>---</p>
+  {{ partial src="blocks/{type}" }}
 
-	<h3>{{name}}</h3>
-
-	{{photo}}
-		<img src="{{value}}" alt="{{founder_name}}">
-	{{/photo}}
-
-	{{bio}}
-
-{{ /studio_members }}
+{{ /content_blocks }}
