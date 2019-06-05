@@ -78,18 +78,15 @@ Typographic variables
 ////////////////////////////////////////////////////////////////////////////
 */
 
-$font-family-sans: Helvetica, Arial, sans-serif;
-$font-family-serif: Georgia, 'Times New Roman', serif;
-$font-family-display: $font-family-sans;
-$font-family-monospace: Courier, monospace;
+$font-family-sans: 'PostGrotesk', Helvetica, sans-serif;
+$font-family-serif: linotype-sabon, 'Times New Roman', serif;
+$font-family-display: $font-family-serif;
 
 $sans: $font-family-sans;
 $serif: $font-family-serif;
-$display: $font-family-display;
-$mono: $font-family-monospace;
 
-$font-family-base: $font-family-sans;
-$font-family-heading: $font-family-sans;
+$font-family-base: $font-family-serif;
+$font-family-heading: $font-family-serif;
 
 
 $font-size-base: 1rem;

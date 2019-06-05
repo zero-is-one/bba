@@ -103,6 +103,18 @@ z-index
 Embed custom fonts here
 ////////////////////////////////////////////////////////////////////////////
 */
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url("../fonts/PostGrotesk-Book.woff2") format("woff2"), url("../fonts/PostGrotesk-Book.woff") format("woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url("../fonts/PostGrotesk-Italic.woff2") format("woff2"), url("../fonts/PostGrotesk-Italic.woff") format("woff");
+  font-style: italic;
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Color functions -- making up for Compass
@@ -146,7 +158,7 @@ Animate specific properties
 }
 
 .breadcrumbs li {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   font-size: .75em;
   line-height: 0;
@@ -179,7 +191,7 @@ button {
   box-sizing: border-box;
   appearance: none;
   border-radius: 0;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   background: blue;
   color: white !important;
@@ -232,7 +244,7 @@ input[type=submit] {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   background: blue;
   color: white !important;
@@ -268,7 +280,7 @@ input[type=submit] {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   background: blue;
   color: white !important;
@@ -303,7 +315,7 @@ input[type="search"],
 input[type="url"],
 input[type="date"],
 textarea {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 0.8rem;
   padding: 0.75rem;
   box-sizing: border-box;
@@ -348,7 +360,7 @@ form {
 }
 
 label {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #000000;
   font-size: 1rem;
@@ -435,7 +447,7 @@ a.button-link {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   background: blue;
   color: white !important;
@@ -484,12 +496,12 @@ figure {
 }
 
 figure figcaption {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #000000;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   font-size: 0.8rem;
   color: #4d4c4c;
@@ -659,7 +671,7 @@ input.is-error {
 }
 
 .pagination li {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -693,7 +705,7 @@ table td, table th {
 
 table th {
   color: #000000;
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 700;
 }
 
@@ -809,8 +821,8 @@ Headings
 ////////////////////////////////////////////////////////////////////////////
 */
 h1 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -828,8 +840,8 @@ h1 a:hover, h1 a:focus {
 }
 
 h2 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -847,8 +859,8 @@ h2 a:hover, h2 a:focus {
 }
 
 h3 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -866,8 +878,8 @@ h3 a:hover, h3 a:focus {
 }
 
 h4 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -885,8 +897,8 @@ h4 a:hover, h4 a:focus {
 }
 
 h5 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -904,8 +916,8 @@ h5 a:hover, h5 a:focus {
 }
 
 h6 {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
   color: #000000;
   line-height: 1.2;
   margin: 0 0 0.5rem;
@@ -935,7 +947,7 @@ Block-level Elements
 ////////////////////////////////////////////////////////////////////////////
 */
 p {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #000000;
   font-size: 1rem;
@@ -958,7 +970,7 @@ ul li, ol li {
 }
 
 li {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #000000;
   font-size: 1rem;
@@ -1000,7 +1012,7 @@ Inline Elements
 ////////////////////////////////////////////////////////////////////////////
 */
 strong, b {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 700;
 }
 
@@ -1008,25 +1020,9 @@ em, i {
   font-style: italic;
 }
 
-.font-bolditalic {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
 .font-heading {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
-}
-
-.font-headingitalic {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.font-fallback {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
+  font-weight: 400;
 }
 
 /* 
@@ -1393,7 +1389,7 @@ html {
 }
 
 body {
-  font-family: "CustomFont", Georgia, "Times New Roman", serif;
+  font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #000000;
   font-size: 1rem;

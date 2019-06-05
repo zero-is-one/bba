@@ -5,41 +5,26 @@ Basic font style mixins
 */
 
 @mixin font-regular { 
-  font-family: 'CustomFont', $serif;
+  font-family: $font-family-base;
   font-weight: $font-weight-regular;
 }
 
 @mixin font-bold { 
-  font-family: 'CustomFont', $serif;
+  font-family: $font-family-base;
   font-weight: $font-weight-bold;
 }
 
 @mixin font-italic { 
-  font-family: 'CustomFont', $serif;
+  font-family: $font-family-base;
   font-weight: $font-weight-regular;
-  font-style:   italic;
-}
-
-@mixin font-bolditalic { 
-  font-family: 'CustomFont', $serif;
-  font-weight: $font-weight-bold;
   font-style:   italic;
 }
 
 @mixin font-heading { 
   font-family: $font-family-heading;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-regular;
 }
 
-@mixin font-headingitalic { 
-  font-family: $font-family-heading;
-  font-weight: $font-weight-light;
-  font-style:   italic;
-}
-
-@mixin font-fallback { 
-  font-family: $sans;
-}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////

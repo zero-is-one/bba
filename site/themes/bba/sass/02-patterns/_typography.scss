@@ -91,22 +91,9 @@ em, i {
   font-style: italic;
 }
 
-.font-bolditalic {
-  @include font-bolditalic;
-}
-
 .font-heading {
   @include font-heading;
 }
-
-.font-headingitalic {
-  @include font-headingitalic;
-}
-
-.font-fallback {
-  @include font-fallback;
-}
-
 
 
 /* 

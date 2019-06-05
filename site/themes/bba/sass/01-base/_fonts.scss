@@ -4,4 +4,16 @@ Embed custom fonts here
 ////////////////////////////////////////////////////////////////////////////
 */
 
+@font-face {
+	font-family: 'PostGrotesk';
+	src: url('../fonts/PostGrotesk-Book.woff2') format('woff2'), 
+		url('../fonts/PostGrotesk-Book.woff') format('woff');
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'PostGrotesk';
+	src: url('../fonts/PostGrotesk-Italic.woff2') format('woff2'), 
+		url('../fonts/PostGrotesk-Italic.woff') format('woff');
+	font-style: italic;
+}
