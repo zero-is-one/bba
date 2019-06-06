@@ -1,5 +1,47 @@
 header {
 	ul, ol { //clear styling from nav-based lists
-		@include ul-null;
 	}
+}
+
+.site-header {
+	padding: $spacing-xxl 0;
+	display: flex;
+	justify-content: center;
+}
+
+.logo-link {
+	color: $color-base;
+}
+
+.bba-logo {
+	width: 304px;
+	height: 24px;
+	margin-right: $spacing-xl;
+}
+
+.site-nav {
+	@include container;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+.site-menu {
+	@include ul-null;
+}
+
+.site-menu__menu-item {
+	@include heading-3;
+	display: inline-block;
+	margin-bottom: 0;
+	font-family: $sans;
+
+	&:not(:last-child) {
+		margin-right: $spacing-lg;
+	}
+}
+
+.instagram {
+	width: 14px;
+	height: 14px;
 }

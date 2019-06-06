@@ -1,40 +1,14 @@
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Gray values
+Color values
 ////////////////////////////////////////////////////////////////////////////
 */
 
-$color-gray-0: #000000;
-$color-gray-1: tint($color-gray-0, 10%);
-$color-gray-2: tint($color-gray-0, 20%);
-$color-gray-3: tint($color-gray-0, 30%);
-$color-gray-4: tint($color-gray-0, 40%);
-$color-gray-5: tint($color-gray-0, 50%);
-$color-gray-6: tint($color-gray-0, 60%);
-$color-gray-7: tint($color-gray-0, 70%);
-$color-gray-8: tint($color-gray-0, 80%);
-$color-gray-9: tint($color-gray-0, 90%);
-$color-gray-f: #ffffff;
+$color-white: #fff;
+$color-gray: #686763;
+$color-gray-light: rgba($color-gray,.5);
 
-$color-black: $color-gray-0;
-$color-white: $color-gray-f;
-$color-gray: $color-gray-5;
-
-
-/* 
-////////////////////////////////////////////////////////////////////////////
-Color values -- primary
-////////////////////////////////////////////////////////////////////////////
-*/
-
-$color-red: red;
-$color-orange: orange;
-$color-yellow: yellow;
-$color-green: green;
-$color-blue: blue;
-$color-indigo: indigo;
-$color-violet: violet;
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
@@ -42,33 +16,17 @@ Standard applications of color variables
 ////////////////////////////////////////////////////////////////////////////
 */
 
-$color-base: $color-black;
-
+$color-base: $color-gray;
 $color-background: $color-white;
-$color-background--tint: lighten($color-base, 50%);
 
 $color-text: $color-base;
-$color-text--light: lighten($color-text, 30%);
-$color-text--invert: $color-white;
-
 $color-heading: $color-text;
-$color-caption: $color-text--light;
 
-$color-link: $color-blue;
-$color-link--active: $color-green;
+$color-link: rgba($color-base,.5);
+$color-link--active: $color-base;
 
-$color-selection-bg: rgba($color-link,.2);
+$color-selection-bg: $color-gray-light;
 $color-selection-text: $color-text;
-
-$color-error: $color-red;
-$color-valid: $color-green;
-
-$color-button: $color-link;
-$color-button--active: $color-link--active;
-$color-button-text: $color-text--invert;
-
-$color-border: $color-gray-8;
-
 
 
 
@@ -127,8 +85,8 @@ $spacing-lg: 1.5rem;
 $spacing-xl: 2rem;
 $spacing-xxl: 3rem;
 
-$spacing-section: $spacing-xl;
-$form-padding: $spacing-sm;
+$grid-padding: 2%;
+$section-padding: 160px;
 
 $font-margin--body-text: 0 0 $spacing-md;
 $font-margin--heading-text: 0 0 $spacing-xs;

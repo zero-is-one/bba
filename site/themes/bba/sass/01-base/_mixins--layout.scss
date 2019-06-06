@@ -15,47 +15,12 @@
   margin: auto;
   max-width: $maxwidth;
   padding: 0 $grid-padding;
-  @include clearfix;
   clear: both;
 }
 
 
 
 
-@mixin divider-top($border-weight:1px, $spacing:1em, $color-border:auto) {
-  padding-top: $spacing/2;
-  border-top: $border-weight solid;
-  margin-top: $spacing;
-  border-color: $color-border;
-}
-
-@mixin divider-right($border-weight:1px, $spacing:1em, $color-border:auto) {
-  padding-right: $spacing/2;
-  border-right: $border-weight solid;
-  margin-right: $spacing;
-  border-color: $color-border;
-}
-
-@mixin divider-bottom($border-weight:1px, $spacing:1em, $color-border:auto) {
-  padding-bottom: $spacing/2;
-  border-bottom: $border-weight solid;
-  margin-bottom: $spacing;
-  border-color: $color-border;
-}
-
-@mixin divider-left($border-weight:1px, $spacing:1em, $color-border:auto) {
-  padding-left: $spacing/2;
-  border-left: $border-weight solid;
-  margin-left: $spacing;
-  border-color: $color-border;
-}
-
-
-@mixin divider-none {
-  padding: 0;
-  border: 0 none;
-  margin: 0;
-}
 
 // Usage: @include center-vertical
 @mixin center-vertical {

@@ -35,10 +35,10 @@ Block-level typographic elements
 @mixin link {
   color: $color-link;
   text-decoration: none;
+  @include animate;
 
   &:hover, &:focus {
     color: $color-link--active;
-    text-decoration: underline;
   }
 }
 
