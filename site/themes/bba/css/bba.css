@@ -157,6 +157,19 @@ img, iframe {
   -webkit-transform: translateZ(0);
 }
 
+.work-img-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(104, 103, 99, 0.5);
+}
+
+.work-img {
+  max-height: calc(100vh - 20%);
+  max-width: calc(100vw - 20%);
+}
+
 svg {
   display: inline-block;
   width: 1em;

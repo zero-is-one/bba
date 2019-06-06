@@ -11,9 +11,14 @@ img, iframe {
 }
 
 .work-img-container {
-
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $color-gray-light;
 }
 
 .work-img {
-
+	max-height: calc(100vh - #{$section-padding});
+	max-width: calc(100vw - #{$section-padding});
 }
