@@ -32,25 +32,6 @@ sections:
     fields:
       content_blocks:
         sets:
-          carousel:
-            display: Carousel
-            fields:
-              carousel_item:
-                sets:
-                  carousel_item:
-                    display: 'Carousel Item'
-                    fields:
-                      image:
-                        container: main
-                        folder: /
-                        restrict: false
-                        type: assets
-                        display: Image
-                      text:
-                        type: text
-                        display: Text
-                type: replicator
-                display: 'Carousel Item'
           inline_image:
             display: 'Inline Image'
             fields:
@@ -72,18 +53,6 @@ sections:
               things_we_learned:
                 type: list
                 display: 'Things We Learned'
-          multi_photo:
-            display: 'Multi-Photo + Caption'
-            fields:
-              image:
-                container: main
-                folder: /
-                restrict: false
-                type: assets
-                display: image
-              text:
-                type: textarea
-                display: text
         type: replicator
         display: 'Content Blocks'
 taxonomies: false
