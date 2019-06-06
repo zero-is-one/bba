@@ -1,0 +1,35 @@
+/* 
+////////////////////////////////////////////////////////////////////////////
+Intro section 
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.work-intro {
+	text-align: center;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Project images
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.work-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.work-section--text {
+	max-width: $text-max-width;
+	@include margin-auto;
+}
+
+.work__inline-image {
+	max-height: calc(100vh - #{$section-padding});
+	max-width: calc(100vw - #{$section-padding});
+}
+

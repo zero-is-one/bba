@@ -1,8 +1,3 @@
-header {
-	ul, ol { //clear styling from nav-based lists
-	}
-}
-
 .site-header {
 	padding: $spacing-xxl 0;
 	display: flex;
@@ -35,6 +30,8 @@ header {
 	display: inline-block;
 	margin-bottom: 0;
 	font-family: $sans;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 
 	&:not(:last-child) {
 		margin-right: $spacing-lg;

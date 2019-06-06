@@ -17,14 +17,27 @@ If you're calling the container mixin, you can define a custom max-width. Otherw
 }
 
 html {
-  font-size: 1em; /* change this for different breakpoints to make a responsive typographic scale */
+  /*font-size: 1em;  change this for different breakpoints to make a responsive typographic scale */
+  font-size: .75em; /* change this for different breakpoints to make a responsive typographic scale */
+
+  @include mq($s) {
+    font-size: .85em;
+  }
+  @include mq($m) {
+    font-size: .9em;
+  }
+  @include mq($l) {
+    font-size: 1em;
+  }
 }
+
 
 body {
   @include body-text;
   color: $color-text;
   background-color: $color-background;
   position: relative;
+  padding: 0 $body-padding;
 }
 
 ::selection {

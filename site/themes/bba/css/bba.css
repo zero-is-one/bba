@@ -157,19 +157,6 @@ img, iframe {
   -webkit-transform: translateZ(0);
 }
 
-.work-img-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(104, 103, 99, 0.5);
-}
-
-.work-img {
-  max-height: calc(100vh - 20%);
-  max-width: calc(100vw - 20%);
-}
-
 svg {
   display: inline-block;
   width: 1em;
@@ -320,8 +307,8 @@ p {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #686763;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.75rem;
+  line-height: 1.75;
   margin-bottom: 1em;
 }
 
@@ -345,8 +332,8 @@ li {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #686763;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.75rem;
+  line-height: 1.75;
 }
 
 li a {
@@ -448,6 +435,8 @@ small {
   display: inline-block;
   margin-bottom: 0;
   font-family: "PostGrotesk", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .site-menu__menu-item a {
@@ -504,19 +493,39 @@ If you're calling the container mixin, you can define a custom max-width. Otherw
 }
 
 html {
-  font-size: 1em;
+  /*font-size: 1em;  change this for different breakpoints to make a responsive typographic scale */
+  font-size: .75em;
   /* change this for different breakpoints to make a responsive typographic scale */
+}
+
+@media (min-width: 600px) {
+  html {
+    font-size: .85em;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: .9em;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 1em;
+  }
 }
 
 body {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
   color: #686763;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
   background-color: #fff;
   position: relative;
+  padding: 0 10%;
 }
 
 body a {
@@ -554,6 +563,39 @@ hr {
   background-color: rgba(104, 103, 99, 0.5);
   height: 1px;
   border: none;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Intro section 
+////////////////////////////////////////////////////////////////////////////
+*/
+.work-intro {
+  text-align: center;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Project images
+////////////////////////////////////////////////////////////////////////////
+*/
+.work-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-section--text {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work__inline-image {
+  max-height: calc(100vh - 20%);
+  max-width: calc(100vw - 20%);
 }
 
 /* 05 -- individual third-party components */
