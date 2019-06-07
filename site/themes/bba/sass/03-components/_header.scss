@@ -30,8 +30,6 @@
 	display: inline-block;
 	margin-bottom: 0;
 	font-family: $sans;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 
 	&:not(:last-child) {
 		margin-right: $spacing-lg;

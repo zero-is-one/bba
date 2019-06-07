@@ -7,22 +7,17 @@ Basic font style mixins
 @mixin font-regular { 
   font-family: $font-family-base;
   font-weight: $font-weight-regular;
-}
+  font-size: $font-size-base; 
+  line-height: $line-height-base;
+  color: $color-text;
 
-@mixin font-bold { 
-  font-family: $font-family-base;
-  font-weight: $font-weight-bold;
-}
-
-@mixin font-italic { 
-  font-family: $font-family-base;
-  font-weight: $font-weight-regular;
-  font-style:   italic;
+  a {
+    @include link;
+  }
 }
 
 @mixin font-heading { 
-  font-family: $font-family-heading;
-  font-weight: $font-weight-regular;
+  @include font-regular;
 }
 
 
@@ -44,54 +39,35 @@ Block-level typographic elements
 
 @mixin body-text {
   @include font-regular;
-  color: $color-text;
-  font-size: $font-size-base; 
-  line-height: $line-height-base;
-
-  a {
-    @include link;
-  }
+  margin-bottom: 1em;
 }
 
 @mixin heading-text {
   @include font-heading;
-  color: $color-heading;
-  line-height: $line-height-heading;
-  margin: $font-margin--heading-text;
-
-  a {
-    @include link;
-  }
 }
 
 @mixin heading-1 {
   @include heading-text;
-  font-size: $font-size-h1; 
 }
 
 @mixin heading-2 {
   @include heading-text;
-  font-size: $font-size-h2; 
 }
 
 @mixin heading-3 {
   @include heading-text;
-  font-size: $font-size-h3; 
 }
 
 @mixin heading-4 {
   @include heading-text;
-  font-size: $font-size-h4; 
 }
 
 @mixin heading-5 {
   @include heading-text;
-  font-size: $font-size-h5; 
 }
 
 @mixin heading-6 {
   @include heading-text;
-  font-size: $font-size-h6; 
 }
 
 @mixin paragraph {
@@ -122,11 +98,11 @@ Stylistic applications
 
 @mixin smallcaps {
   @include caps;
-  font-size: $font-size-small;
+  font-size: $font-size-sm;
 }
 
 @mixin small {
-  font-size: $font-size-small;
+  font-size: $font-size-sm;
 }
 
 // Fancy Underline

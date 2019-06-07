@@ -175,10 +175,9 @@ Headings
 h1 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 2.75rem;
 }
 
 h1 a {
@@ -196,10 +195,9 @@ h1 a:hover, h1 a:focus {
 h2 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 2.25rem;
 }
 
 h2 a {
@@ -217,10 +215,9 @@ h2 a:hover, h2 a:focus {
 h3 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 1.5rem;
 }
 
 h3 a {
@@ -238,10 +235,9 @@ h3 a:hover, h3 a:focus {
 h4 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
 }
 
 h4 a {
@@ -259,10 +255,9 @@ h4 a:hover, h4 a:focus {
 h5 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
 }
 
 h5 a {
@@ -280,10 +275,9 @@ h5 a:hover, h5 a:focus {
 h6 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 0.8rem;
 }
 
 h6 a {
@@ -306,9 +300,9 @@ Block-level Elements
 p {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  color: #686763;
   font-size: 1.75rem;
   line-height: 1.75;
+  color: #686763;
   margin-bottom: 1em;
 }
 
@@ -324,16 +318,19 @@ p a:hover, p a:focus {
   color: #686763;
 }
 
-ul li, ol li {
-  margin-bottom: 1em;
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  color: #686763;
   font-size: 1.75rem;
   line-height: 1.75;
+  color: #686763;
+  margin-bottom: 1em;
 }
 
 li a {
@@ -348,24 +345,13 @@ li a:hover, li a:focus {
   color: #686763;
 }
 
-ul {
-  list-style: disc;
-  margin: 0 0 1em 1.5em;
-}
-
-ol {
-  list-style: decimal;
-  margin: 0 0 1em 1.5em;
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Inline Elements
 ////////////////////////////////////////////////////////////////////////////
 */
 strong, b {
-  font-family: linotype-sabon, "Times New Roman", serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 em, i {
@@ -378,13 +364,13 @@ Special Formatting
 ////////////////////////////////////////////////////////////////////////////
 */
 small {
-  font-size: 0.8rem;
+  font-size: 1.125rem;
 }
 
 .smallcaps {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 0.8rem;
+  font-size: 1.125rem;
 }
 
 .caps {
@@ -428,15 +414,12 @@ small {
 .site-menu__menu-item {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #686763;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
-  font-size: 1.5rem;
   display: inline-block;
   margin-bottom: 0;
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .site-menu__menu-item a {
@@ -468,7 +451,7 @@ footer ul, footer ol {
 
 footer p, footer li {
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 1.125rem;
 }
 
 .copyright {
@@ -519,13 +502,16 @@ html {
 body {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  color: #686763;
   font-size: 1.75rem;
   line-height: 1.75;
+  color: #686763;
+  margin-bottom: 1em;
   color: #686763;
   background-color: #fff;
   position: relative;
   padding: 0 10%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body a {
@@ -574,12 +560,19 @@ Intro section
   text-align: center;
 }
 
+.work-intro__title, .work-intro__location, .work-intro__photographer, .work-intro__year {
+  font-size: 1.125rem;
+  line-height: 2.5;
+  letter-spacing: .05rem;
+  margin-bottom: 0;
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Project images
+Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
-.work-section {
+.page-section {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -587,15 +580,34 @@ Project images
   justify-content: center;
 }
 
-.work-section--text {
+.page-section--text {
   max-width: 750px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.work__inline-image {
+.inline-image {
   max-height: calc(100vh - 20%);
   max-width: calc(100vw - 20%);
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Work images
+////////////////////////////////////////////////////////////////////////////
+*/
+.page-section--things {
+  text-align: center;
+  font-style: italic;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+"Things We Learned" list
+////////////////////////////////////////////////////////////////////////////
+*/
+.things__heading, .things__list-item {
+  margin-bottom: 1.75em;
 }
 
 /* 05 -- individual third-party components */

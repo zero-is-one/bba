@@ -5,11 +5,9 @@ sections:
       location:
         type: text
         display: Location
-      tags:
-        taxonomy: tags
-        mode: tags
-        type: taxonomy
-        display: Tags
+      photographer:
+        type: text
+        display: Photographer
       year:
         type: text
         display: Year
@@ -45,7 +43,8 @@ sections:
             display: 'Inline Text'
             fields:
               inline_text:
-                type: text
+                restrict_assets: false
+                type: redactor
                 display: 'Inline Text'
           things_we_learned:
             display: 'Things We Learned'

@@ -48,23 +48,19 @@ $font-family-heading: $font-family-serif;
 
 
 $font-size-base: 1.75rem;
+$font-size-sm: 1.125rem;
 
-$font-size-small: .8rem;
-$font-size-h1: 2.75rem; 
-$font-size-h2: 2.25rem; 
-$font-size-h3: 1.5rem; 
-$font-size-h4: 1.2rem; 
-$font-size-h5: 1rem; 
-$font-size-h6: .8rem; 
 $font-size-p: $font-size-base;
-$font-size-caption: $font-size-small;
+$font-size-caption: $font-size-sm;
 
 
 $line-height-base: 1.75;
-$line-height-small: 1.2;
+$line-height-sm: 1.2;
+$line-height-lg: 2.5;
+
 $line-height-body: $line-height-base;
 $line-height-p: $line-height-base;
-$line-height-heading: $line-height-small;
+$line-height-heading: $line-height-sm;
 
 $font-weight-bold: 700;
 $font-weight-regular: 400;

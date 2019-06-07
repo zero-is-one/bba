@@ -39,28 +39,16 @@ Block-level Elements
 
 p {
   @include paragraph;
-  margin-bottom: 1em;
 }
 
 ul, ol {
-  li {
-  margin-bottom: 1em;
-  }
+  @include ul-null;
 }
 
 li {
   @include li;
 }
 
-ul {
-  list-style: disc;
-  margin: 0 0 1em 1.5em;
-}
-
-ol {
-  list-style: decimal;
-  margin: 0 0 1em 1.5em;
-}
 
 
 /* 
@@ -71,7 +59,7 @@ Inline Elements
 
 
 strong, b {
-  @include font-bold;
+  font-weight: bold;
 }
 
 em, i {

@@ -8,14 +8,20 @@ Intro section
 	text-align: center;
 }
 
+.work-intro__title, .work-intro__location, .work-intro__photographer, .work-intro__year {
+	font-size: $font-size-sm;
+	line-height: $line-height-lg;
+	letter-spacing: .05rem;
+	margin-bottom: 0;
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Project images
+Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
 
-.work-section {
+.page-section {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -23,13 +29,35 @@ Project images
 	justify-content: center;
 }
 
-.work-section--text {
+.page-section--text {
 	max-width: $text-max-width;
 	@include margin-auto;
 }
 
-.work__inline-image {
+.inline-image {
 	max-height: calc(100vh - #{$section-padding});
 	max-width: calc(100vw - #{$section-padding});
 }
 
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Work images
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.page-section--things {
+	text-align: center;
+	font-style: italic;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+"Things We Learned" list
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.things__heading, .things__list-item {
+	margin-bottom: 1.75em;
+}
