@@ -4019,11 +4019,3 @@ if(window.jQuery && window.fullpage){
         };
     })(window.jQuery, window.fullpage);
 }
-
-$(document).ready(function() {   
-	console.log('why hello there');
-
-	$('#fullpage').fullpage({
-	});
-}); 
-//# sourceMappingURL=bba.js.map

@@ -1,25 +1,30 @@
-<section class="work-intro">
-	<h1 class="work-intro__title">{{title}}</h1>
-	{{ if location }}
-	<p class="work-intro__location">{{location}}</p>
-	{{ /if }}
-	{{ if photographer }}
-		<p class="work-intro__photographer">Photography by {{photographer}}</p>
-	{{ /if }}
-	{{ if year }}
-		<h3 class="work-intro__year">{{year}}</h3>	
-	{{ /if }}
-</section>
+<div id="fullpage">
+	<div class="section">
+		<section class="work-intro">
+			<h1 class="work-intro__title">{{title}}</h1>
+			{{ if location }}
+			<p class="work-intro__location">{{location}}</p>
+			{{ /if }}
+			{{ if photographer }}
+				<p class="work-intro__photographer">Photography by {{photographer}}</p>
+			{{ /if }}
+			{{ if year }}
+				<h3 class="work-intro__year">{{year}}</h3>	
+			{{ /if }}
+		</section>
+	</div>
 
-<section class="work-hero">
-	{{ assets:hero_img }}
-		<img src="{{ url }}" alt="{{ alt }}" class="hero-image" />
-	{{ /assets:hero_img }}		
-</section>
+	<div class="section">
+		<section class="work-hero">
+			{{ assets:hero_img }}
+				<img src="{{ url }}" alt="{{ alt }}" class="hero-image" />
+			{{ /assets:hero_img }}		
+		</section>
+	</div>
 
+	{{ content_blocks }}
 
-{{ content_blocks }}
+	  {{ partial src="blocks/{type}" }}
 
-  {{ partial src="blocks/{type}" }}
-
-{{ /content_blocks }}
+	{{ /content_blocks }}	
+</div>
