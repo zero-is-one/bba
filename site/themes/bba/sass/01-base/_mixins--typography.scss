@@ -28,6 +28,7 @@ Block-level typographic elements
 */
 
 @mixin link {
+  font-family: $font-family-sans;
   color: $color-link;
   text-decoration: none;
   @include animate;

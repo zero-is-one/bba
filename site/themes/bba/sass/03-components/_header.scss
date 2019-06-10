@@ -29,7 +29,6 @@
 	@include heading-3;
 	display: inline-block;
 	margin-bottom: 0;
-	font-family: $sans;
 
 	&:not(:last-child) {
 		margin-right: $spacing-lg;
