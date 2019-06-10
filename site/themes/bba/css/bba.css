@@ -176,7 +176,7 @@ Headings
 h1 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -197,7 +197,7 @@ h1 a:hover, h1 a:focus {
 h2 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -218,7 +218,7 @@ h2 a:hover, h2 a:focus {
 h3 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -239,7 +239,7 @@ h3 a:hover, h3 a:focus {
 h4 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -260,7 +260,7 @@ h4 a:hover, h4 a:focus {
 h5 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -281,7 +281,7 @@ h5 a:hover, h5 a:focus {
 h6 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -307,7 +307,7 @@ Block-level Elements
 p {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;
@@ -335,7 +335,7 @@ ul, ol {
 li {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;
@@ -389,7 +389,7 @@ small {
 
 /* 03 -- individual components reused throughout multiple layouts: header, footer, navigation, sidebars, carousels, etc. */
 .site-header {
-  padding: 3rem 0;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
 }
@@ -401,7 +401,7 @@ small {
 .bba-logo {
   width: 304px;
   height: 24px;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .site-nav {
@@ -423,7 +423,7 @@ small {
 .site-menu__menu-item {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
   display: inline-block;
@@ -502,7 +502,7 @@ html {
 body {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;

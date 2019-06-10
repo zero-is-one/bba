@@ -47,7 +47,7 @@ $font-family-base: $font-family-serif;
 $font-family-heading: $font-family-serif;
 
 
-$font-size-base: 1.75rem;
+$font-size-base: 1.7rem;
 $font-size-sm: 1.125rem;
 $font-size-xs: .875rem;
 
@@ -75,20 +75,17 @@ Layout/spacing variables
 ////////////////////////////////////////////////////////////////////////////
 */
 
-$spacing-xxs: .25rem;
-$spacing-xs: .5rem;
-$spacing-sm: .75rem;
+$spacing-sm: .5rem;
 $spacing-md: 1rem;
 $spacing-lg: 1.5rem;
-$spacing-xl: 2rem;
-$spacing-xxl: 3rem;
+$spacing-xl: 4rem;
 
 $grid-padding: 2%;
 $section-padding: 20%;
 $body-padding: $section-padding/2;
 
 $font-margin--body-text: 0 0 $spacing-md;
-$font-margin--heading-text: 0 0 $spacing-xs;
+$font-margin--heading-text: 0 0 $spacing-sm;
 
 $text-max-width: 750px;
 
