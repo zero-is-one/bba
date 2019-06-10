@@ -389,19 +389,23 @@ small {
 
 /* 03 -- individual components reused throughout multiple layouts: header, footer, navigation, sidebars, carousels, etc. */
 .site-header {
-  padding: 4rem 0;
+  padding: 4.25rem 0;
   display: flex;
   justify-content: center;
 }
 
 .logo-link {
   color: #686763;
+  margin-right: 4.25rem;
+}
+
+.logo-link:hover, .logo-link:focus {
+  color: rgba(104, 103, 99, 0.5);
 }
 
 .bba-logo {
   width: 304px;
   height: 24px;
-  margin-right: 4rem;
 }
 
 .site-nav {
@@ -418,6 +422,7 @@ small {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .site-menu__menu-item {
@@ -426,7 +431,6 @@ small {
   font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
-  display: inline-block;
   margin-bottom: 0;
 }
 

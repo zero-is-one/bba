@@ -6,12 +6,16 @@
 
 .logo-link {
 	color: $color-base;
+	margin-right: $spacing-xl;
+
+	&:hover, &:focus {
+		color: $color-link;
+	}
 }
 
 .bba-logo {
 	width: 304px;
 	height: 24px;
-	margin-right: $spacing-xl;
 }
 
 .site-nav {
@@ -23,11 +27,11 @@
 
 .site-menu {
 	@include ul-null;
+	display: flex;
 }
 
 .site-menu__menu-item {
 	@include heading-3;
-	display: inline-block;
 	margin-bottom: 0;
 
 	&:not(:last-child) {
