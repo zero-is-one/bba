@@ -13,4 +13,8 @@ sections:
         type: text
         instructions: 'Text to appear in the global footer of the site'
         display: 'Copyright Text'
+      instagram_url:
+        type: text
+        instructions: 'The full URL of your Instagram account (including https://)'
+        display: 'Instagram URL'
 taxonomies: true

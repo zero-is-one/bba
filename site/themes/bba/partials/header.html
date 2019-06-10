@@ -3,17 +3,19 @@
         <a href="/" class="logo-link">{{ partial src="svg/bba-logo" }}</a>
         <ul class="site-menu">
             <li class="site-menu__menu-item">
-                <a href="#">Projects</a>
+                <a href="/projects">Projects</a>
             </li>
             <li class="site-menu__menu-item">
-                <a href="#">Practice</a>
+                <a href="/practice">Practice</a>
             </li>
             <li class="site-menu__menu-item">
-                <a href="#">Contact</a>
+                <a href="/contact">Contact</a>
             </li>
+            {{ if instagram_url }}
             <li class="site-menu__menu-item">
-                <a href="#">{{ partial src="svg/instagram" }}</a>
+                <a href="{{ instagram_url }}" target="_blank" rel="noopener">{{ partial src="svg/instagram" }}</a>
             </li>
+            {{ /if }}
         </ul>
     </nav>
 </header>
