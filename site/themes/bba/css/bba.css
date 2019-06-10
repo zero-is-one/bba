@@ -598,7 +598,8 @@ Page sections
 }
 
 .page-section--text {
-  max-width: 750px;
+  min-height: 100vh;
+  max-width: calc(100vw - 20%);
   margin-left: auto;
   margin-right: auto;
 }
@@ -616,6 +617,15 @@ Work images
 .inline-image {
   max-width: calc(100vw - 20%);
   max-height: calc(100vh - 20%);
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline text
+////////////////////////////////////////////////////////////////////////////
+*/
+.inline-text {
+  max-width: 750px;
 }
 
 /* 
