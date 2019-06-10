@@ -1,8 +1,16 @@
-title: Default Globals
+title: 'Default Globals'
 hide: true
-fields:
-  site_name:
-    type: text
-    display: Website Name
-    instructions: The name of your website
-    localizable: true
+sections:
+  main:
+    display: Main
+    fields:
+      site_name:
+        type: text
+        display: 'Website Name'
+        instructions: 'The name of your website'
+        localizable: true
+      copyright_text:
+        type: text
+        instructions: 'Text to appear in the global footer of the site'
+        display: 'Copyright Text'
+taxonomies: true
