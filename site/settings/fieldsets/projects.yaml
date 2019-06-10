@@ -56,4 +56,5 @@ sections:
         display: 'Content Blocks'
 taxonomies: false
 hide: true
-title: Work
+title: Projects
+create_title: 'New Project'
