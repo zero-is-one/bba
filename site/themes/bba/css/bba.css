@@ -452,20 +452,11 @@ small {
   height: 14px;
 }
 
-footer ul, footer ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer p, footer li {
+.site-footer {
+  max-width: calc(100vw - 20%);
+  font-family: "PostGrotesk", Helvetica, sans-serif;
+  font-size: 0.875rem;
   margin-bottom: 0;
-  font-size: 1.125rem;
-}
-
-.copyright {
-  padding: 2em;
-  float: right;
 }
 
 /* 04 -- idividual page layouts, including global styles */

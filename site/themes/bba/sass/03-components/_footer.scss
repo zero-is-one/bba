@@ -1,15 +1,6 @@
-footer {
-	ul, ol { //clear styling from nav-based lists
-		@include ul-null;
-	}
-
-	p, li {
-		margin-bottom: 0;
-		@include small;
-	}
-}
-
-.copyright {
-	padding: 2em;
-	float: right;
+.site-footer {
+	max-width: calc(100vw - #{$section-padding});
+	font-family: $font-family-sans;
+	font-size: $font-size-xs;
+	margin-bottom: 0;
 }
