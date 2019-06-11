@@ -158,6 +158,27 @@ img, iframe {
   -webkit-transform: translateZ(0);
 }
 
+/* 
+////////////////////////////////////////////////////////////////////////////
+Lazyloaded Images (https://github.com/aFarkas/lazysizes)
+////////////////////////////////////////////////////////////////////////////
+*/
+.no-js img.lazyload {
+  opacity: 1;
+}
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+
+.lazyloaded {
+  opacity: 1;
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
+}
+
 svg {
   display: inline-block;
   width: 1em;

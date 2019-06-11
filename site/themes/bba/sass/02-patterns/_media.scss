@@ -6,6 +6,26 @@ Images, iframes, figures
 
 
 img, iframe {
-  max-width: 100%;
-  -webkit-transform: translateZ(0);
+	max-width: 100%;
+	-webkit-transform: translateZ(0);
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Lazyloaded Images (https://github.com/aFarkas/lazysizes)
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.no-js img.lazyload {
+	opacity: 1;
+}
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+}
+
+.lazyloaded {
+	opacity: 1;
+	@include animate-slow;
 }

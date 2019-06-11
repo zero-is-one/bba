@@ -9,3 +9,10 @@ Animate all properties
   transition-duration: .125s;
   transition-timing-function: ease-in-out;
 }
+
+
+@mixin animate-slow {
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
+}
