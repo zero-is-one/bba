@@ -16,7 +16,7 @@ sections:
         folder: /
         restrict: false
         type: assets
-        instructions: 'The smaller image used to represent the project on the Work landing page'
+        instructions: 'The thumbnail image used on the Projects landing page'
         display: 'Thumbnail Image'
       hero_img:
         container: main

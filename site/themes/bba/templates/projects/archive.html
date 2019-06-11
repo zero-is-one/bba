@@ -1,3 +1,15 @@
+<div class="project-teases">
+	
 {{ collection:projects }}
-    <h2><a href="{{ url }}">{{ title }}</a></h2>
+	<article class="project-tease">
+		<a href="{{ url }}" class="project-tease__link">
+			{{ assets:thumbnail_img }}
+				<img src="{{ url }}" alt="{{ alt }}" class="project-tease__thumbnail-image" />
+			{{ /assets:thumbnail_img }}		
+		    <h2 class="project-tease__title">{{ title }}</h2>
+		</a>
+	</article>
 {{ /collection:projects }}
+
+</div>
+

@@ -642,6 +642,20 @@ Inline text
   margin-bottom: 1.75em;
 }
 
+.projects-teases {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-tease {
+  width: calc(100% / 3);
+  padding: 1rem;
+}
+
+.project-tease__title {
+  font-family: "PostGrotesk", Helvetica, sans-serif;
+}
+
 /* 05 -- individual third-party components */
 
 /*# sourceMappingURL=bba.css.map */

@@ -1,0 +1,13 @@
+.projects-teases {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project-tease {
+	width: calc(100% / 3);
+	padding: $spacing-md;	
+}
+
+.project-tease__title {
+	font-family: $font-family-sans;
+}
