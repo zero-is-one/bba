@@ -20,7 +20,7 @@ Intro section
 }
 
 .page-section--work-hero {
-	margin-top: -20vh !important;
+	// margin-top: -20vh !important;
 }
 
 .hero-image {
@@ -37,7 +37,7 @@ Page sections
 */
 
 .page-section {
-	height: 100vh !important;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
