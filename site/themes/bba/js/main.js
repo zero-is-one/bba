@@ -9,4 +9,19 @@ $(document).ready(function() {
     $(this).html(string);
   });
 
+
+	$.scrollify({
+		section:".js-scrollify",
+		sectionName:false,
+		scrollSpeed:300,
+	    standardScrollElements: ".site-footer",
+	});
+
+	$(window).resize(function() {
+	    $.scrollify.update();
+	});
+
+	$(window).on( "orientationchange", function() {
+	    $.scrollify.update();
+	});
 }); 

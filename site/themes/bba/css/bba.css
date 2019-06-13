@@ -446,6 +446,12 @@ small {
   display: flex;
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  .site-menu {
+    display: none;
+  }
+}
+
 .site-menu__menu-item {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
@@ -597,12 +603,8 @@ Intro section
   margin-bottom: 0;
 }
 
-.work-hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.page-section--work-hero {
+  margin-top: -20vh !important;
 }
 
 .hero-image {
@@ -616,7 +618,7 @@ Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
 .page-section {
-  height: 100vh;
+  height: 100vh !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -633,6 +635,11 @@ Page sections
 .page-section--things {
   text-align: center;
   font-style: italic;
+}
+
+.page-section--recirc {
+  height: calc(100vh - 4rem);
+  min-height: 0;
 }
 
 /* 

@@ -1,17 +1,22 @@
-<section class="work-intro">
-	<h1 class="work-intro__title">{{title}}</h1>
-	{{ if location }}
-	<p class="work-intro__location">{{location}}</p>
-	{{ /if }}
-	{{ if photographer }}
-		<p class="work-intro__photographer">Photography by {{photographer}}</p>
-	{{ /if }}
-	{{ if year }}
-		<h3 class="work-intro__year">{{year}}</h3>	
-	{{ /if }}
-</section>
+<header class="page-header js-scrollify">
+	{{ partial src="header" }}
 
-<section class="work-hero">
+	<section class="work-intro">
+
+	 	<h1 class="work-intro__title">{{title}}</h1>
+		{{ if location }}
+		<p class="work-intro__location">{{location}}</p>
+		{{ /if }}
+		{{ if photographer }}
+			<p class="work-intro__photographer">Photography by {{photographer}}</p>
+		{{ /if }}
+		{{ if year }}
+			<h3 class="work-intro__year">{{year}}</h3>	
+		{{ /if }}
+	</section>
+</header>
+
+<section class="page-section page-section--work-hero js-scrollify">
 	{{ assets:hero_img }}
 		<img src="" data-src="{{ url }}" alt="{{ alt }}" class="lazyload hero-image" />
 	{{ /assets:hero_img }}		
@@ -24,6 +29,9 @@
 
 {{ /content_blocks }}
 
-<div class="page-section page-section--text">
-	<a href="/projects" class="link link--recirc">Projects</a>
-</div>
+<footer class="page-footer js-scrollify">
+	<div class="page-section page-section--text page-section--recirc">
+		<a href="/projects" class="link link--recirc">Projects</a>
+	</div>	
+    {{ partial src="footer" }}
+</footer>

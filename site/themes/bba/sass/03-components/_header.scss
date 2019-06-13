@@ -26,6 +26,10 @@
 
 
 .site-menu {
+	@include mq(0, $m) {
+		display: none;
+	}
+
 	@include ul-null;
 	display: flex;
 }
