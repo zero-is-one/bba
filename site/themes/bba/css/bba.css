@@ -410,6 +410,7 @@ small {
 
 /* 03 -- individual components reused throughout multiple layouts: header, footer, navigation, sidebars, carousels, etc. */
 .site-header {
+  width: 100%;
   padding: 4.25rem 0;
   display: flex;
   justify-content: center;
@@ -484,10 +485,10 @@ small {
 }
 
 .site-footer {
-  max-width: calc(100vw - 20%);
   font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 0.875rem;
-  margin-bottom: 0;
+  align-self: flex-start;
+  margin: 0 0 4.25rem 10%;
 }
 
 /* 04 -- idividual page layouts, including global styles */
@@ -614,6 +615,7 @@ Page sections
 */
 .page-section {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -630,11 +632,6 @@ Page sections
 .page-section--things {
   text-align: center;
   font-style: italic;
-}
-
-.page-section--recirc {
-  height: calc(100vh - 4rem);
-  min-height: 0;
 }
 
 /* 

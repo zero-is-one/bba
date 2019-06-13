@@ -34,6 +34,7 @@ Page sections
 
 .page-section {
 	height: 100vh;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -51,10 +52,10 @@ Page sections
 	font-style: italic;
 }
 
-.page-section--recirc {
-	height: calc(100vh - 4rem);
-	min-height: 0;
-}
+// .page-section--recirc {
+// 	height: calc(100vh - 8rem);
+// 	min-height: 0;
+// }
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
