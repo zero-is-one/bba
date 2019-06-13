@@ -4735,10 +4735,11 @@ $(document).ready(function() {
 	});
 
 	// configure FullPage: https://github.com/alvarotrigo/fullPage.js
-	$('#fullpage').fullpage({
+	$('.js-fullpage-container').fullpage({
 		//options here
 		lazyLoading: false,
 		scrollingSpeed: 600,
+		sectionSelector: '.js-fullpage-section',
 	});
 }); 
 //# sourceMappingURL=bba.js.map
