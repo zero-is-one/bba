@@ -4737,6 +4737,8 @@ $(document).ready(function() {
 
 	$('#fullpage').fullpage({
 		//options here
+		lazyLoading: false,
+		scrollingSpeed: 600,
 	});
 }); 
 //# sourceMappingURL=bba.js.map

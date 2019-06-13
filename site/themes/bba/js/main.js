@@ -11,5 +11,7 @@ $(document).ready(function() {
 
 	$('#fullpage').fullpage({
 		//options here
+		lazyLoading: false,
+		scrollingSpeed: 600,
 	});
 }); 
