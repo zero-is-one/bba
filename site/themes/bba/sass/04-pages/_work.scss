@@ -20,10 +20,9 @@ Intro section
 }
 
 .hero-image {
-	max-width: calc(100vw - #{$section-padding});
-	max-height: calc(100vh - #{$section-padding});
+	@include section-width;
+	@include section-height;
 }
-
 
 
 /* 
@@ -43,7 +42,7 @@ Page sections
 
 .page-section--text {
 	min-height: 100vh;
-	max-width: calc(100vw - #{$section-padding});
+	@include section-width;
 	@include margin-auto;
 }
 
@@ -52,11 +51,6 @@ Page sections
 	font-style: italic;
 }
 
-// .page-section--recirc {
-// 	height: calc(100vh - 8rem);
-// 	min-height: 0;
-// }
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Work images
@@ -64,8 +58,8 @@ Work images
 */
 
 .inline-image {
-	max-width: calc(100vw - #{$section-padding});
-	max-height: calc(100vh - #{$section-padding});
+	@include section-width;
+	@include section-height;
 }
 
 

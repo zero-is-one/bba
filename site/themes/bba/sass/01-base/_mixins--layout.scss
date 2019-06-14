@@ -19,17 +19,17 @@
 }
 
 
+// Section width/height
+// -------
+// FOR: providing consistent viewport-based padding across layouts
+// USE: @include section-width; @include section-height;
 
+@mixin section-width {
+  max-width: calc(100vw - #{$section-padding});
+}
 
-
-// Usage: @include center-vertical
-@mixin center-vertical {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    .lt-ie9 & {
-        top:auto;
-    }
+@mixin section-height {
+  max-height: calc(100vh - #{$section-padding});
 }
 
 

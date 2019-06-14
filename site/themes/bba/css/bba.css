@@ -662,18 +662,93 @@ Inline text
   margin-bottom: 1.75em;
 }
 
-.projects-teases {
+.tease-wrapper {
+  max-width: calc(100vw - 20%);
+  margin: 6rem auto;
+}
+
+.project-teases {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-tease {
-  width: calc(100% / 3);
-  padding: 1rem;
+.project-teases:hover .project-tease__thumbnail-image, .project-teases:focus .project-tease__thumbnail-image {
+  opacity: .8;
+}
+
+@supports not (display: grid) {
+  .project-teases {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.5rem;
+  }
+}
+
+@supports (display: grid) {
+  .project-teases {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  @media (min-width: 600px) {
+    .project-teases {
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (min-width: 1024px) {
+    .project-teases {
+      -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@supports not (display: grid) {
+  .project-tease {
+    padding: 1.5rem;
+  }
+  @media (min-width: 600px) {
+    .project-tease {
+      width: 50%;
+    }
+  }
+  @media (min-width: 1024px) {
+    .project-tease {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+.project-tease__link {
+  position: relative;
+  display: block;
+  line-height: 1;
+}
+
+.project-tease__link:hover .project-tease__thumbnail-image, .project-tease__link:hover .project-tease__title, .project-tease__link:focus .project-tease__thumbnail-image, .project-tease__link:focus .project-tease__title {
+  opacity: 1;
+}
+
+.project-tease__thumbnail-image {
+  display: block;
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
 }
 
 .project-tease__title {
+  position: absolute;
+  top: 100%;
+  font-size: 1.125rem;
   font-family: "PostGrotesk", Helvetica, sans-serif;
+  padding-top: 0.25rem;
+  opacity: 0;
+  transition: all;
+  transition-duration: .25s;
+  transition-timing-function: ease-in-out;
 }
 
 /* 05 -- individual third-party components */

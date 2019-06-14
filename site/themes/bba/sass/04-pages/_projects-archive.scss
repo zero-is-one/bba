@@ -1,13 +1,79 @@
-.projects-teases {
+.tease-wrapper {
+	@include section-width;
+	margin: $spacing-xxl auto;
+}
+
+.project-teases {
 	display: flex;
 	flex-wrap: wrap;
+
+	&:hover, &:focus {
+		.project-tease__thumbnail-image {
+			opacity: .8;
+		}
+	}
+
+	// non-grid layout
+	@supports not (display: grid) {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -1.5rem;
+	}
+
+	// grid layout
+	@supports (display: grid) {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 3rem;
+
+		@include mq($s) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include mq($l) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
 }
 
 .project-tease {
-	width: calc(100% / 3);
-	padding: $spacing-md;	
+
+	@supports not (display: grid) {
+		padding: 1.5rem;
+
+		@include mq($s) {
+			width: 50%;
+		}
+
+		@include mq($l) {
+			width: calc(100% / 3);
+		}
+	}
+}
+
+.project-tease__link {
+	position: relative;
+	display: block;
+	line-height: 1;
+
+	&:hover, &:focus {
+		.project-tease__thumbnail-image, .project-tease__title {
+			opacity: 1;
+		}
+	}
+}
+
+.project-tease__thumbnail-image {
+	display: block;
+	@include animate-slow;
 }
 
 .project-tease__title {
+	position: absolute;
+	top: 100%;
+	font-size: $font-size-sm;
 	font-family: $font-family-sans;
+	padding-top: $spacing-xs;
+	opacity: 0;
+	@include animate-slow;
 }
