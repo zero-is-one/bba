@@ -163,7 +163,7 @@ img, iframe {
 Lazyloaded Images (https://github.com/aFarkas/lazysizes)
 ////////////////////////////////////////////////////////////////////////////
 */
-.no-js img.lazyload {
+.no-js .lazyload {
   opacity: 1;
 }
 
