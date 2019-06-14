@@ -12,7 +12,12 @@
 				<p class="project-intro__photographer">Photography by {{photographer}}</p>
 			{{ /if }}
 			{{ if year }}
-				<h3 class="project-intro__year">{{year}}</h3>	
+				<p class="project-intro__year">{{year}}</p>	
+			{{ /if }}
+			{{ if misc_intro_text }}
+				<div class="project-intro__misc">
+					{{ misc_intro_text }}
+				</div>
 			{{ /if }}
 		</section>
 	</header>

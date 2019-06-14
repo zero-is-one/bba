@@ -11,6 +11,11 @@ sections:
       year:
         type: text
         display: Year
+      misc_intro_text:
+        restrict_assets: false
+        type: redactor
+        display: 'Misc Intro Text'
+        settings: Basic
       thumbnail_img:
         container: main
         folder: /
@@ -46,6 +51,7 @@ sections:
                 restrict_assets: false
                 type: redactor
                 display: 'Inline Text'
+                settings: Basic
           things_we_learned:
             display: 'Things We Learned'
             fields:
