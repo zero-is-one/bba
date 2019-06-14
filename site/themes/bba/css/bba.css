@@ -605,31 +605,6 @@ hr {
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Intro section 
-////////////////////////////////////////////////////////////////////////////
-*/
-.work-intro {
-  height: calc(80vh - 150px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.work-intro__title, .work-intro__location, .work-intro__photographer, .work-intro__year {
-  font-size: 1.125rem;
-  line-height: 2.5;
-  letter-spacing: .05rem;
-  margin-bottom: 0;
-}
-
-.hero-image {
-  max-width: calc(100vw - 20%);
-  max-height: calc(100vh - 20%);
-}
-
-/* 
-////////////////////////////////////////////////////////////////////////////
 Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
@@ -656,7 +631,27 @@ Page sections
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Work images
+Intro
+////////////////////////////////////////////////////////////////////////////
+*/
+.project-intro {
+  height: calc(80vh - 150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-intro__title, .project-intro__location, .project-intro__photographer, .project-intro__year {
+  font-size: 1.125rem;
+  line-height: 2.5;
+  letter-spacing: .05rem;
+  margin-bottom: 0;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images
 ////////////////////////////////////////////////////////////////////////////
 */
 .inline-image {
