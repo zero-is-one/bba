@@ -331,6 +331,7 @@ p {
   font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
+  font-size: 20px;
   margin-bottom: 1em;
 }
 
@@ -347,6 +348,18 @@ p a:hover, p a:focus {
   color: #686763;
 }
 
+@media (min-width: 600px) and (max-width: 1399px) {
+  p {
+    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+  }
+}
+
+@media (min-width: 1400px) {
+  p {
+    font-size: 28px;
+  }
+}
+
 ul, ol {
   list-style: none;
   margin: 0;
@@ -359,6 +372,7 @@ li {
   font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
+  font-size: 20px;
   margin-bottom: 1em;
 }
 
@@ -373,6 +387,18 @@ li a {
 
 li a:hover, li a:focus {
   color: #686763;
+}
+
+@media (min-width: 600px) and (max-width: 1399px) {
+  li {
+    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+  }
+}
+
+@media (min-width: 1400px) {
+  li {
+    font-size: 28px;
+  }
 }
 
 /* 
@@ -508,27 +534,8 @@ If you're calling the container mixin, you can define a custom max-width. Otherw
 }
 
 html {
-  /*font-size: 1em;  change this for different breakpoints to make a responsive typographic scale */
-  font-size: .75em;
-  /* change this for different breakpoints to make a responsive typographic scale */
-}
-
-@media (min-width: 600px) {
-  html {
-    font-size: .85em;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: .9em;
-  }
-}
-
-@media (min-width: 1024px) {
-  html {
-    font-size: 1em;
-  }
+  font-size: 1em;
+  /*change this for different breakpoints to make a responsive typographic scale */
 }
 
 body {
@@ -537,6 +544,7 @@ body {
   font-size: 1.7rem;
   line-height: 1.75;
   color: #686763;
+  font-size: 20px;
   margin-bottom: 1em;
   color: #686763;
   background-color: #fff;
@@ -556,6 +564,18 @@ body a {
 
 body a:hover, body a:focus {
   color: #686763;
+}
+
+@media (min-width: 600px) and (max-width: 1399px) {
+  body {
+    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 28px;
+  }
 }
 
 ::selection {
@@ -659,7 +679,20 @@ Inline text
 ////////////////////////////////////////////////////////////////////////////
 */
 .things__heading, .things__list-item {
+  font-size: 20px;
   margin-bottom: 1.75em;
+}
+
+@media (min-width: 600px) and (max-width: 1399px) {
+  .things__heading, .things__list-item {
+    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+  }
+}
+
+@media (min-width: 1400px) {
+  .things__heading, .things__list-item {
+    font-size: 28px;
+  }
 }
 
 .tease-wrapper {
@@ -673,7 +706,7 @@ Inline text
 }
 
 .project-teases:hover .project-tease__thumbnail-image, .project-teases:focus .project-tease__thumbnail-image {
-  opacity: .8;
+  opacity: .75;
 }
 
 @supports not (display: grid) {

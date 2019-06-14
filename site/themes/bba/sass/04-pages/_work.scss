@@ -81,5 +81,6 @@ Inline text
 */
 
 .things__heading, .things__list-item {
+	@include fluid-text;
 	margin-bottom: 1.75em;
 }
