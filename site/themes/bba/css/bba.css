@@ -197,7 +197,7 @@ Headings
 h1 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -218,7 +218,7 @@ h1 a:hover, h1 a:focus {
 h2 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -239,7 +239,7 @@ h2 a:hover, h2 a:focus {
 h3 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -260,7 +260,7 @@ h3 a:hover, h3 a:focus {
 h4 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -281,7 +281,7 @@ h4 a:hover, h4 a:focus {
 h5 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -302,7 +302,7 @@ h5 a:hover, h5 a:focus {
 h6 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -328,11 +328,11 @@ Block-level Elements
 p {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
-  font-size: 20px;
   margin-bottom: 1em;
+  font-size: 20px;
 }
 
 p a {
@@ -350,13 +350,13 @@ p a:hover, p a:focus {
 
 @media (min-width: 600px) and (max-width: 1399px) {
   p {
-    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(20px + (25 - 20) * (100vw - 600px) / (1400 - 600));
   }
 }
 
 @media (min-width: 1400px) {
   p {
-    font-size: 28px;
+    font-size: 25px;
   }
 }
 
@@ -369,10 +369,9 @@ ul, ol {
 li {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
-  font-size: 20px;
   margin-bottom: 1em;
 }
 
@@ -387,18 +386,6 @@ li a {
 
 li a:hover, li a:focus {
   color: #686763;
-}
-
-@media (min-width: 600px) and (max-width: 1399px) {
-  li {
-    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
-  }
-}
-
-@media (min-width: 1400px) {
-  li {
-    font-size: 28px;
-  }
 }
 
 /* 
@@ -444,7 +431,19 @@ small {
 
 .logo-link {
   color: #686763;
-  margin-right: 4.25rem;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .logo-link {
+    margin-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo-link {
+    margin-right: 4.25rem;
+  }
 }
 
 .logo-link:hover, .logo-link:focus {
@@ -452,8 +451,15 @@ small {
 }
 
 .bba-logo {
-  width: 304px;
-  height: 24px;
+  width: 225px;
+  height: 18px;
+}
+
+@media (min-width: 768px) {
+  .bba-logo {
+    width: 304px;
+    height: 24px;
+  }
 }
 
 .site-nav {
@@ -466,6 +472,21 @@ small {
   align-items: flex-end;
 }
 
+@media (min-width: 0) and (max-width: 767px) {
+  .menu-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 4.25rem 0;
+    z-index: 100;
+  }
+}
+
 .site-menu {
   list-style: none;
   margin: 0;
@@ -475,34 +496,22 @@ small {
 
 @media (min-width: 0) and (max-width: 767px) {
   .site-menu {
-    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
 .site-menu__menu-item {
-  font-family: linotype-sabon, "Times New Roman", serif;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 1.75;
-  color: #686763;
+  font-size: 1.55rem;
+  line-height: 1;
   margin-bottom: 0;
 }
 
-.site-menu__menu-item a {
-  font-family: "PostGrotesk", Helvetica, sans-serif;
-  color: rgba(104, 103, 99, 0.5);
-  text-decoration: none;
-  transition: all;
-  transition-duration: .125s;
-  transition-timing-function: ease-in-out;
-}
-
-.site-menu__menu-item a:hover, .site-menu__menu-item a:focus {
-  color: #686763;
-}
-
-.site-menu__menu-item:not(:last-child) {
-  margin-right: 1.5rem;
+@media (min-width: 768px) {
+  .site-menu__menu-item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
 }
 
 .instagram {
@@ -541,10 +550,9 @@ html {
 body {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   line-height: 1.75;
   color: #686763;
-  font-size: 20px;
   margin-bottom: 1em;
   color: #686763;
   background-color: #fff;
@@ -564,18 +572,6 @@ body a {
 
 body a:hover, body a:focus {
   color: #686763;
-}
-
-@media (min-width: 600px) and (max-width: 1399px) {
-  body {
-    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
-  }
-}
-
-@media (min-width: 1400px) {
-  body {
-    font-size: 28px;
-  }
 }
 
 ::selection {
@@ -687,14 +683,23 @@ Inline text
 
 @media (min-width: 600px) and (max-width: 1399px) {
   .things__heading, .things__list-item {
-    font-size: calc(20px + (28 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(20px + (25 - 20) * (100vw - 600px) / (1400 - 600));
   }
 }
 
 @media (min-width: 1400px) {
   .things__heading, .things__list-item {
-    font-size: 28px;
+    font-size: 25px;
   }
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Projects recirculation link
+////////////////////////////////////////////////////////////////////////////
+*/
+.page-section--recirc {
+  font-size: 1.55rem;
 }
 
 .tease-wrapper {

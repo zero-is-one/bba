@@ -7,7 +7,15 @@
 
 .logo-link {
 	color: $color-base;
-	margin-right: $spacing-xl;
+	line-height: 1;
+
+	@include mq($m) {
+		margin-right: 2.5rem;
+	}
+
+	@include mq($l) {
+		margin-right: $spacing-xl;
+	}
 
 	&:hover, &:focus {
 		color: $color-link;
@@ -15,8 +23,13 @@
 }
 
 .bba-logo {
-	width: 304px;
-	height: 24px;
+	width: 225px;
+	height: 18px;
+
+	@include mq($m) {
+		width: 304px;
+		height: 24px;
+	}
 }
 
 .site-nav {
@@ -25,22 +38,41 @@
 	align-items: flex-end;
 }
 
+.menu-wrapper {
+	@include mq(0, $nav-breakpoint) {
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $color-white;
+		padding: $spacing-xl 0;
+		z-index: $zIndex-1;
+	}	
+}
 
 .site-menu {
-	@include mq(0, $m) {
-		display: none;
-	}
-
 	@include ul-null;
 	display: flex;
+
+	@include mq(0, $nav-breakpoint) {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
 }
 
 .site-menu__menu-item {
-	@include heading-3;
+	@include nav-link;
+	line-height: 1;
 	margin-bottom: 0;
 
-	&:not(:last-child) {
-		margin-right: $spacing-lg;
+	@include mq($nav-breakpoint) {
+		&:not(:last-child) {
+			margin-right: $spacing-lg;
+		}
 	}
 }
 

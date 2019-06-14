@@ -1,21 +1,23 @@
 <header class="site-header">
     <nav class="site-nav" role="navigation">
         <a href="/" class="logo-link">{{ partial src="svg/bba-logo" }}</a>
-        <ul class="site-menu">
-            <li class="site-menu__menu-item">
-                <a href="/projects">Projects</a>
-            </li>
-            <li class="site-menu__menu-item">
-                <a href="/practice">Practice</a>
-            </li>
-            <li class="site-menu__menu-item">
-                <a href="/contact">Contact</a>
-            </li>
-            {{ if instagram_url }}
-            <li class="site-menu__menu-item">
-                <a href="{{ instagram_url }}" target="_blank" rel="noopener">{{ partial src="svg/instagram" }}</a>
-            </li>
-            {{ /if }}
-        </ul>
+        <div class="menu-wrapper">
+            <ul class="site-menu">
+                <li class="site-menu__menu-item">
+                    <a href="/projects">Projects</a>
+                </li>
+                <li class="site-menu__menu-item">
+                    <a href="/practice">Practice</a>
+                </li>
+                <li class="site-menu__menu-item">
+                    <a href="/contact">Contact</a>
+                </li>
+                {{ if instagram_url }}
+                <li class="site-menu__menu-item">
+                    <a href="{{ instagram_url }}" target="_blank" rel="noopener">{{ partial src="svg/instagram" }}</a>
+                </li>
+                {{ /if }}
+            </ul>            
+        </div>
     </nav>
 </header>
