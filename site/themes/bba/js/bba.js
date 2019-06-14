@@ -4740,6 +4740,7 @@ $(document).ready(function() {
 		lazyLoading: false,
 		scrollingSpeed: 600,
 		sectionSelector: '.js-fullpage-section',
+		scrollBar: true,
 	});
 }); 
 //# sourceMappingURL=bba.js.map
