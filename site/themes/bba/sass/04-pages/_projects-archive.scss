@@ -37,7 +37,6 @@
 }
 
 .project-tease {
-
 	@supports not (display: grid) {
 		padding: 1.5rem;
 
@@ -47,6 +46,14 @@
 
 		@include mq($l) {
 			width: calc(100% / 3);
+		}
+	}
+
+	opacity: 0;
+
+	@for $i from 1 through 4 {
+		&:nth-child( 4n + #{$i} ) {
+			animation: fadeIn 1s #{$i * 0.1}s ease 1 forwards;
 		}
 	}
 }
