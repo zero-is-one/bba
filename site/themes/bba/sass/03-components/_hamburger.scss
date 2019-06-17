@@ -42,6 +42,7 @@ $translateX: 0;
     }
     &.line-2 {
       top:50%;
+      width: $width-line*.8;
     }
     &.line-3 {
       top:100%;
