@@ -40,6 +40,11 @@ body {
   // padding: 0 $body-padding;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  &.nav-is-open {
+    max-height: 100%;
+    overflow: hidden;
+  }
 }
 
 ::selection {

@@ -424,14 +424,21 @@ small {
 /* 03 -- individual components reused throughout multiple layouts: header, footer, navigation, sidebars, carousels, etc. */
 .site-header {
   width: 100%;
-  padding: 4.25rem 0;
+  padding: 3.5rem 0;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    padding: 4.25rem 0;
+  }
 }
 
 .logo-link {
   color: #686763;
   line-height: 1;
+  z-index: 200;
 }
 
 @media (min-width: 768px) {
@@ -465,24 +472,44 @@ small {
 .site-nav {
   position: relative;
   margin: auto;
-  max-width: 75rem;
-  padding: 0 2%;
+  max-width: none;
   clear: both;
   display: flex;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10%;
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    width: auto;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0;
+  }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
   .menu-wrapper {
     position: fixed;
-    display: flex;
     justify-content: center;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: #fff;
-    padding: 4.25rem 0;
+    padding: 25vh 0 1.5rem;
+    z-index: 100;
+    display: flex;
+    opacity: 0;
+    z-index: -100;
+    transition: all;
+    transition-duration: .125s;
+    transition-timing-function: ease-in-out;
+  }
+  .nav-is-open .menu-wrapper {
+    opacity: 1;
     z-index: 100;
   }
 }
@@ -524,6 +551,64 @@ small {
   font-size: 0.875rem;
   align-self: flex-start;
   margin: 0 0 4.25rem 10%;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Mobile nav hamburger icon
+////////////////////////////////////////////////////////////////////////////
+*/
+.site-nav__nav-toggle {
+  width: 25px;
+  height: 12px;
+  position: relative;
+  z-index: 200;
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .site-nav__nav-toggle {
+    display: none;
+  }
+}
+
+.site-nav__nav-toggle .line {
+  display: block;
+  background: rgba(104, 103, 99, 0.5);
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s;
+}
+
+.site-nav__nav-toggle .line.line-1 {
+  top: 0;
+}
+
+.site-nav__nav-toggle .line.line-2 {
+  top: 50%;
+}
+
+.site-nav__nav-toggle .line.line-3 {
+  top: 100%;
+}
+
+.nav-is-open .site-nav__nav-toggle .line {
+  background: #686763;
+}
+
+.nav-is-open .site-nav__nav-toggle .line-1 {
+  transform: translateY(6px) translateX(0) rotate(45deg);
+}
+
+.nav-is-open .site-nav__nav-toggle .line-2 {
+  opacity: 0;
+}
+
+.nav-is-open .site-nav__nav-toggle .line-3 {
+  transform: translateY(-6px) translateX(0) rotate(-45deg);
 }
 
 /* 04 -- idividual page layouts, including global styles */
@@ -574,6 +659,11 @@ body a:hover, body a:focus {
   color: #686763;
 }
 
+body.nav-is-open {
+  max-height: 100%;
+  overflow: hidden;
+}
+
 ::selection {
   background: rgba(104, 103, 99, 0.1);
   color: #686763;
@@ -588,8 +678,7 @@ body a:hover, body a:focus {
 .container {
   position: relative;
   margin: auto;
-  max-width: 75rem;
-  padding: 0 2%;
+  max-width: none;
   clear: both;
 }
 
@@ -1063,6 +1152,11 @@ html.fp-enabled,
 
 .page-header .fp-tableCell, .page-footer .fp-tableCell {
   flex-direction: column;
+}
+
+.nav-is-open .fullpage-wrapper {
+  position: fixed !important;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=bba.css.map */

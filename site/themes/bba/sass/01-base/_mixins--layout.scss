@@ -10,11 +10,10 @@
 
 
 
-@mixin container($maxwidth: 75rem) {
+@mixin container($maxwidth: none) {
   position: relative;
   margin: auto;
   max-width: $maxwidth;
-  padding: 0 $grid-padding;
   clear: both;
 }
 

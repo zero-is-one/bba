@@ -16,4 +16,19 @@ $(document).ready(function() {
 		sectionSelector: '.js-fullpage-section',
 		scrollBar: true,
 	});
+
+
+	// Main Nav Toggling
+	$(".site-nav__nav-toggle").on("click", function(e){
+		e.preventDefault();
+		$("body").toggleClass("nav-is-open");
+	});
+
+	// Escape key closes nav
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+		  $("body").removeClass("nav-is-open");
+		}
+	});
+
 }); 

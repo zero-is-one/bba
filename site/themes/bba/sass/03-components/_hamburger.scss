@@ -1,0 +1,65 @@
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Mobile nav hamburger icon
+////////////////////////////////////////////////////////////////////////////
+*/
+
+$height-icon: 12px;
+$width-line: 25px;
+$height-line: 2px;
+$color-line: $color-gray-light;
+$color-line-active: $color-gray;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;
+
+.site-nav__nav-toggle {
+  width: $width-line;
+  height: $height-icon;
+  position: relative;
+  z-index: $zIndex-2;
+  display:block;
+  cursor: pointer;
+
+  @include mq($nav-breakpoint) {
+  	display: none;
+  }
+  
+  .line {
+    display:block;
+    background: $color-line;
+    width: $width-line;
+    height: $height-line;
+    position:absolute;
+    left:0;
+    transition: all $transition-time;
+    
+    &.line-1 {
+      top:0;
+    }
+    &.line-2 {
+      top:50%;
+    }
+    &.line-3 {
+      top:100%;
+    }
+  }
+
+  .nav-is-open & {
+  	.line {
+	    background: $color-line-active;  		
+  	}
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX) rotate($rotation);
+    }
+    .line-2 {
+      opacity:0;
+    }
+    .line-3 {
+      transform: translateY($translateY * -1) translateX($translateX) rotate($rotation * -1);
+    }
+  }
+}

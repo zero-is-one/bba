@@ -1,13 +1,25 @@
 .site-header {
 	width: 100%;
-	padding: $spacing-xl 0;
+	padding: 3.5rem 0;
 	display: flex;
 	justify-content: center;
+
+	@include mq($nav-breakpoint) {
+		padding: $spacing-xl 0;
+	}
+}
+
+// applied only when mobile nav is open
+.nav-is-open .site-header {
+	// position: fixed;
+	// top: 0;
+	// z-index: $zIndex-1;
 }
 
 .logo-link {
 	color: $color-base;
 	line-height: 1;
+	z-index: $zIndex-2;
 
 	@include mq($m) {
 		margin-right: 2.5rem;
@@ -35,21 +47,39 @@
 .site-nav {
 	@include container;
 	display: flex;
-	align-items: flex-end;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 $body-padding;
+	
+	@include mq($nav-breakpoint) {
+		width: auto;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 0;
+	}
 }
 
 .menu-wrapper {
 	@include mq(0, $nav-breakpoint) {
 		position: fixed;
-		display: flex;
 		justify-content: center;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		background-color: $color-white;
-		padding: $spacing-xl 0;
+		padding: 25vh 0 $spacing-lg;
 		z-index: $zIndex-1;
+		display: flex;
+		opacity: 0;
+		z-index: $zIndex-n1;
+		@include animate;
+
+		.nav-is-open & {
+			opacity: 1;
+			z-index: $zIndex-1;
+		}
 	}	
 }
 
@@ -61,6 +91,10 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
+
+		// .nav-is-open & {
+		// 	opacity: 1;
+		// }		
 	}
 }
 
