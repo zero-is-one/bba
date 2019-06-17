@@ -30,6 +30,10 @@
 			grid-template-columns: 1fr 1fr;
 		}
 
+		@include mq($m) {
+			grid-gap: $spacing-xl;
+		}
+
 		@include mq($l) {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
@@ -78,7 +82,7 @@
 .project-tease__title {
 	position: absolute;
 	top: 100%;
-	font-size: $font-size-sm;
+	@include nav-link;
 	font-family: $font-family-sans;
 	padding-top: $spacing-xs;
 	opacity: 0;
