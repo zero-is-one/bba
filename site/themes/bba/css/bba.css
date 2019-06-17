@@ -557,17 +557,12 @@ small {
 }
 
 .site-menu__menu-item {
-  font-size: 1.125rem;
+  font-family: "PostGrotesk", Helvetica, sans-serif;
+  font-size: 1.55rem;
   line-height: 1.2;
   font-size: 1.55rem;
   line-height: 1;
   margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .site-menu__menu-item {
-    font-size: 1.55rem;
-  }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -842,14 +837,9 @@ Projects recirculation link
 ////////////////////////////////////////////////////////////////////////////
 */
 .page-section--recirc {
-  font-size: 1.125rem;
+  font-family: "PostGrotesk", Helvetica, sans-serif;
+  font-size: 1.55rem;
   line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .page-section--recirc {
-    font-size: 1.55rem;
-  }
 }
 
 .tease-wrapper {
@@ -957,9 +947,9 @@ Projects recirculation link
 .project-tease__title {
   position: absolute;
   top: 100%;
-  font-size: 1.125rem;
-  line-height: 1.2;
   font-family: "PostGrotesk", Helvetica, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1.2;
   padding-top: 0.25rem;
   opacity: 0;
   transition: all;
@@ -967,9 +957,9 @@ Projects recirculation link
   transition-timing-function: ease-in-out;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 0) and (max-width: 767px) {
   .project-tease__title {
-    font-size: 1.55rem;
+    font-size: 1.125rem;
   }
 }
 
