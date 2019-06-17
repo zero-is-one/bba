@@ -8,6 +8,7 @@ Color values
 $color-white: #fff;
 $color-gray: #686763;
 $color-gray-light: rgba($color-gray,.5);
+$color-gray-xlight: rgba($color-gray,.1);
 
 
 /* 
@@ -25,7 +26,7 @@ $color-heading: $color-text;
 $color-link: rgba($color-base,.5);
 $color-link--active: $color-base;
 
-$color-selection-bg: rgba($color-gray,.1);
+$color-selection-bg: $color-gray-xlight;
 $color-selection-text: $color-text;
 
 

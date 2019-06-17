@@ -9,13 +9,6 @@
 	}
 }
 
-// applied only when mobile nav is open
-.nav-is-open .site-header {
-	// position: fixed;
-	// top: 0;
-	// z-index: $zIndex-1;
-}
-
 .logo-link {
 	color: $color-base;
 	line-height: 1;
@@ -62,19 +55,19 @@
 
 .menu-wrapper {
 	@include mq(0, $nav-breakpoint) {
-		position: fixed;
+		display: flex;
 		justify-content: center;
+		align-items: stretch;
+		position: fixed;
 		top: 0;
 		right: 0;
 		bottom: 0;
 		left: 0;
 		background-color: $color-white;
-		padding: 25vh 0 $spacing-lg;
-		z-index: $zIndex-1;
-		display: flex;
+		padding: 50vh 10% 1.5rem;
+		@include animate;
 		opacity: 0;
 		z-index: $zIndex-n1;
-		@include animate;
 
 		.nav-is-open & {
 			opacity: 1;
@@ -90,11 +83,12 @@
 	@include mq(0, $nav-breakpoint) {
 		flex-direction: column;
 		justify-content: space-around;
-		align-items: center;
+	    align-items: flex-start;
+	    width: 100%;
+	}
 
-		// .nav-is-open & {
-		// 	opacity: 1;
-		// }		
+	@include mq($nav-breakpoint) {
+		align-items: center;
 	}
 }
 
@@ -102,6 +96,18 @@
 	@include nav-link;
 	line-height: 1;
 	margin-bottom: 0;
+
+	@include mq(0, $nav-breakpoint) {
+		opacity: 0;
+			
+		.nav-is-open & {
+			@for $i from 1 through 4 {
+				&:nth-child( #{$i} ) {
+					animation: slideIn .5s #{$i * 0.1}s ease 1 forwards;
+				}
+			}
+		}
+	}
 
 	@include mq($nav-breakpoint) {
 		&:not(:last-child) {

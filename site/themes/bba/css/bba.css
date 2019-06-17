@@ -135,6 +135,17 @@ Stylistic applications
 Animate all properties
 ////////////////////////////////////////////////////////////////////////////
 */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 a {
   font-family: "PostGrotesk", Helvetica, sans-serif;
   color: rgba(104, 103, 99, 0.5);
@@ -492,21 +503,21 @@ small {
 
 @media (min-width: 0) and (max-width: 767px) {
   .menu-wrapper {
-    position: fixed;
+    display: flex;
     justify-content: center;
+    align-items: stretch;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: #fff;
-    padding: 25vh 0 1.5rem;
-    z-index: 100;
-    display: flex;
-    opacity: 0;
-    z-index: -100;
+    padding: 50vh 10% 1.5rem;
     transition: all;
     transition-duration: .125s;
     transition-timing-function: ease-in-out;
+    opacity: 0;
+    z-index: -100;
   }
   .nav-is-open .menu-wrapper {
     opacity: 1;
@@ -525,6 +536,13 @@ small {
   .site-menu {
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-menu {
     align-items: center;
   }
 }
@@ -533,6 +551,24 @@ small {
   font-size: 1.55rem;
   line-height: 1;
   margin-bottom: 0;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .site-menu__menu-item {
+    opacity: 0;
+  }
+  .nav-is-open .site-menu__menu-item:nth-child(1) {
+    animation: slideIn 0.5s 0.1s ease 1 forwards;
+  }
+  .nav-is-open .site-menu__menu-item:nth-child(2) {
+    animation: slideIn 0.5s 0.2s ease 1 forwards;
+  }
+  .nav-is-open .site-menu__menu-item:nth-child(3) {
+    animation: slideIn 0.5s 0.3s ease 1 forwards;
+  }
+  .nav-is-open .site-menu__menu-item:nth-child(4) {
+    animation: slideIn 0.5s 0.4s ease 1 forwards;
+  }
 }
 
 @media (min-width: 768px) {
