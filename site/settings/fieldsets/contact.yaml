@@ -1,0 +1,30 @@
+sections:
+  main:
+    display: Main
+    fields:
+      email_address:
+        type: text
+        display: 'Email Address'
+        width: 50
+      phone_number:
+        type: text
+        width: 50
+        display: 'Phone Number'
+      street_address:
+        type: text
+        display: 'Street Address'
+      city:
+        type: text
+        width: 50
+        display: City
+      state:
+        type: text
+        width: 25
+        display: State
+      zip:
+        type: text
+        width: 25
+        display: ZIP
+taxonomies: false
+hide: true
+title: Contact

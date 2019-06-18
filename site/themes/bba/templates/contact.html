@@ -3,12 +3,23 @@
 </header>
 
 <address class="contact-info">
-	<p class="contact-info__email">
-		<a href="mailto:brent@brentbuckarchitects.com">brent@brentbuckarchitects.com</a>
-	</p>
-	<p class="contact-info__phone">917–657–8905</p>
-	<p class="contact-info__street">138 Prospect Place</p>
-	<p class="contact-info__city-state-zip">Brooklyn, New York 11217</p>
+	{{ if email_address }}
+		<p class="contact-info__email">
+			<a href="mailto:brent@brentbuckarchitects.com">{{ email_address }}</a>
+		</p>
+	{{ /if }}
+
+	{{ if phone_number }}
+		<p class="contact-info__phone">{{ phone_number }}</p>
+	{{ /if }}
+
+	{{ if street_address }}
+		<p class="contact-info__street">{{ street_address }}</p>
+	{{ /if }}
+
+	{{ if city and state and zip }}
+		<p class="contact-info__city-state-zip">{{ city }}, {{ state }} {{ zip }}</p>
+	{{ /if }}
 </address>	
 
 <footer class="page-footer">

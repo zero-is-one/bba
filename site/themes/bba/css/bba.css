@@ -751,12 +751,19 @@ hr {
 .contact-info {
   max-width: calc(100vw - 20%);
   text-align: center;
-  letter-spacing: 0.05rem;
 }
 
 .contact-info__email {
-  letter-spacing: 0;
   margin-bottom: 4.25rem;
+}
+
+.contact-info__phone,
+.contact-info__street,
+.contact-info__city-state-zip {
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  line-height: 2.5;
+  letter-spacing: 0.05rem;
 }
 
 /* 

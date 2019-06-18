@@ -9,10 +9,17 @@
 .contact-info {
 	@include section-width;
 	text-align: center;
-	letter-spacing: $letterspacing-lg;
 }
 
 .contact-info__email {
-	letter-spacing: $letterspacing-base;
 	margin-bottom: $spacing-xl;
+}
+
+.contact-info__phone, 
+.contact-info__street, 
+.contact-info__city-state-zip {
+	margin-bottom: 0;
+	font-size: $font-size-sm;
+	line-height: $line-height-lg;
+	letter-spacing: $letter-spacing-lg;
 }
