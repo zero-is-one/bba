@@ -98,4 +98,5 @@ Projects recirculation link
 
 .page-section--recirc {
 	@include nav-link;
+	min-height: 0;
 }

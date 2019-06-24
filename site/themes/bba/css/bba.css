@@ -869,6 +869,7 @@ Projects recirculation link
   font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 1.55rem;
   line-height: 1.2;
+  min-height: 0;
 }
 
 .tease-wrapper {
