@@ -1,0 +1,52 @@
+.coming-soon {
+	height: 100vh;
+	@include section-width;
+	@include margin-auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.coming-soon__heading {
+	@extend %visuallyhidden;
+}
+
+.coming-soon__logo {
+	width: 685px;
+	height: 66px;
+	max-width: 100%;
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.coming-soon__instagram {
+	width: 30px;
+	height: 30px;
+	max-width: 100%;
+	margin-top: 40px;
+
+	svg {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.coming-soon-contact {
+	@include section-width;
+	@include margin-auto;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-size: $font-size-sm;
+		line-height: $line-height-sm;
+		font-family: $font-family-sans;
+	}
+}

@@ -114,6 +114,17 @@ Embed custom fonts here
 Color functions -- making up for Compass
 ////////////////////////////////////////////////////////////////////////////
 */
+.coming-soon__heading {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Basic font style mixins
@@ -991,6 +1002,57 @@ Projects recirculation link
   .project-tease__title {
     font-size: 1.125rem;
   }
+}
+
+.coming-soon {
+  height: 100vh;
+  max-width: calc(100vw - 20%);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon__logo {
+  width: 685px;
+  height: 66px;
+  max-width: 100%;
+}
+
+.coming-soon__logo svg {
+  width: 100%;
+  height: auto;
+}
+
+.coming-soon__instagram {
+  width: 30px;
+  height: 30px;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.coming-soon__instagram svg {
+  width: 100%;
+  height: auto;
+}
+
+.coming-soon-contact {
+  max-width: calc(100vw - 20%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon-contact p {
+  font-size: 1.125rem;
+  line-height: 1.2;
+  font-family: "PostGrotesk", Helvetica, sans-serif;
 }
 
 /* 05 -- individual third-party components */

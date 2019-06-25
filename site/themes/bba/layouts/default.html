@@ -13,8 +13,12 @@
 
 
 <body class="body--{{ slug }}">
-    
+
+{{ if logged_in }}    
     {{ template_content }}
+{{ else }}
+    {{ partial:coming-soon }}
+{{ /if }}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{{ theme:js }}"></script>
