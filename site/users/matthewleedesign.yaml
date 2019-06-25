@@ -2,5 +2,5 @@ id: d711aee9-ec50-41ed-b693-08fa0eade2dd
 super: true
 first_name: Matt
 last_name: Lee
-password_hash: $2y$10$Z5pS4zQB1aU32n8vqCeOxuFZvL4rDm6aWiuYS5Ustc2vX16V6Eyhe
 email: matthewleedesign@gmail.com
+password_hash: $2y$10$bCSxMSAeKS/2rO9b0GjW1OgUmeG.dca9pAuuoaQwT0nvngZXG5Kfi
