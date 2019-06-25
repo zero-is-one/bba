@@ -17,4 +17,8 @@ sections:
         type: text
         instructions: 'The full URL of your Instagram account (including https://)'
         display: 'Instagram URL'
+      coming_soon:
+        type: toggle
+        instructions: 'Display the "coming soon" screen to all logged-out users'
+        display: 'Coming Soon'
 taxonomies: true
