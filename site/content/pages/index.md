@@ -1,3 +1,7 @@
+background_videos:
+  - /assets/core-drill.jpg
+  - /assets/counter.jpg
+  - /assets/rusty-nail.jpg
 title: Home
 template: home
 fieldset: home

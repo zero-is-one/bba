@@ -2,6 +2,12 @@
 	{{ partial:header }}
 </header>
 
+<div style="display:flex">
+{{ assets:background_videos sort="random"}}
+	<div><img src="{{ url }}"  alt="{{ alt }}" /></div>
+{{ /assets:background_videos }}	
+</div>
+
 <footer class="page-footer">
     {{ partial:footer }}
 </footer>
