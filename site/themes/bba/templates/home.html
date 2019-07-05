@@ -4,7 +4,12 @@
 
 <div style="display:flex">
 {{ assets:background_videos sort="random"}}
-	<div><img src="{{ url }}"  alt="{{ alt }}" /></div>
+<!-- 	<div><img src="{{ url }}"  alt="{{ alt }}" /></div>
+ -->	<div>
+		<video autoplay muted>
+			<source src="{{ url }}" type="video/mp4">
+		</video>
+	</div>
 {{ /assets:background_videos }}	
 </div>
 
