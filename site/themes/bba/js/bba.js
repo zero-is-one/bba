@@ -4738,7 +4738,7 @@ $(document).ready(function() {
 	$('.js-fullpage-container').fullpage({
 		//options here
 		lazyLoading: false,
-		scrollingSpeed: 600,
+		scrollingSpeed: 1000,
 		sectionSelector: '.js-fullpage-section',
 		scrollBar: true,
 	});
