@@ -17,6 +17,6 @@ routes:
     template: feeds/things
     content_type: atom
 collections:
-  projects: '/projects/{slug}'
+  works: '/works/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
