@@ -228,7 +228,7 @@ Headings
 h1 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -249,7 +249,7 @@ h1 a:hover, h1 a:focus {
 h2 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -270,7 +270,7 @@ h2 a:hover, h2 a:focus {
 h3 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -291,7 +291,7 @@ h3 a:hover, h3 a:focus {
 h4 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -312,7 +312,7 @@ h4 a:hover, h4 a:focus {
 h5 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -333,7 +333,7 @@ h5 a:hover, h5 a:focus {
 h6 {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
 }
@@ -359,7 +359,7 @@ Block-level Elements
 p {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;
@@ -381,13 +381,13 @@ p a:hover, p a:focus {
 
 @media (min-width: 600px) and (max-width: 1399px) {
   p {
-    font-size: calc(20px + (25 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(20px + (22.56 - 20) * (100vw - 600px) / (1400 - 600));
   }
 }
 
 @media (min-width: 1400px) {
   p {
-    font-size: 25px;
+    font-size: 22.56px;
   }
 }
 
@@ -400,7 +400,7 @@ ul, ol {
 li {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;
@@ -474,13 +474,13 @@ small {
 
 @media (min-width: 768px) {
   .logo-link {
-    margin-right: 2.5rem;
+    margin-right: 50px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 900px) {
   .logo-link {
-    margin-right: 4.25rem;
+    margin-right: 100px;
   }
 }
 
@@ -569,9 +569,9 @@ small {
 
 .site-menu__menu-item {
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.2;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -596,13 +596,19 @@ small {
 
 @media (min-width: 768px) {
   .site-menu__menu-item:not(:last-child) {
-    margin-right: 1.5rem;
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: 900px) {
+  .site-menu__menu-item:not(:last-child) {
+    margin-right: 50px;
   }
 }
 
 .instagram {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
 }
 
 .site-footer {
@@ -695,7 +701,7 @@ html {
 body {
   font-family: linotype-sabon, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.75;
   color: #686763;
   color: #686763;
@@ -861,13 +867,13 @@ Inline text
 
 @media (min-width: 600px) and (max-width: 1399px) {
   .things__heading, .things__list-item {
-    font-size: calc(20px + (25 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(20px + (22.56 - 20) * (100vw - 600px) / (1400 - 600));
   }
 }
 
 @media (min-width: 1400px) {
   .things__heading, .things__list-item {
-    font-size: 25px;
+    font-size: 22.56px;
   }
 }
 
@@ -878,7 +884,7 @@ Projects recirculation link
 */
 .page-section--recirc {
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.2;
   min-height: 0;
 }
@@ -989,7 +995,7 @@ Projects recirculation link
   position: absolute;
   top: 100%;
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.55rem;
+  font-size: 1.41rem;
   line-height: 1.2;
   padding-top: 0.25rem;
   opacity: 0;

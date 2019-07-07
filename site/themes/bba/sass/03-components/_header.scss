@@ -14,12 +14,12 @@
 	line-height: 1;
 	z-index: $zIndex-2;
 
-	@include mq($m) {
-		margin-right: 2.5rem;
+	@include mq($nav-breakpoint) {
+		margin-right: 50px;
 	}
 
-	@include mq($l) {
-		margin-right: $spacing-xl;
+	@include mq($m2) {
+		margin-right: 100px;
 	}
 
 	&:hover, &:focus {
@@ -112,12 +112,18 @@
 
 	@include mq($nav-breakpoint) {
 		&:not(:last-child) {
-			margin-right: $spacing-lg;
+			margin-right: 25px;
+		}
+	}
+
+	@include mq($m2) {
+		&:not(:last-child) {
+			margin-right: 50px;
 		}
 	}
 }
 
 .instagram {
-	width: 18px;
-	height: 18px;
+	width: 15px;
+	height: 15px;
 }
