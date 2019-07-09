@@ -2,7 +2,7 @@
 	{{ partial:header }}
 </header>
 
-<div>
+<!-- <div>
 {{ assets:background_videos sort="random"}}
 	<div>
 		<video autoplay muted style="max-width:100%">
@@ -10,9 +10,24 @@
 		</video>
 	</div>
 {{ /assets:background_videos }}	
+</div> -->
+
+
+<div id="video-player" class="fullscreen-bg">
+	
+	<video class="fullscreen-bg__video" autoplay muted style="max-width:100%">
+		{{ assets:background_videos limit="1" sort="random"}}
+			<source src="{{ url }}" type="video/mp4">
+		{{ /assets:background_videos }}	
+	</video>
+
+	<div class="fullscreen-bg__playlist">
+		{{ assets:background_videos sort="random"}}
+			<a href="{{ url }}"></a>
+		{{ /assets:background_videos }}	
+	</div>
 </div>
 
 <footer class="page-footer">
     {{ partial:footer }}
 </footer>
-
