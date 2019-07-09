@@ -1,4 +1,4 @@
-email_address: brent@brentbuckarchitects.com
+email_address: contact@brentbuckarchitects.com
 phone_number: 917–657–8905
 street_address: '138 Prospect Place'
 city: Brooklyn

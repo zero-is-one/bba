@@ -1,5 +1,5 @@
 ---
-title: Practice
+title: Studio
 fun_facts:
   - cats
   - dogs
