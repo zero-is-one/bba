@@ -1,7 +1,7 @@
 background_videos:
-  - /assets/video-1-1562715210.mp4
-  - /assets/video-2-1562715211.mp4
-  - /assets/video-3-1562715211.mp4
+  - /assets/video-1.mp4
+  - /assets/video-2.mp4
+  - /assets/video-3.mp4
 title: Home
 template: home
 fieldset: home
