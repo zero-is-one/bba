@@ -68,10 +68,12 @@
 		@include animate;
 		opacity: 0;
 		z-index: $zIndex-n1;
+		pointer-events: none;
 
 		.nav-is-open & {
 			opacity: 1;
 			z-index: $zIndex-1;
+			pointer-events: auto;
 		}
 	}	
 }
