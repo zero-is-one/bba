@@ -1,3 +1,6 @@
+// fullscreen HTML5 video background playlist
+// https://slicejack.com/video-background-playlist/
+
 ( function() {
 	if ( $( "#homepage-video" ).length ) {
 	 
