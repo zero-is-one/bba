@@ -1,9 +1,8 @@
-	console.log('video bg loaded');
 ( function() {
 	/* Variables */
-	var videoPlayer = document.getElementById( 'video-player' ),
-		video = videoPlayer.getElementsByClassName( 'fullscreen-bg__video' )[0],
-		playlist = videoPlayer.getElementsByClassName( 'fullscreen-bg__playlist' )[0],
+	var videoPlayer = document.getElementById( 'homepage-video' ),
+		video = videoPlayer.getElementsByClassName( 'homepage-video__video' )[0],
+		playlist = videoPlayer.getElementsByClassName( 'homepage-video__playlist' )[0],
 		source = video.getElementsByTagName( 'source' ),
 		linkList = [],
 		videoDirectory = '/assets/',

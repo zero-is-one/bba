@@ -4724,12 +4724,11 @@ if(window.jQuery && window.fullpage){
 }
 ));
 
-	console.log('video bg loaded');
 ( function() {
 	/* Variables */
-	var videoPlayer = document.getElementById( 'video-player' ),
-		video = videoPlayer.getElementsByClassName( 'fullscreen-bg__video' )[0],
-		playlist = videoPlayer.getElementsByClassName( 'fullscreen-bg__playlist' )[0],
+	var videoPlayer = document.getElementById( 'homepage-video' ),
+		video = videoPlayer.getElementsByClassName( 'homepage-video__video' )[0],
+		playlist = videoPlayer.getElementsByClassName( 'homepage-video__playlist' )[0],
 		source = video.getElementsByTagName( 'source' ),
 		linkList = [],
 		videoDirectory = '/assets/',
@@ -4775,7 +4774,7 @@ if(window.jQuery && window.fullpage){
 
 } () );
 $(document).ready(function() {   
-	console.log('why hello there');
+	// console.log('why hello there');
 
 	// prevent widows within inline-text
 	$('.inline-text p, .inline-text li').each(function(){
