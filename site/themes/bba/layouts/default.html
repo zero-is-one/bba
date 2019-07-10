@@ -12,7 +12,7 @@
 </head>
 
 
-<body class="body--{{ slug }}">
+<body class="{{ if slug }}body--{{ slug }}{{ else }}body--home{{ /if }}">
 
 {{ if coming_soon }}
 
