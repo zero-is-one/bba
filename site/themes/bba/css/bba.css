@@ -917,17 +917,17 @@ Projects recirculation link
   margin: 6rem auto;
 }
 
-.project-teases {
+.teases {
   display: flex;
   flex-wrap: wrap;
 }
 
-.project-teases:hover .project-tease__thumbnail-image, .project-teases:focus .project-tease__thumbnail-image {
+.teases:hover .tease__thumbnail-image, .teases:focus .tease__thumbnail-image {
   opacity: .75;
 }
 
 @supports not (display: grid) {
-  .project-teases {
+  .teases {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -1.5rem;
@@ -935,7 +935,7 @@ Projects recirculation link
 }
 
 @supports (display: grid) {
-  .project-teases {
+  .teases {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -943,84 +943,86 @@ Projects recirculation link
     grid-gap: 3rem;
   }
   @media (min-width: 600px) {
-    .project-teases {
+    .teases {
       -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
     }
   }
   @media (min-width: 768px) {
-    .project-teases {
+    .teases {
       grid-gap: 4.25rem;
     }
   }
   @media (min-width: 1024px) {
-    .project-teases {
+    .teases {
       -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 }
 
-.project-tease {
+.tease {
   opacity: 0;
 }
 
 @supports not (display: grid) {
-  .project-tease {
+  .tease {
     padding: 1.5rem;
   }
   @media (min-width: 600px) {
-    .project-tease {
+    .tease {
       width: 50%;
     }
   }
   @media (min-width: 1024px) {
-    .project-tease {
+    .tease {
       width: calc(100% / 3);
     }
   }
 }
 
-.project-tease:nth-child(4n + 1) {
+.tease:nth-child(4n + 1) {
   animation: fadeIn 1s 0.1s ease 1 forwards;
 }
 
-.project-tease:nth-child(4n + 2) {
+.tease:nth-child(4n + 2) {
   animation: fadeIn 1s 0.2s ease 1 forwards;
 }
 
-.project-tease:nth-child(4n + 3) {
+.tease:nth-child(4n + 3) {
   animation: fadeIn 1s 0.3s ease 1 forwards;
 }
 
-.project-tease:nth-child(4n + 4) {
+.tease:nth-child(4n + 4) {
   animation: fadeIn 1s 0.4s ease 1 forwards;
 }
 
-.project-tease__link {
+.tease__link {
   position: relative;
   display: block;
   line-height: 1;
 }
 
-.project-tease__link:hover .project-tease__thumbnail-image, .project-tease__link:hover .project-tease__title, .project-tease__link:focus .project-tease__thumbnail-image, .project-tease__link:focus .project-tease__title {
+.tease__link:hover .tease__thumbnail-image, .tease__link:hover .tease__title, .tease__link:focus .tease__thumbnail-image, .tease__link:focus .tease__title {
   opacity: 1;
 }
 
-.project-tease__thumbnail-image {
+.tease__thumbnail-image {
   display: block;
   transition: all;
   transition-duration: .25s;
   transition-timing-function: ease-in-out;
 }
 
-.project-tease__title {
+.tease__title {
   position: absolute;
   top: 100%;
+  width: 100%;
   font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 1.41rem;
   line-height: 1.2;
   padding-top: 0.25rem;
+  text-align: center;
   opacity: 0;
   transition: all;
   transition-duration: .25s;
@@ -1028,7 +1030,7 @@ Projects recirculation link
 }
 
 @media (min-width: 0) and (max-width: 767px) {
-  .project-tease__title {
+  .tease__title {
     font-size: 1.125rem;
   }
 }

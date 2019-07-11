@@ -3,14 +3,14 @@
 </header>
 
 <div class="tease-wrapper">
-	<div class="project-teases">
+	<div class="teases teases--work">
 	{{ collection:works }}
-		<article class="project-tease">
-			<a href="{{ url }}" class="project-tease__link">
+		<article class="tease tease--work">
+			<a href="{{ url }}" class="tease__link">
 				{{ assets:thumbnail_img }}
-					{{ partial:img-srcset--thumb class="project-tease__thumbnail-image" }}
+					{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
 				{{ /assets:thumbnail_img }}		
-				<h2 class="project-tease__title">{{ title }}</h2>
+				<h2 class="tease__title">{{ title }}</h2>
 			</a>
 		</article>
 	{{ /collection:works }}

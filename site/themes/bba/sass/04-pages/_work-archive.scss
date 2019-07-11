@@ -3,12 +3,12 @@
 	margin: $spacing-xxl auto;
 }
 
-.project-teases {
+.teases {
 	display: flex;
 	flex-wrap: wrap;
 
 	&:hover, &:focus {
-		.project-tease__thumbnail-image {
+		.tease__thumbnail-image {
 			opacity: .75;
 		}
 	}
@@ -40,7 +40,7 @@
 	}
 }
 
-.project-tease {
+.tease {
 	@supports not (display: grid) {
 		padding: 1.5rem;
 
@@ -62,28 +62,30 @@
 	}
 }
 
-.project-tease__link {
+.tease__link {
 	position: relative;
 	display: block;
 	line-height: 1;
 
 	&:hover, &:focus {
-		.project-tease__thumbnail-image, .project-tease__title {
+		.tease__thumbnail-image, .tease__title {
 			opacity: 1;
 		}
 	}
 }
 
-.project-tease__thumbnail-image {
+.tease__thumbnail-image {
 	display: block;
 	@include animate-slow;
 }
 
-.project-tease__title {
+.tease__title {
 	position: absolute;
 	top: 100%;
+	width: 100%;
 	@include nav-link;
 	padding-top: $spacing-xs;
+	text-align: center;
 	opacity: 0;
 	@include animate-slow;
 
