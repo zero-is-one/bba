@@ -1,0 +1,30 @@
+<header class="page-header">
+	{{ partial:header }}
+</header>
+
+<div class="tease-wrapper">
+	<div class="teases teases--studio">
+	{{ collection:people }}
+		<article class="tease">
+			{{ if link_to_bio }}
+			<a href="{{ url }}" class="tease__link">
+				{{ assets:img }}
+					{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
+				{{ /assets:img }}		
+				<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
+			</a>
+			{{ else }}
+			{{ assets:img }}
+				{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
+			{{ /assets:img }}		
+			<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
+			{{ /if }}
+		</article>
+	{{ /collection:people }}
+	</div>
+</div>
+
+<footer class="page-footer">
+	{{ partial:footer }}
+</footer>
+
