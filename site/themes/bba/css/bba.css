@@ -1014,7 +1014,7 @@ Projects recirculation link
   transition-timing-function: ease-in-out;
 }
 
-.tease__thumbnail-image.lazyloaded ~ .tease__title {
+.teases--studio .tease__thumbnail-image.lazyloaded ~ .tease__title {
   opacity: 1;
 }
 

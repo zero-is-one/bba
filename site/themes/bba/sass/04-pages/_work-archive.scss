@@ -78,8 +78,8 @@
 	display: block;
 	@include animate-slow;
 
-	&.lazyloaded {
-		& ~ .tease__title {
+	.teases--studio & {
+		&.lazyloaded ~ .tease__title {
 			opacity: 1;
 		}
 	}
