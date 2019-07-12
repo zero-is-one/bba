@@ -6,19 +6,12 @@
 	<div class="teases teases--studio">
 	{{ collection:people }}
 		<article class="tease">
-			{{ if link_to_bio }}
-			<a href="{{ url }}" class="tease__link">
+			{{ if link_to_bio }}<a href="{{ url }}" class="tease__link">{{ /if }}
 				{{ assets:img }}
 					{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
 				{{ /assets:img }}		
 				<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
-			</a>
-			{{ else }}
-			{{ assets:img }}
-				{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
-			{{ /assets:img }}		
-			<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
-			{{ /if }}
+			{{ if link_to_bio }}</a>{{ /if }}
 		</article>
 	{{ /collection:people }}
 	</div>
