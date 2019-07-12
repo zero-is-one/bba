@@ -962,6 +962,7 @@ Projects recirculation link
 }
 
 .tease {
+  position: relative;
   opacity: 0;
 }
 
@@ -981,6 +982,10 @@ Projects recirculation link
   }
 }
 
+.tease:hover .tease__thumbnail-image, .tease:hover .tease__title, .tease:focus .tease__thumbnail-image, .tease:focus .tease__title {
+  opacity: 1;
+}
+
 .tease:nth-child(4n + 1) {
   animation: fadeIn 1s 0.1s ease 1 forwards;
 }
@@ -998,13 +1003,8 @@ Projects recirculation link
 }
 
 .tease__link {
-  position: relative;
   display: block;
   line-height: 1;
-}
-
-.tease__link:hover .tease__thumbnail-image, .tease__link:hover .tease__title, .tease__link:focus .tease__thumbnail-image, .tease__link:focus .tease__title {
-  opacity: 1;
 }
 
 .tease__thumbnail-image {
@@ -1012,6 +1012,10 @@ Projects recirculation link
   transition: all;
   transition-duration: .25s;
   transition-timing-function: ease-in-out;
+}
+
+.tease__thumbnail-image.lazyloaded ~ .tease__title {
+  opacity: 1;
 }
 
 .tease__title {
