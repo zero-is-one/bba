@@ -7370,22 +7370,24 @@ $(document).ready(function() {
 	});
 
 	// configure FullPage: https://github.com/alvarotrigo/fullPage.js
-	$('.js-fullpage-container--work').fullpage({
-		lazyLoading: false,
-		scrollingSpeed: 1000,
-		sectionSelector: '.js-fullpage-section',
-		scrollBar: true,
-		scrollOverflow: false,
-	});
+	if ( $( ".js-fullpage-container--work" ).length ) {
+		$('.js-fullpage-container--work').fullpage({
+			lazyLoading: false,
+			scrollingSpeed: 1000,
+			sectionSelector: '.js-fullpage-section',
+			scrollBar: true,
+		});
+	}
 
-	$('.js-fullpage-container--studio').fullpage({
-		lazyLoading: false,
-		scrollingSpeed: 1000,
-		sectionSelector: '.js-fullpage-section',
-		scrollBar: false,
-		scrollOverflow: true,
-        responsiveWidth: 768,
-	});
+	if ( $( ".js-fullpage-container--studio" ).length ) {
+		$('.js-fullpage-container--studio').fullpage({
+			lazyLoading: false,
+			scrollingSpeed: 1000,
+			sectionSelector: '.js-fullpage-section',
+			scrollOverflow: true,
+			responsiveWidth: 768,
+		});
+	}
 
 
 	// Main Nav Toggling
