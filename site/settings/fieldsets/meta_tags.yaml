@@ -1,0 +1,22 @@
+sections:
+  main:
+    display: Main
+    fields:
+      seo_title:
+        type: text
+        display: 'SEO Title'
+      seo_description:
+        type: text
+        display: 'SEO Description'
+      seo_keywords:
+        type: text
+        display: 'SEO Keywords'
+      seo_image:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'SEO Image'
+taxonomies: false
+hide: true
+title: 'Meta Tags'

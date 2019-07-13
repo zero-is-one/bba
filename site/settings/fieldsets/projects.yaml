@@ -60,6 +60,13 @@ sections:
                 display: 'Things We Learned'
         type: replicator
         display: 'Content Blocks'
+  seo:
+    display: SEO
+    fields:
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
 taxonomies: false
 hide: true
 title: Work
