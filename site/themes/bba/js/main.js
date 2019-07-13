@@ -23,6 +23,7 @@ $(document).ready(function() {
 		sectionSelector: '.js-fullpage-section',
 		scrollBar: false,
 		scrollOverflow: true,
+        responsiveWidth: 768,
 	});
 
 

@@ -13,3 +13,13 @@
 	position: fixed !important;
 	z-index: $zIndex-0;
 }
+
+.body--studio .fp-tableCell {
+	@include mq(0, $nav-breakpoint) {
+		display: table-cell;
+
+		> * {
+			margin: 0 auto;
+		}
+	}
+}
