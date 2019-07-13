@@ -1,0 +1,5 @@
+.studio-intro {
+	@include flex-center;
+	max-width: $text-max-width;
+	height: calc(100vh - #{$nav-height});
+}

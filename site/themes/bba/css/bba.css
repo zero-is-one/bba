@@ -806,25 +806,34 @@ hr {
   letter-spacing: 0.05rem;
 }
 
+.studio-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 750px;
+  height: calc(100vh - 164px);
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
 .page-section {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .page-section--text {
-  min-height: 100vh;
   max-width: calc(100vw - 20%);
   margin-left: auto;
   margin-right: auto;
+  min-height: 100vh;
 }
 
 .page-section--things {
@@ -838,11 +847,11 @@ Intro
 ////////////////////////////////////////////////////////////////////////////
 */
 .project-intro {
-  height: calc(80vh - 150px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: calc(80vh - 150px);
 }
 
 .project-intro__title,
