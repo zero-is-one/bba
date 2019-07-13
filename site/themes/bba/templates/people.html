@@ -1,0 +1,23 @@
+<header class="page-header">
+	{{ partial:header }}
+</header>
+
+<section class="person">
+	<h1 class="person__name">{{ title }}</h1>
+
+	<div class="person__img">
+		{{ assets:img }}
+			{{ partial:img-srcset }}
+		{{ /assets:img }}	
+	</div>
+
+	<div class="person__bio">
+		{{ bio }}	
+	</div>
+
+</section>
+
+<footer class="page-footer">
+    {{ partial:footer }}
+</footer>
+

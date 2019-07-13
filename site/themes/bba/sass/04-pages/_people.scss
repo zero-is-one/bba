@@ -1,0 +1,51 @@
+.person {
+	// position: relative;
+	@include section-width;
+	@include vertical-space;
+	@include margin-auto;
+
+	@include mq($nav-breakpoint) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		
+	}
+}
+
+.person__name {
+	@extend %visuallyhidden;
+}
+
+.person__img, .person__bio {
+	max-width: $text-max-width;
+
+	@include mq($nav-breakpoint) {
+		width: calc(50% - 25px);
+	}
+
+	@include mq($m2) {
+		width: calc(50% - 50px);
+	}
+}
+
+.person__img {
+	margin-bottom: $spacing-lg;
+	img {
+		width: 100%;
+	}
+}
+
+.person__bio {
+	@include mq($nav-breakpoint) {
+		margin-top: -10px;
+	}
+
+	p:first-child {
+		font-size: $font-size-base !important;
+	}
+
+	p:not(:first-child) {
+		font-family: $font-family-sans;
+		font-size: $font-size-sm;
+	}
+}

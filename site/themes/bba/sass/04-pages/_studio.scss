@@ -1,6 +1,13 @@
 .studio-intro {
 	@include flex-center;
 	@include section-width;
-	margin: 0 auto;
-	min-height: calc(100vh - #{$nav-height});
+	@include margin-auto;
+
+	@include mq(0, $nav-breakpoint) {
+		@include vertical-space;
+	}
+
+	@include mq($nav-breakpoint) {
+		min-height: calc(100vh - #{$nav-height});
+	}
 }

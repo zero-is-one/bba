@@ -33,6 +33,25 @@
 
 
 
+
+// Vertical space
+// -------
+// FOR: Consistently adding different vertical padding on different pages
+// USE: @include vertical-space;
+
+@mixin vertical-space {
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-lg;  
+
+  @include mq($nav-breakpoint) {
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-xxl;  
+  }
+}
+
+
+
+
 // Flex centering
 // -------
 // FOR: centering a section vertically and horizontally using flexbox

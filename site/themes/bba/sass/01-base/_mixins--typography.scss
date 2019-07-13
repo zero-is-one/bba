@@ -21,7 +21,7 @@ Basic font style mixins
 }
 
 @mixin fluid-text {
-  @include fluid-font-size(20px $s, 22.56px $xl);
+  @include fluid-font-size(18px $s, 22.56px $xl);
 }
 
 

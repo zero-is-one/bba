@@ -114,7 +114,7 @@ Embed custom fonts here
 Color functions -- making up for Compass
 ////////////////////////////////////////////////////////////////////////////
 */
-.coming-soon__heading {
+.person__name, .coming-soon__heading {
   margin: -1px;
   padding: 0;
   width: 1px;
@@ -363,7 +363,7 @@ p {
   line-height: 1.75;
   color: #686763;
   margin-bottom: 1em;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 p a {
@@ -381,7 +381,7 @@ p a:hover, p a:focus {
 
 @media (min-width: 600px) and (max-width: 1399px) {
   p {
-    font-size: calc(20px + (22.56 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(18px + (22.56 - 18) * (100vw - 600px) / (1400 - 600));
   }
 }
 
@@ -681,7 +681,17 @@ Mobile nav hamburger icon
 
 .tease-wrapper {
   max-width: calc(100vw - 20%);
-  margin: 6rem auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .tease-wrapper {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
 }
 
 .teases {
@@ -957,8 +967,90 @@ hr {
   align-items: center;
   justify-content: center;
   max-width: calc(100vw - 20%);
-  margin: 0 auto;
-  min-height: calc(100vh - 164px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .studio-intro {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 0) and (max-width: 767px) and (min-width: 768px) {
+  .studio-intro {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .studio-intro {
+    min-height: calc(100vh - 164px);
+  }
+}
+
+.person {
+  max-width: calc(100vw - 20%);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .person {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.person__img, .person__bio {
+  max-width: 750px;
+}
+
+@media (min-width: 768px) {
+  .person__img, .person__bio {
+    width: calc(50% - 25px);
+  }
+}
+
+@media (min-width: 900px) {
+  .person__img, .person__bio {
+    width: calc(50% - 50px);
+  }
+}
+
+.person__img {
+  margin-bottom: 1.5rem;
+}
+
+.person__img img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .person__bio {
+    margin-top: -10px;
+  }
+}
+
+.person__bio p:first-child {
+  font-size: 1.41rem !important;
+}
+
+.person__bio p:not(:first-child) {
+  font-family: "PostGrotesk", Helvetica, sans-serif;
+  font-size: 1.125rem;
 }
 
 /* 
@@ -1039,13 +1131,13 @@ Inline text
 ////////////////////////////////////////////////////////////////////////////
 */
 .things__heading, .things__list-item {
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom: 1.75em;
 }
 
 @media (min-width: 600px) and (max-width: 1399px) {
   .things__heading, .things__list-item {
-    font-size: calc(20px + (22.56 - 20) * (100vw - 600px) / (1400 - 600));
+    font-size: calc(18px + (22.56 - 18) * (100vw - 600px) / (1400 - 600));
   }
 }
 

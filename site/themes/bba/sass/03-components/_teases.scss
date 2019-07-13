@@ -1,6 +1,7 @@
 .tease-wrapper {
 	@include section-width;
-	margin: $spacing-xxl auto;
+	@include vertical-space;
+	@include margin-auto;
 }
 
 .teases {
