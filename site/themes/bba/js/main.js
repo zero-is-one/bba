@@ -18,13 +18,13 @@ $(document).ready(function() {
 		});
 	}
 
-	if ( $( ".js-fullpage-container--studio" ).length ) {
+
+   if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 768 ){
 		$('.js-fullpage-container--studio').fullpage({
 			lazyLoading: false,
 			scrollingSpeed: 1000,
 			sectionSelector: '.js-fullpage-section',
 			scrollOverflow: true,
-			responsiveWidth: 768,
 		});
 	}
 
