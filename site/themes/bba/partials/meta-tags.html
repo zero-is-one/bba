@@ -1,14 +1,14 @@
-<meta name="description" content="Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015.">
+<meta name="description" content="{{ if seo_description }}{{ seo_description }}{{ elseif seo_description_default }}{{ seo_description_default }}{{ else }}Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015.{{ /if }}">
 
-<meta name="keywords" content="Brent Buck Architects, Brent Buck, Brent Allen Buck, Buck Projects, Brooklyn architects, Manhattan architects, townhouse renovation, apartment renovation, brownstone renovation" />
+<meta name="keywords" content="{{ if seo_keywords }}{{ seo_keywords }}{{ elseif seo_keywords_default }}{{ seo_keywords_default }}{{ else }}Brent Buck Architects, Brent Buck, Brent Allen Buck, Buck Projects, Brooklyn architects, Manhattan architects, townhouse renovation, apartment renovation, brownstone renovation{{ /if }}">
 
 
 <!-- Open Graph markup -->
-<meta property="og:title" content="{{ title }}" />
+<meta property="og:title" content="{{ if seo_title }}{{ seo_title }}{{ else }}{{ title }}{{ /if }}" />
 <meta property="og:url" content="{{ url }}" />
 <meta property="og:image" content="" />
 <meta property="og:site_name" content="{{ site_name }}" />
-<meta property="og:description" content="Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015." />
+<meta property="og:description" content="{{ if seo_description }}{{ seo_description }}{{ elseif seo_description_default }}{{ seo_description_default }}{{ else }}Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015.{{ /if }}" />
 <meta property="og:locale" content="en_US" />
 
 <!-- Twitter cards -->
