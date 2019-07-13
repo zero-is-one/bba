@@ -1,0 +1,12 @@
+sections:
+  main:
+    display: Main
+    fields:
+      about_the_studio:
+        restrict_assets: false
+        type: redactor
+        display: 'About the studio'
+        settings: Basic
+taxonomies: false
+title: Studio
+hide: true
