@@ -33,6 +33,22 @@
 
 
 
+// Flex centering
+// -------
+// FOR: centering a section vertically and horizontally using flexbox
+// FOR: defaults to flex-column but can be switched to row
+// USE: @include flex-center; @include flex-center(row);
+
+@mixin flex-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 // Fullbleed image mixin
 // -------
 // FOR: making items full-browser-width when inside a limited-width parent

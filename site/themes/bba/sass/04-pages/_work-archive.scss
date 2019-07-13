@@ -53,7 +53,14 @@
 		}
 	}
 
+	position: relative;
 	opacity: 0;
+
+	&:hover, &:focus {
+		.tease__thumbnail-image, .tease__title {
+			opacity: 1;
+		}
+	}
 
 	@for $i from 1 through 4 {
 		&:nth-child( 4n + #{$i} ) {
@@ -63,20 +70,19 @@
 }
 
 .tease__link {
-	position: relative;
 	display: block;
 	line-height: 1;
-
-	&:hover, &:focus {
-		.tease__thumbnail-image, .tease__title {
-			opacity: 1;
-		}
-	}
 }
 
 .tease__thumbnail-image {
 	display: block;
 	@include animate-slow;
+
+	.teases--studio & {
+		&.lazyloaded ~ .tease__title {
+			opacity: 1;
+		}
+	}
 }
 
 .tease__title {

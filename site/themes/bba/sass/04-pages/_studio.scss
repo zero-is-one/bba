@@ -1,0 +1,5 @@
+.studio-intro {
+	@include flex-center;
+	@include section-width;
+	min-height: calc(100vh - #{$nav-height});
+}

@@ -9,12 +9,21 @@ $(document).ready(function() {
 	});
 
 	// configure FullPage: https://github.com/alvarotrigo/fullPage.js
-	$('.js-fullpage-container').fullpage({
-		//options here
+	$('.js-fullpage-container--work').fullpage({
 		lazyLoading: false,
 		scrollingSpeed: 1000,
 		sectionSelector: '.js-fullpage-section',
 		scrollBar: true,
+		scrollOverflow: false,
+	});
+
+	$('.js-fullpage-container--studio').fullpage({
+		lazyLoading: false,
+		scrollingSpeed: 1000,
+		sectionSelector: '.js-fullpage-section',
+		scrollBar: false,
+		scrollOverflow: true,
+        responsiveWidth: 768,
 	});
 
 

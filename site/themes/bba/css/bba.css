@@ -806,25 +806,34 @@ hr {
   letter-spacing: 0.05rem;
 }
 
+.studio-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100vw - 20%);
+  min-height: calc(100vh - 164px);
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Page sections
 ////////////////////////////////////////////////////////////////////////////
 */
 .page-section {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .page-section--text {
-  min-height: 100vh;
   max-width: calc(100vw - 20%);
   margin-left: auto;
   margin-right: auto;
+  min-height: 100vh;
 }
 
 .page-section--things {
@@ -838,11 +847,11 @@ Intro
 ////////////////////////////////////////////////////////////////////////////
 */
 .project-intro {
-  height: calc(80vh - 150px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: calc(80vh - 150px);
 }
 
 .project-intro__title,
@@ -962,6 +971,7 @@ Projects recirculation link
 }
 
 .tease {
+  position: relative;
   opacity: 0;
 }
 
@@ -981,6 +991,10 @@ Projects recirculation link
   }
 }
 
+.tease:hover .tease__thumbnail-image, .tease:hover .tease__title, .tease:focus .tease__thumbnail-image, .tease:focus .tease__title {
+  opacity: 1;
+}
+
 .tease:nth-child(4n + 1) {
   animation: fadeIn 1s 0.1s ease 1 forwards;
 }
@@ -998,13 +1012,8 @@ Projects recirculation link
 }
 
 .tease__link {
-  position: relative;
   display: block;
   line-height: 1;
-}
-
-.tease__link:hover .tease__thumbnail-image, .tease__link:hover .tease__title, .tease__link:focus .tease__thumbnail-image, .tease__link:focus .tease__title {
-  opacity: 1;
 }
 
 .tease__thumbnail-image {
@@ -1012,6 +1021,10 @@ Projects recirculation link
   transition: all;
   transition-duration: .25s;
   transition-timing-function: ease-in-out;
+}
+
+.teases--studio .tease__thumbnail-image.lazyloaded ~ .tease__title {
+  opacity: 1;
 }
 
 .tease__title {
@@ -1363,6 +1376,15 @@ html.fp-enabled,
 .nav-is-open .fullpage-wrapper {
   position: fixed !important;
   z-index: 1;
+}
+
+@media (min-width: 0) and (max-width: 767px) {
+  .body--studio .fp-tableCell {
+    display: table-cell;
+  }
+  .body--studio .fp-tableCell > * {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=bba.css.map */

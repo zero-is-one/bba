@@ -1,13 +1,15 @@
 ---
+about_the_studio: |
+  <p>Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015. Current work includes renovations to townhouses and apartments in Brooklyn and Manhattan.
+  </p>
+  <p>Brent Buck Architects believes architecture is the collaboration between many to create simple, timeless solutions. We are committed to process—we begin by listening and prefer to start by hand. Each project requires a unique, responsible design that we ensure is carried out effectively and efficiently. We pay attention to detail, scale, context, use, and materials.
+  </p>
 title: Studio
-fun_facts:
-  - cats
-  - dogs
-  - rabbits
-template: practice
-fieldset: practice
+template: studio
+fieldset: studio
+mount: people
 id: 1ebf6105-5d6f-4b81-a86e-b0a2add2ffa1
 ---
-Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui.
+Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015. Current work includes renovations to townhouses and apartments in Brooklyn and Manhattan.
 
-Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Buck Projects believes architecture is the collaboration between many to create simple, timeless solutions. We are committed to process—we begin by listening and prefer to start by hand. Each project requires a unique, responsible design that we ensure is carried out effectively and efficiently. We pay attention to detail, scale, context, use, and materials.

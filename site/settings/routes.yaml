@@ -18,5 +18,6 @@ routes:
     content_type: atom
 collections:
   works: '/work/{slug}'
+  people: 'studio/{slug}'
 taxonomies:
   tags: '/blog/tags/{slug}'
