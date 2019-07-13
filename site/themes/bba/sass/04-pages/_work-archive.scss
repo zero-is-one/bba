@@ -58,7 +58,7 @@
 
 	&:hover, &:focus {
 		.tease__thumbnail-image, .tease__title {
-			opacity: 1;
+			opacity: 1 !important;
 		}
 	}
 
@@ -83,6 +83,20 @@
 			opacity: 1;
 		}
 	}
+
+	.teases--work & {
+		&.lazyloaded ~ .tease__title {
+			opacity: 1;
+			/* smartphones, touchscreens */
+			@media (hover: none) and (pointer: coarse) {
+				opacity: 1;
+			}
+			/* mouse, touch pad */
+			@media (hover: hover) and (pointer: fine) {
+				opacity: 0;
+			}
+		}
+	}
 }
 
 .tease__title {
@@ -92,8 +106,8 @@
 	@include nav-link;
 	padding-top: $spacing-xs;
 	text-align: center;
-	opacity: 0;
 	@include animate-slow;
+	opacity: 0;
 
 	@include mq(0, $nav-breakpoint) {
 		font-size: $font-size-sm;
