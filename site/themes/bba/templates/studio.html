@@ -1,23 +1,34 @@
-<header class="page-header">
-	{{ partial:header }}
-</header>
+<div class="js-fullpage-container--studio">
+	
+	<header class="js-fullpage-section page-header">
+		{{ partial:header }}
 
-<div class="tease-wrapper">
-	<div class="teases teases--studio">
-	{{ collection:people }}
-		<article class="tease">
-			{{ if link_to_bio }}<a href="{{ url }}" class="tease__link">{{ /if }}
-				{{ assets:img }}
-					{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
-				{{ /assets:img }}		
-				<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
-			{{ if link_to_bio }}</a>{{ /if }}
-		</article>
-	{{ /collection:people }}
-	</div>
+		<section class="studio-intro lazyload">
+			{{ content }}
+		</section>
+	</header>
+
+	<section class="js-fullpage-section fp-auto-height-responsive ">
+		<div>
+			<div class="tease-wrapper">
+				<div class="teases teases--studio">
+				{{ collection:people }}
+					<article class="tease">
+						{{ if link_to_bio }}<a href="{{ url }}" class="tease__link">{{ /if }}
+							{{ assets:img }}
+								{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
+							{{ /assets:img }}		
+							<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
+						{{ if link_to_bio }}</a>{{ /if }}
+					</article>
+				{{ /collection:people }}
+				</div>
+			</div>	
+
+			<footer class="page-footer">
+				{{ partial:footer }}
+			</footer>			
+		</div>
+	</section>
+
 </div>
-
-<footer class="page-footer">
-	{{ partial:footer }}
-</footer>
-
