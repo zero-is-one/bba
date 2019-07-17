@@ -935,6 +935,13 @@ hr {
   width: 100%;
 }
 
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 164px);
+}
+
 .body--contact {
   min-height: 100vh;
   display: flex;
@@ -989,6 +996,15 @@ hr {
   .studio-intro {
     min-height: calc(100vh - 164px);
   }
+}
+
+.studio-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .person {

@@ -2,19 +2,23 @@
 	{{ partial:header }}
 </header>
 
-<div id="homepage-video" class="homepage-video">
-	
-	<video class="homepage-video__video" autoplay muted>
-		<source src="{{ placeholder_video }}" type="video/mp4">
-	</video>
+<div class="homepage-wrapper">
 
-	<div class="homepage-video__playlist">
-		{{ assets:background_videos sort="random"}}
-			<a href="{{ url }}"></a>
-		{{ /assets:background_videos }}	
+	<div id="homepage-video" class="homepage-video">
+		
+		<video class="homepage-video__video" autoplay muted>
+			<source src="{{ placeholder_video }}" type="video/mp4">
+		</video>
+
+		<div class="homepage-video__playlist">
+			{{ assets:background_videos sort="random"}}
+				<a href="{{ url }}"></a>
+			{{ /assets:background_videos }}	
+		</div>
 	</div>
-</div>
 
-<footer class="page-footer">
-    {{ partial:footer }}
-</footer>
+	<footer class="page-footer">
+	    {{ partial:footer }}
+	</footer>
+	
+</div>
