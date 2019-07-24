@@ -17,6 +17,7 @@ sections:
         restrict: false
         type: assets
         display: 'SEO Image'
+        instructions: 'SEO images should be cropped to 1200px wide, 630px high'
 taxonomies: false
 hide: true
 title: 'Meta Tags'
