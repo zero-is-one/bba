@@ -6,12 +6,13 @@ sections:
         type: text
         width: 50
         display: Name
+        localizable: true
       certification:
         type: text
         width: 50
         display: Title/Certification
         localizable: true
-      img:
+      hero_img:
         container: main
         folder: /
         restrict: false
@@ -26,6 +27,13 @@ sections:
         display: Bio
         show_when:
           link_to_bio: true
+  seo:
+    display: SEO
+    fields:
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
 taxonomies: true
 hide: true
 title: People

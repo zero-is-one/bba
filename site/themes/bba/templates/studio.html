@@ -17,9 +17,9 @@
 				{{ collection:people }}
 					<article class="tease">
 						{{ if link_to_bio }}<a href="{{ url }}" class="tease__link">{{ /if }}
-							{{ assets:img }}
+							{{ assets:hero_img }}
 								{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
-							{{ /assets:img }}		
+							{{ /assets:hero_img }}		
 							<h2 class="tease__title">{{ title }}{{ if certification }}, {{ certification}}{{ /if }}</h2>
 						{{ if link_to_bio }}</a>{{ /if }}
 					</article>

@@ -25,6 +25,13 @@ sections:
         type: text
         width: 25
         display: ZIP
+  seo:
+    display: SEO
+    fields:
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
 taxonomies: false
 hide: true
 title: Contact
