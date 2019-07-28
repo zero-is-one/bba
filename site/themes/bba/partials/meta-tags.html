@@ -9,7 +9,7 @@
 
 <meta property="og:title" content="{{ if seo_title }}{{ seo_title }}{{ else }}{{ title }}{{ /if }}" />
 <meta property="og:url" content="{{ url }}" />
-<meta property="og:image" content="{{ if seo_image }}{{ seo_image }}{{ value }}{{ /seo_image }}{{ elseif hero_img }}{{ assets:hero_img }}{{ url }}{{ /assets:hero_img }}{{ elseif seo_image_default }}{{ seo_image_default }}{{ value }}{{ /seo_image_default }}{{ else }}/assets/bba-social-default.png{{ /if }}" />
+<meta property="og:image" content="{{ if seo_image }}{{ seo_image }}{{ permalink }}{{ /seo_image }}{{ elseif hero_img }}{{ assets:hero_img }}{{ permalink }}{{ /assets:hero_img }}{{ elseif seo_image_default }}{{ seo_image_default }}{{ permalink }}{{ /seo_image_default }}{{ else }}{{ site_url }}/assets/bba-social-default.png{{ /if }}" />
 <meta property="og:site_name" content="{{ site_name }}" />
 <meta property="og:description" content="{{ if seo_description }}{{ seo_description }}{{ elseif seo_description_default }}{{ seo_description_default }}{{ else }}Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015.{{ /if }}" />
 
@@ -19,4 +19,4 @@
 <meta property="twitter:title" content="{{ if seo_title }}{{ seo_title }}{{ else }}{{ title }}{{ /if }}" />
 <meta name="twitter:site" content="{{ site_name }}" />
 <meta property="twitter:description" content="{{ if seo_description }}{{ seo_description }}{{ elseif seo_description_default }}{{ seo_description_default }}{{ else }}Brent Buck Architects is a Brooklyn-based architectural design firm founded by Brent Allen Buck in 2015.{{ /if }}" />
-<meta property="twitter:image" content="{{ if seo_image }}{{ seo_image }}{{ value }}{{ /seo_image }}{{ elseif hero_img }}{{ assets:hero_img }}{{ url }}{{ /assets:hero_img }}{{ elseif seo_image_default }}{{ seo_image_default }}{{ value }}{{ /seo_image_default }}{{ else }}/assets/bba-social-default.png{{ /if }}" />
+<meta property="twitter:image" content="{{ if seo_image }}{{ seo_image }}{{ permalink }}{{ /seo_image }}{{ elseif hero_img }}{{ assets:hero_img }}{{ permalink }}{{ /assets:hero_img }}{{ elseif seo_image_default }}{{ seo_image_default }}{{ permalink }}{{ /seo_image_default }}{{ else }}{{ site_url }}/assets/bba-social-default.png{{ /if }}" />
