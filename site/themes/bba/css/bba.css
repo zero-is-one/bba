@@ -514,7 +514,6 @@ small {
 
 @media (min-width: 768px) {
   .site-nav {
-    width: auto;
     justify-content: center;
     align-items: flex-end;
     padding: 0;

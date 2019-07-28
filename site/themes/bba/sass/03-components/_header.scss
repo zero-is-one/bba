@@ -46,7 +46,7 @@
 	padding: 0 $body-padding;
 	
 	@include mq($nav-breakpoint) {
-		width: auto;
+		// width: auto;
 		justify-content: center;
 		align-items: flex-end;
 		padding: 0;
