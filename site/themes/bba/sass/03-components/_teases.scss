@@ -13,6 +13,11 @@
 			opacity: .75;
 		}
 	}
+
+	@include mq($s) {
+		margin-left: -2rem;
+		margin-right: -2rem;
+	}
 }
 
 .tease {
@@ -20,7 +25,7 @@
 
 	@include mq($s) {
 		width: 50%;
-		padding: 1.5rem;
+		padding: 2rem;
 	}
 
 	@include mq($l) {
@@ -45,7 +50,6 @@
 
 .tease__link {
 	display: block;
-	position: relative;
 	line-height: 1;
 }
 
@@ -77,12 +81,19 @@
 .tease__title {
 	position: absolute;
 	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 100%;
 	@include nav-link;
-	padding-top: $spacing-xs;
 	text-align: center;
 	@include animate-slow;
 	opacity: 0;
+	padding: .25rem 1rem 0;
+	margin-top: -1.5rem;
+
+	@include mq($s) {
+		margin-top: -2rem;
+	}
 
 	@include mq(0, $nav-breakpoint) {
 		font-size: $font-size-sm;
