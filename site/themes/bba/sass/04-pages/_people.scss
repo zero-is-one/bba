@@ -41,11 +41,15 @@
 	}
 
 	p:first-child {
-		font-size: $font-size-base !important;
+		@include mq($s) {
+			font-size: $font-size-base !important;
+		}
 	}
 
 	p:not(:first-child) {
-		font-family: $font-family-sans;
-		font-size: $font-size-sm;
+		@include mq($s) {
+			font-family: $font-family-sans;
+			font-size: $font-size-sm;
+		}
 	}
 }

@@ -703,7 +703,7 @@ Mobile nav hamburger icon
 }
 
 .tease {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   position: relative;
   opacity: 0;
 }
@@ -711,6 +711,7 @@ Mobile nav hamburger icon
 @media (min-width: 600px) {
   .tease {
     width: 50%;
+    padding: 1.5rem;
   }
 }
 
@@ -1022,13 +1023,17 @@ hr {
   }
 }
 
-.person__bio p:first-child {
-  font-size: 1.41rem !important;
+@media (min-width: 600px) {
+  .person__bio p:first-child {
+    font-size: 1.41rem !important;
+  }
 }
 
-.person__bio p:not(:first-child) {
-  font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.125rem;
+@media (min-width: 600px) {
+  .person__bio p:not(:first-child) {
+    font-family: "PostGrotesk", Helvetica, sans-serif;
+    font-size: 1.125rem;
+  }
 }
 
 /* 
