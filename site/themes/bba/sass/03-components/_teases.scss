@@ -13,45 +13,17 @@
 			opacity: .75;
 		}
 	}
-
-	// non-grid layout
-	@supports not (display: grid) {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -1.5rem;
-	}
-
-	// grid layout
-	@supports (display: grid) {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-gap: 3rem;
-
-		@include mq($s) {
-			grid-template-columns: 1fr 1fr;
-		}
-
-		@include mq($m) {
-			grid-gap: $spacing-xl;
-		}
-
-		@include mq($l) {
-			grid-template-columns: 1fr 1fr 1fr;
-		}
-	}
 }
 
 .tease {
-	@supports not (display: grid) {
-		padding: 1.5rem;
+	padding: 1.5rem;
 
-		@include mq($s) {
-			width: 50%;
-		}
+	@include mq($s) {
+		width: 50%;
+	}
 
-		@include mq($l) {
-			width: calc(100% / 3);
-		}
+	@include mq($l) {
+		width: calc(100% / 3);
 	}
 
 	position: relative;
@@ -72,6 +44,7 @@
 
 .tease__link {
 	display: block;
+	position: relative;
 	line-height: 1;
 }
 
