@@ -702,59 +702,21 @@ Mobile nav hamburger icon
   opacity: .75;
 }
 
-@supports not (display: grid) {
-  .teases {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -1.5rem;
-  }
-}
-
-@supports (display: grid) {
-  .teases {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
-  }
-  @media (min-width: 600px) {
-    .teases {
-      -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media (min-width: 768px) {
-    .teases {
-      grid-gap: 4.25rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .teases {
-      -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-  }
-}
-
 .tease {
+  padding: 1.5rem;
   position: relative;
   opacity: 0;
 }
 
-@supports not (display: grid) {
+@media (min-width: 600px) {
   .tease {
-    padding: 1.5rem;
+    width: 50%;
   }
-  @media (min-width: 600px) {
-    .tease {
-      width: 50%;
-    }
-  }
-  @media (min-width: 1024px) {
-    .tease {
-      width: calc(100% / 3);
-    }
+}
+
+@media (min-width: 1024px) {
+  .tease {
+    width: calc(100% / 3);
   }
 }
 
@@ -780,6 +742,7 @@ Mobile nav hamburger icon
 
 .tease__link {
   display: block;
+  position: relative;
   line-height: 1;
 }
 
@@ -1502,6 +1465,10 @@ html.fp-enabled,
 .nav-is-open .fullpage-wrapper {
   position: fixed !important;
   z-index: 1;
+}
+
+.fp-scrollable {
+  width: 100%;
 }
 
 /*# sourceMappingURL=bba.css.map */

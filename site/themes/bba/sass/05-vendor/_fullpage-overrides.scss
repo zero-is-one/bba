@@ -13,3 +13,8 @@
 	position: fixed !important;
 	z-index: $zIndex-0;
 }
+
+// fixes display bugs in IE11
+.fp-scrollable {
+	width: 100%;
+}
