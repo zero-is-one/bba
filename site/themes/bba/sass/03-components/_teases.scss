@@ -1,4 +1,5 @@
 .tease-wrapper {
+	width: calc(#{$layout-max-width} - #{$section-padding});
 	@include section-width;
 	@include vertical-space;
 	@include margin-auto;
