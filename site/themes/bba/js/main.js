@@ -14,7 +14,6 @@ $(document).ready(function() {
 			lazyLoading: false,
 			scrollingSpeed: 1000,
 			sectionSelector: '.js-fullpage-section',
-			scrollBar: true,
 		});
 	}
 
