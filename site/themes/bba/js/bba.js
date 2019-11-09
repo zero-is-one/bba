@@ -7372,6 +7372,7 @@ $(document).ready(function() {
 	// configure FullPage: https://github.com/alvarotrigo/fullPage.js
 	if ( $( ".js-fullpage-container--work" ).length && $(window).width() > 768 ){
 		$('.js-fullpage-container--work').fullpage({
+			licenseKey: '106A2C82-AFDC4C37-9D512023-000D61E1',
 			lazyLoading: false,
 			scrollingSpeed: 1000,
 			sectionSelector: '.js-fullpage-section',
@@ -7383,6 +7384,7 @@ $(document).ready(function() {
 
 	if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 768 ){
 		$('.js-fullpage-container--studio').fullpage({
+			licenseKey: '106A2C82-AFDC4C37-9D512023-000D61E1',
 			lazyLoading: false,
 			scrollingSpeed: 1000,
 			sectionSelector: '.js-fullpage-section',
