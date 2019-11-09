@@ -1,7 +1,6 @@
 background_videos:
-  - /assets/video-1.mp4
-  - /assets/video-2.mp4
-  - /assets/video-3.mp4
+  - /assets/test_02.mp4
+  - /assets/video_test_01_.mp4
 placeholder_video: /assets/video-placeholder.mp4
 title: Home
 template: home
