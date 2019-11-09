@@ -655,7 +655,6 @@ Mobile nav hamburger icon
 
 .site-nav__nav-toggle .line.line-2 {
   top: 50%;
-  width: 20px;
 }
 
 .site-nav__nav-toggle .line.line-3 {
@@ -1051,6 +1050,23 @@ hr {
     font-family: "PostGrotesk", Helvetica, sans-serif;
     font-size: 1.125rem;
   }
+}
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+CSS scroll snap fallback
+javascript-applied class if screen is under 768px
+////////////////////////////////////////////////////////////////////////////
+*/
+.fullpage-container--css-snap {
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.fullpage-container--css-snap .js-fullpage-section {
+  scroll-snap-align: start;
 }
 
 /* 
