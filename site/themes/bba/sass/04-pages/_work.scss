@@ -59,9 +59,10 @@ Intro
 .project-intro__misc,
 .project-intro__misc p {
 	max-width: 36em;
+	font-family: $font-family-sans;
 	font-size: $font-size-sm;
 	line-height: $line-height-lg;
-	letter-spacing: $letter-spacing-lg;
+	// letter-spacing: $letter-spacing-lg;
 	text-align: center;
 	margin-bottom: 0;
 }
