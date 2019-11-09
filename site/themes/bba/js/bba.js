@@ -7370,16 +7370,18 @@ $(document).ready(function() {
 	});
 
 	// configure FullPage: https://github.com/alvarotrigo/fullPage.js
-	if ( $( ".js-fullpage-container--work" ).length ) {
+	if ( $( ".js-fullpage-container--work" ).length && $(window).width() > 768 ){
 		$('.js-fullpage-container--work').fullpage({
 			lazyLoading: false,
 			scrollingSpeed: 1000,
 			sectionSelector: '.js-fullpage-section',
 		});
-	}
+	} else {
+		$(".js-fullpage-container--work").addClass("fullpage-container--css-snap");
+    }
 
 
-   if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 768 ){
+	if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 768 ){
 		$('.js-fullpage-container--studio').fullpage({
 			lazyLoading: false,
 			scrollingSpeed: 1000,
