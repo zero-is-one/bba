@@ -40,16 +40,8 @@
 		margin-top: -10px;
 	}
 
-	p:first-child {
-		@include mq($s) {
-			font-size: $font-size-base !important;
-		}
-	}
-
-	p:not(:first-child) {
-		@include mq($s) {
-			font-family: $font-family-sans;
-			font-size: $font-size-sm;
-		}
+	p {
+		font-family: $font-family-sans;
+		// font-size: $font-size-sm;
 	}
 }
