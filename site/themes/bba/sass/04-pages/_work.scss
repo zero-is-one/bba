@@ -40,6 +40,21 @@ Page sections
 	font-style: italic;
 }
 
+.page-section--project-hero, .page-section--image {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: calc(50% - 30px);
+		left: calc(50% - 30px);
+		width: 60px;
+		height: 60px;
+		background-color: $color-gray-light;
+		border-radius: 100%;  
+		animation: loading 1.25s infinite ease-in-out;
+	}
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
