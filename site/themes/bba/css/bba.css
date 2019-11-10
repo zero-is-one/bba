@@ -890,21 +890,40 @@ hr {
   display: none;
 }
 
-.homepage-video {
-  position: relative;
-  z-index: 1;
-  padding-bottom: 56.25%;
-  /* preserves video aspect ratio */
+.homepage-video video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.homepage-video video {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  min-width: 100%;
-  width: 100%;
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .homepage-video video {
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: -5vh;
+    left: -5vw;
+    width: 110vw;
+    height: 110vh;
+    transform: none;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .homepage-video video {
+    -o-object-fit: none;
+    object-fit: none;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 
 .homepage-wrapper {
