@@ -1,14 +1,11 @@
 .body--contact {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .contact-info {
 	@include section-width;
-	text-align: center;
+	@include margin-auto;
+	@include flex-center;
+	min-height: calc(100vh - #{$nav-height});
 }
 
 .contact-info__email {
@@ -19,6 +16,7 @@
 .contact-info__street, 
 .contact-info__city-state-zip {
 	margin-bottom: 0;
+	font-family: $font-family-sans;
 	font-size: $font-size-sm;
 	line-height: $line-height-lg;
 	letter-spacing: $letter-spacing-lg;

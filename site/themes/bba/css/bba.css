@@ -612,13 +612,6 @@ small {
   height: 15px;
 }
 
-.site-footer {
-  font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 0.875rem;
-  align-self: flex-start;
-  margin: 4.25rem 10%;
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Mobile nav hamburger icon
@@ -921,17 +914,15 @@ hr {
   min-height: calc(100vh - 164px);
 }
 
-.body--contact {
-  min-height: 100vh;
+.contact-info {
+  max-width: calc(100vw - 20%);
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-}
-
-.contact-info {
-  max-width: calc(100vw - 20%);
-  text-align: center;
+  justify-content: center;
+  min-height: calc(100vh - 164px);
 }
 
 .contact-info__email {
@@ -942,6 +933,7 @@ hr {
 .contact-info__street,
 .contact-info__city-state-zip {
   margin-bottom: 0;
+  font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 1.125rem;
   line-height: 2.3;
   letter-spacing: 0.05rem;
