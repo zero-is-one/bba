@@ -5,15 +5,15 @@ javascript-applied class if screen is under 768px
 ////////////////////////////////////////////////////////////////////////////
 */
 
-.fullpage-container--css-snap {
-	scroll-snap-type: y mandatory;
-	max-height: 100vh;
-	overflow-y: scroll;
+// .fullpage-container--css-snap {
+// 	scroll-snap-type: y mandatory;
+// 	max-height: 100vh;
+// 	overflow-y: scroll;
 
-	.js-fullpage-section {
-		scroll-snap-align: start;
-	}
-}
+// 	.js-fullpage-section {
+// 		scroll-snap-align: start;
+// 	}
+// }
 
 
 
