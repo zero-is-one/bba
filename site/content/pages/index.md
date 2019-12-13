@@ -1,6 +1,7 @@
 background_videos:
-  - /assets/test_02.mp4
-  - /assets/video_test_01_.mp4
+  - /assets/books.mp4
+  - /assets/brass.mp4
+  - /assets/chunk.mp4
 placeholder_video: /assets/video-placeholder.mp4
 title: Home
 template: home
