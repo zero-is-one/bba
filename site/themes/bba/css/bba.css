@@ -898,6 +898,11 @@ hr {
   width: 100%;
 }
 
+.body--home {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .homepage-video__playlist {
   display: none;
 }
