@@ -7304,8 +7304,7 @@ if ( typeof module != 'undefined' && module.exports ) {
 }
 ));
 
-var videoContainer = document.getElementById('videoContainer'),
-    output = document.getElementById('output'),
+var videoContainer = document.getElementById('homepage-video'),
     nextVideo,
     videoObjects =
     [
@@ -7347,8 +7346,6 @@ function initVideoElement(video)
     //loadedmetadata is wrong because if we use it then we get endless loop
     video.onplaying = function(e)
     {
-        output.innerHTML = 'Current video source index: ' + nextActiveVideo;
-
         //select next index. If is equal vidSources.length then it is 0
         nextActiveVideo = ++nextActiveVideo % vidSources.length;
 
