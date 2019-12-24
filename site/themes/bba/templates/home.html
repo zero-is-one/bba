@@ -6,9 +6,8 @@
 
 	<div id="homepage-video" class="homepage-video">
 		
-		<video class="homepage-video__video" autoplay muted playsinline>
-			<source src="{{ placeholder_video }}" type="video/mp4">
-		</video>
+		<div id="videoContainer" style="display:inline-block"></div>
+		<b id="output" style="vertical-align:top"></b>
 
 		<div class="homepage-video__playlist">
 			{{ assets:background_videos sort="random"}}

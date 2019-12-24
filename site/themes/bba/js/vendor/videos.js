@@ -1,55 +1,65 @@
-// fullscreen HTML5 video background playlist
-// https://slicejack.com/video-background-playlist/
+var videoContainer = document.getElementById('videoContainer'),
+    output = document.getElementById('output'),
+    nextVideo,
+    videoObjects =
+    [
+        document.createElement('video'),
+        document.createElement('video')
+    ],
 
-( function() {
-	if ( $( "#homepage-video" ).length ) {
-	 
-	 	/* Variables */
-		var videoPlayer = document.getElementById( 'homepage-video' ),
-			video = videoPlayer.getElementsByClassName( 'homepage-video__video' )[0],
-			playlist = videoPlayer.getElementsByClassName( 'homepage-video__playlist' )[0],
-			source = video.getElementsByTagName( 'source' ),
-			linkList = [],
-			videoDirectory = '/assets/',
-			currentVideo = 0,
-			allLinks = playlist.children,
-			linkNumber = allLinks.length,
-			i, filename;
+    vidSources = [],
+    //random starting point
+    nextActiveVideo = Math.floor((Math.random() * vidSources.length));
 
-		/**
-		 * Load and play video
-		 * @param  int index Video index
-		 */
-		function playVideo( index ) {
-			allLinks[index].classList.add( 'current-video' );
-			currentVideo = index;
+$('.homepage-video__playlist')
+    .find('a[href]')  // only target <a>s which have a href attribute
+        .each(function() {
+            vidSources.push(this.href);
+        })
+    .end()
+;
 
-			source[0].src = videoDirectory + linkList[index] + '.mp4';
+videoObjects[0].inx = 0; //set index
+videoObjects[1].inx = 1;
 
-			video.load();
-			video.play();
-		}
+initVideoElement(videoObjects[0]);
+initVideoElement(videoObjects[1]);
 
-		// Save all video sources from playlist
-		for ( i = 0; i < linkNumber; i++ ) {
-			filename = allLinks[i].href;
-			linkList[i] = filename.match( /([^\/]+)(?=\.\w+$)/ )[0];
-		}
+videoObjects[0].autoplay = 'autoplay';
+videoObjects[0].src = vidSources[nextActiveVideo];
+videoContainer.appendChild(videoObjects[0]);
 
-		/**
-		 * Play next video
-		 */
-		video.addEventListener( 'ended', function () {
-			allLinks[currentVideo].classList.remove( 'current-video' );
+videoObjects[1].style.display = 'none';
+videoContainer.appendChild(videoObjects[1]);
 
-			nextVideo = currentVideo + 1;
-			if ( nextVideo >= linkNumber ) {
-				nextVideo = 0;
-			}
+function initVideoElement(video)
+{
+    video.playsinline = true;
+    video.muted = true;
+    video.preload = 'auto'; //but do not set autoplay, because it deletes preload
 
-			playVideo( nextVideo );
-		} );
+    //loadedmetadata is wrong because if we use it then we get endless loop
+    video.onplaying = function(e)
+    {
+        output.innerHTML = 'Current video source index: ' + nextActiveVideo;
 
-	}
+        //select next index. If is equal vidSources.length then it is 0
+        nextActiveVideo = ++nextActiveVideo % vidSources.length;
 
-} () );
+        //replace the video elements against each other:
+        if(this.inx == 0)
+            nextVideo = videoObjects[1];
+        else
+            nextVideo = videoObjects[0];
+
+        nextVideo.src = vidSources[nextActiveVideo];
+        nextVideo.pause();
+    };
+
+    video.onended = function(e)
+    {
+        this.style.display = 'none';
+        nextVideo.style.display = 'block';
+        nextVideo.play();
+    };
+}
