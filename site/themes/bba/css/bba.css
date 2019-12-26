@@ -448,13 +448,13 @@ Special Formatting
 ////////////////////////////////////////////////////////////////////////////
 */
 small {
-  font-size: 1.125rem;
+  font-size: 1.0125rem;
 }
 
 .smallcaps {
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.125rem;
+  font-size: 1.0125rem;
 }
 
 .caps {
@@ -818,7 +818,7 @@ Mobile nav hamburger icon
 
 @media (min-width: 0) and (max-width: 767px) {
   .tease__title {
-    font-size: 1.125rem;
+    font-size: 1.0125rem;
   }
 }
 
@@ -975,9 +975,8 @@ hr {
 .contact-info__city-state-zip {
   margin-bottom: 0;
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.0125rem;
   line-height: 2.3;
-  letter-spacing: 0.05rem;
 }
 
 .studio-intro {
@@ -1146,7 +1145,7 @@ Intro
 .project-intro__misc p {
   max-width: 36em;
   font-family: "PostGrotesk", Helvetica, sans-serif;
-  font-size: 1.125rem;
+  font-size: 1.0125rem;
   line-height: 2.3;
   text-align: center;
   margin-bottom: 0;
@@ -1251,7 +1250,7 @@ Projects recirculation link
 }
 
 .coming-soon-contact p {
-  font-size: 1.125rem;
+  font-size: 1.0125rem;
   line-height: 1.2;
   font-family: "PostGrotesk", Helvetica, sans-serif;
 }
