@@ -13,13 +13,15 @@
 	color: $color-base;
 	line-height: 1;
 	z-index: $zIndex-2;
+	transform: scale(0.9);
+	transform-origin: left;
 
 	@include mq($nav-breakpoint) {
 		margin-right: 50px;
 	}
 
 	@include mq($m2) {
-		margin-right: 100px;
+		margin-right: 90px;
 	}
 
 	&:hover, &:focus {
@@ -48,7 +50,6 @@
     z-index: $zIndex-2;
 	
 	@include mq($nav-breakpoint) {
-		// width: auto;
 		justify-content: center;
 		align-items: flex-end;
 		padding: 0;
@@ -83,6 +84,8 @@
 .site-menu {
 	@include ul-null;
 	display: flex;
+	transform: scale(0.9);
+	transform-origin: left;
 
 	@include mq(0, $nav-breakpoint) {
 		flex-direction: column;
@@ -93,6 +96,7 @@
 
 	@include mq($nav-breakpoint) {
 		align-items: center;
+		transform-origin: right;
 	}
 }
 
