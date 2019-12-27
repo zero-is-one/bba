@@ -1096,10 +1096,6 @@ hr {
   }
 }
 
-.person__bio p {
-  font-family: "PostGrotesk", Helvetica, sans-serif;
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 CSS scroll snap fallback
