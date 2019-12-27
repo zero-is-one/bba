@@ -24,11 +24,19 @@
 // USE: @include section-width; @include section-height;
 
 @mixin section-width {
-  max-width: calc(100vw - #{$section-padding});
+  max-width: calc(100vw - #{$section-padding-sm});
+
+  @include mq($nav-breakpoint) {
+    max-width: calc(100vw - #{$section-padding});
+  }
 }
 
 @mixin section-height {
-  max-height: calc(100vh - #{$section-padding});
+  max-height: calc(100vh - #{$section-padding-sm});
+
+  @include mq($nav-breakpoint) {
+    max-height: calc(100vh - #{$section-padding});
+  }
 }
 
 

@@ -45,7 +45,7 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	padding: 0 $body-padding;
+	padding: 0 $section-padding-sm/2;
 	position: relative;
     z-index: $zIndex-2;
 	
@@ -67,7 +67,7 @@
 		bottom: 0;
 		left: 0;
 		background-color: $color-white;
-		padding: 50vh 10% 1.5rem;
+		padding: 50vh $section-padding-sm/2 1.5rem;
 		@include animate;
 		opacity: 0;
 		z-index: $zIndex-n1;

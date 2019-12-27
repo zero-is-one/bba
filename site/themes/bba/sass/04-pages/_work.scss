@@ -25,19 +25,32 @@ Page sections
 
 .page-section {
 	@include flex-center;
-	height: 100vh;
 	width: 100%;
+	margin: 25vh 0;
+
+	@include mq($nav-breakpoint) {
+		height: 100vh;
+		margin: 0;
+	}
 }
 
 .page-section--text {
 	@include section-width;
 	@include margin-auto;
-	min-height: 100vh;
+	min-height: 25vh;
+
+	@include mq($nav-breakpoint) {
+		min-height: 100vh;
+	}
 }
 
 .page-section--things {
 	text-align: center;
 	font-style: italic;
+}
+
+.page-section--project-hero {
+	margin-top: 0;
 }
 
 .page-section--project-hero, .page-section--image {
@@ -64,7 +77,11 @@ Intro
 
 .project-intro {
 	@include flex-center;
-	height: calc(80vh - 150px);
+	height: calc(90vh - 150px);
+
+	@include mq($nav-breakpoint) {
+		height: calc(80vh - 150px);
+	}
 }
 
 .project-intro__title, 
@@ -126,5 +143,11 @@ Projects recirculation link
 
 .page-section--recirc {
 	@include nav-link;
-	min-height: 0;
+	min-height: 100vh;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@include mq($nav-breakpoint) {
+		min-height: 0;
+	}
 }
