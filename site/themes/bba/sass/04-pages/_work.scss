@@ -119,6 +119,7 @@ Inline text
 
 .inline-text {
 	max-width: $text-max-width;
+	@include margin-auto;
 }
 
 

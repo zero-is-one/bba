@@ -7409,6 +7409,17 @@ $(document).ready(function() {
 	}
 
 
+	if ( $( ".js-fullpage-container--people" ).length && $(window).width() > 768 ){
+		$('.js-fullpage-container--people').fullpage({
+			licenseKey: '106A2C82-AFDC4C37-9D512023-000D61E1',
+			lazyLoading: false,
+			scrollingSpeed: 1000,
+			sectionSelector: '.js-fullpage-section',
+			scrollOverflow: true,
+		});
+	}
+
+
 	// Main Nav Toggling
 	$(".site-nav__nav-toggle").on("click", function(e){
 		e.preventDefault();

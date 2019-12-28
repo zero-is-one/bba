@@ -1,18 +1,22 @@
-<header class="page-header">
-	{{ partial:header }}
-</header>
+<div class="js-fullpage-container--people">
+	
+	<header class="js-fullpage-section page-header">
+		{{ partial:header }}
 
-<section class="person">
-	<h1 class="person__name">{{ title }}</h1>
+		<section class="person">
+			<h1 class="person__name">{{ title }}</h1>
+			{{ assets:hero_img }}
+				{{ partial:img-srcset class="person__img" }}
+			{{ /assets:hero_img }}	
+		</section>
+	</header>
 
-	<div class="person__img">
-		{{ assets:hero_img }}
-			{{ partial:img-srcset }}
-		{{ /assets:hero_img }}	
-	</div>
+	<section class="js-fullpage-section fp-auto-height-responsive">
+		<div class="person__bio">
+			<div class="inline-text">
+				{{ bio }}	
+			</div>
+		</div>
+	</section>
 
-	<div class="person__bio">
-		{{ bio }}	
-	</div>
-
-</section>
+</div>

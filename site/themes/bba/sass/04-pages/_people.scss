@@ -1,44 +1,44 @@
 .person {
-	width: calc(#{$layout-max-width} - #{$section-padding});
-	@include section-width;
-	@include vertical-space;
-	@include margin-auto;
+	// width: calc(#{$layout-max-width} - #{$section-padding});
+	// @include section-width;
+	@include flex-center;
+	// @include section-height;
+	// @include vertical-space;
+	// @include margin-auto;
 
 	@include mq($nav-breakpoint) {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		
+		height: calc(100vh - #{$nav-height});
 	}
+
+	// @include mq($nav-breakpoint) {
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: flex-start;
+	// }
+
 }
 
 .person__name {
 	@extend %visuallyhidden;
 }
 
-.person__img, .person__bio {
-	max-width: $text-max-width;
+.person__img {
+	@include section-width;
+	// max-height: 90%;
+	max-height: calc((100vh - #{$nav-height}) - #{$section-padding});
+	@include margin-auto;
+	margin-top: $spacing-lg;
+	margin-bottom: $spacing-lg;  
 
 	@include mq($nav-breakpoint) {
-		width: calc(50% - 25px);
-	}
-
-	@include mq($m2) {
-		width: calc(50% - 50px);
-	}
-}
-
-.person__img {
-	margin-bottom: $spacing-lg;
-	img {
-		width: 100%;
+		margin-top: -$spacing-xl;
 	}
 }
 
 .person__bio {
-	@include mq($nav-breakpoint) {
-		margin-top: -10px;
-	}
+	@include section-width;
+	@include vertical-space;
+	@include margin-auto;
 
 	p {
 		// font-family: $font-family-sans;
