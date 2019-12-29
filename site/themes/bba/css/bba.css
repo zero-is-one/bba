@@ -1186,7 +1186,9 @@ Intro
 .project-intro__photographer,
 .project-intro__year,
 .project-intro__misc,
-.project-intro__misc p {
+.credits__list-item,
+.project-intro__misc p,
+.credits__list-item p {
   max-width: 36em;
   font-family: "PostGrotesk", Helvetica, sans-serif;
   font-size: 1.0125rem;
@@ -1250,6 +1252,11 @@ Inline text
   }
 }
 
+/* 
+////////////////////////////////////////////////////////////////////////////
+Credits list
+////////////////////////////////////////////////////////////////////////////
+*/
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Projects recirculation link

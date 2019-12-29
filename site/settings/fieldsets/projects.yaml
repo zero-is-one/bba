@@ -58,6 +58,12 @@ sections:
               things_we_learned:
                 type: list
                 display: 'Things We Learned'
+          credits:
+            display: Credits
+            fields:
+              credits:
+                type: list
+                display: Credits
         type: replicator
         display: 'Content Blocks'
   seo:
