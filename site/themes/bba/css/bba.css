@@ -688,7 +688,7 @@ Mobile nav hamburger icon
 }
 
 .tease-wrapper {
-  width: calc(2200px - 20%);
+  width: calc(2200px - 10vw);
   max-width: calc(100vw - 10vw);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -698,7 +698,7 @@ Mobile nav hamburger icon
 
 @media (min-width: 768px) {
   .tease-wrapper {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -974,7 +974,7 @@ hr {
 
 @media (min-width: 768px) {
   .contact-info {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1003,7 +1003,7 @@ hr {
 
 @media (min-width: 768px) {
   .studio-intro {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1051,7 +1051,7 @@ hr {
 
 .person__img {
   max-width: calc(100vw - 10vw);
-  max-height: calc((100vh - 164px) - 20%);
+  max-height: calc((100vh - 164px) - 10vw);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
@@ -1060,7 +1060,7 @@ hr {
 
 @media (min-width: 768px) {
   .person__img {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1080,7 +1080,7 @@ hr {
 
 @media (min-width: 768px) {
   .person__bio {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1127,7 +1127,7 @@ Page sections
 
 @media (min-width: 768px) {
   .page-section--text {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1209,13 +1209,44 @@ Inline images
 
 @media (min-width: 768px) {
   .inline-image {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
 @media (min-width: 768px) {
   .inline-image {
-    max-height: calc(100vh - 20%);
+    max-height: calc(100vh - 10vw);
+  }
+}
+
+.inline-image--double {
+  max-height: calc(100vh - 10vw);
+  max-width: calc(100vw - 10vw);
+}
+
+@media (min-width: 768px) {
+  .inline-image--double {
+    max-height: calc(100vh - 10vw);
+  }
+}
+
+.inline-image--double:first-child {
+  margin: 0 0 12.5vh 0;
+}
+
+.inline-image--double:last-child {
+  margin: 12.5vh 0 0;
+}
+
+@media (min-width: 768px) {
+  .inline-image--double {
+    max-width: 42.5vw;
+  }
+  .inline-image--double:first-child {
+    margin: 0 2.5vw 0 0;
+  }
+  .inline-image--double:last-child {
+    margin: 0 0 0 2.5vw;
   }
 }
 
@@ -1290,7 +1321,7 @@ Projects recirculation link
 
 @media (min-width: 768px) {
   .coming-soon {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 
@@ -1330,7 +1361,7 @@ Projects recirculation link
 
 @media (min-width: 768px) {
   .coming-soon-contact {
-    max-width: calc(100vw - 20%);
+    max-width: calc(100vw - 10vw);
   }
 }
 

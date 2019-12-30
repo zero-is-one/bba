@@ -110,6 +110,29 @@ Inline images
 	@include section-height;
 }
 
+.inline-image--double {
+	@include section-height;
+    max-width: calc(100vw - 10vw);
+
+	&:first-child {
+		margin: 0 0 12.5vh 0;
+	}
+	&:last-child {
+		margin: 12.5vh 0 0;
+	}
+
+	@include mq($nav-breakpoint) {
+		max-width: 42.5vw;
+
+		&:first-child {
+			margin: 0 2.5vw 0 0;
+		}
+		&:last-child {
+			margin: 0 0 0 2.5vw;
+		}
+	}
+}
+
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
