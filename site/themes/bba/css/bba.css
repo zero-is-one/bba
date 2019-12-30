@@ -1146,22 +1146,6 @@ Page sections
   margin-top: 0;
 }
 
-.page-section--project-hero, .page-section--image {
-  position: relative;
-}
-
-.page-section--project-hero:before, .page-section--image:before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 60px;
-  background-color: rgba(104, 103, 99, 0.5);
-  border-radius: 100%;
-  animation: loading 1.25s infinite ease-in-out;
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Intro
@@ -1199,10 +1183,27 @@ Intro
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Inline images
+Inline images -- single
 ////////////////////////////////////////////////////////////////////////////
 */
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 103, 99, 0.5);
+  border-radius: 100%;
+  animation: loading 1.25s infinite ease-in-out;
+}
+
 .inline-image {
+  display: block;
   max-width: calc(100vw - 10vw);
   max-height: calc(100vh - 10vw);
 }
@@ -1219,7 +1220,30 @@ Inline images
   }
 }
 
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images -- double
+////////////////////////////////////////////////////////////////////////////
+*/
+.image-wrapper--double:first-child {
+  margin: 0 0 12.5vh 0;
+}
+
+.image-wrapper--double:last-child {
+  margin: 12.5vh 0 0;
+}
+
+@media (min-width: 768px) {
+  .image-wrapper--double:first-child {
+    margin: 0 2.5vw 0 0;
+  }
+  .image-wrapper--double:last-child {
+    margin: 0 0 0 2.5vw;
+  }
+}
+
 .inline-image--double {
+  display: block;
   max-height: calc(100vh - 10vw);
   max-width: calc(100vw - 10vw);
 }
@@ -1230,23 +1254,9 @@ Inline images
   }
 }
 
-.inline-image--double:first-child {
-  margin: 0 0 12.5vh 0;
-}
-
-.inline-image--double:last-child {
-  margin: 12.5vh 0 0;
-}
-
 @media (min-width: 768px) {
   .inline-image--double {
     max-width: 42.5vw;
-  }
-  .inline-image--double:first-child {
-    margin: 0 2.5vw 0 0;
-  }
-  .inline-image--double:last-child {
-    margin: 0 0 0 2.5vw;
   }
 }
 
