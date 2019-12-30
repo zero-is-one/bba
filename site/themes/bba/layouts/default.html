@@ -9,7 +9,7 @@
     {{ partial:meta-tags }}    
 
     <title>{{ title }} | {{ site_name }}</title>
-    <link rel="stylesheet" href="{{ theme:css }}">
+    {{ theme:css tag="true" }}
     <link rel="stylesheet" href="https://use.typekit.net/xao6dcs.css">
 </head>
 
@@ -34,7 +34,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- BBA js -->
-    <script src="{{ theme:js }}"></script>
+    {{ theme:js tag="true" }}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149929913-1"></script>
