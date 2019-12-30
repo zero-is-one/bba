@@ -44,6 +44,7 @@ sections:
                 restrict: false
                 type: assets
                 display: 'Inline Image'
+                max_files: 2
           inline_text:
             display: 'Inline Text'
             fields:

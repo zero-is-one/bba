@@ -1,6 +1,13 @@
-<figure class="js-fullpage-section page-section page-section--image">
-	{{ assets:inline_image }}
-		{{ partial:img-srcset class="inline-image" }}
-	{{ /assets:inline_image }}	
-</figure>
+<div class="js-fullpage-section page-section page-section--image">
+		{{ if inline_image|length == 2 }}
+		{{ assets:inline_image }}
+			{{ partial:img-srcset class="inline-image--double" }}
+		{{ /assets:inline_image }}
+
+		{{ elseif inline_image|length == 1 }}
+		{{ assets:inline_image }}
+			{{ partial:img-srcset class="inline-image" }}
+		{{ /assets:inline_image }}	
+		{{ /if }}
+</div>
 	

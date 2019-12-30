@@ -53,22 +53,6 @@ Page sections
 	margin-top: 0;
 }
 
-.page-section--project-hero, .page-section--image {
-	position: relative;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: calc(50% - 30px);
-		left: calc(50% - 30px);
-		width: 60px;
-		height: 60px;
-		background-color: $color-gray-light;
-		border-radius: 100%;  
-		animation: loading 1.25s infinite ease-in-out;
-	}
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Intro
@@ -101,13 +85,65 @@ Intro
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Inline images
+Inline images -- single
 ////////////////////////////////////////////////////////////////////////////
 */
 
+.image-wrapper {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: calc(50% - 30px);
+		left: calc(50% - 30px);
+		width: 60px;
+		height: 60px;
+		background-color: $color-gray-light;
+		border-radius: 100%;  
+		animation: loading 1.25s infinite ease-in-out;
+	}
+}
+
 .inline-image {
+	display: block;
 	@include section-width;
 	@include section-height;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images -- double
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.image-wrapper--double {
+	&:first-child {
+		margin: 0 0 12.5vh 0;
+	}
+	&:last-child {
+		margin: 12.5vh 0 0;
+	}
+
+	@include mq($nav-breakpoint) {
+		&:first-child {
+			margin: 0 2.5vw 0 0;
+		}
+		&:last-child {
+			margin: 0 0 0 2.5vw;
+		}
+	}
+}
+
+.inline-image--double {
+	display: block;
+	@include section-height;
+    max-width: calc(100vw - 10vw);
+
+	@include mq($nav-breakpoint) {
+		max-width: 42.5vw;
+	}
 }
 
 

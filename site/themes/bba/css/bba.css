@@ -688,18 +688,12 @@ Mobile nav hamburger icon
 }
 
 .tease-wrapper {
-  width: calc(2200px - 20%);
+  width: calc(2200px - 10vw);
   max-width: calc(100vw - 10vw);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .tease-wrapper {
-    max-width: calc(100vw - 20%);
-  }
 }
 
 @media (min-width: 768px) {
@@ -972,12 +966,6 @@ hr {
   min-height: calc(100vh - 164px);
 }
 
-@media (min-width: 768px) {
-  .contact-info {
-    max-width: calc(100vw - 20%);
-  }
-}
-
 .contact-info__email {
   margin-bottom: 4.25rem;
 }
@@ -999,12 +987,6 @@ hr {
   max-width: calc(100vw - 10vw);
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .studio-intro {
-    max-width: calc(100vw - 20%);
-  }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -1051,17 +1033,11 @@ hr {
 
 .person__img {
   max-width: calc(100vw - 10vw);
-  max-height: calc((100vh - 164px) - 20%);
+  max-height: calc((100vh - 164px) - 10vw);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .person__img {
-    max-width: calc(100vw - 20%);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1076,12 +1052,6 @@ hr {
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .person__bio {
-    max-width: calc(100vw - 20%);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1127,12 +1097,6 @@ Page sections
 
 @media (min-width: 768px) {
   .page-section--text {
-    max-width: calc(100vw - 20%);
-  }
-}
-
-@media (min-width: 768px) {
-  .page-section--text {
     min-height: 100vh;
   }
 }
@@ -1144,22 +1108,6 @@ Page sections
 
 .page-section--project-hero {
   margin-top: 0;
-}
-
-.page-section--project-hero, .page-section--image {
-  position: relative;
-}
-
-.page-section--project-hero:before, .page-section--image:before {
-  content: '';
-  position: absolute;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  width: 60px;
-  height: 60px;
-  background-color: rgba(104, 103, 99, 0.5);
-  border-radius: 100%;
-  animation: loading 1.25s infinite ease-in-out;
 }
 
 /* 
@@ -1199,23 +1147,62 @@ Intro
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Inline images
+Inline images -- single
 ////////////////////////////////////////////////////////////////////////////
 */
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper:before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 103, 99, 0.5);
+  border-radius: 100%;
+  animation: loading 1.25s infinite ease-in-out;
+}
+
 .inline-image {
+  display: block;
   max-width: calc(100vw - 10vw);
   max-height: calc(100vh - 10vw);
 }
 
-@media (min-width: 768px) {
-  .inline-image {
-    max-width: calc(100vw - 20%);
-  }
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images -- double
+////////////////////////////////////////////////////////////////////////////
+*/
+.image-wrapper--double:first-child {
+  margin: 0 0 12.5vh 0;
+}
+
+.image-wrapper--double:last-child {
+  margin: 12.5vh 0 0;
 }
 
 @media (min-width: 768px) {
-  .inline-image {
-    max-height: calc(100vh - 20%);
+  .image-wrapper--double:first-child {
+    margin: 0 2.5vw 0 0;
+  }
+  .image-wrapper--double:last-child {
+    margin: 0 0 0 2.5vw;
+  }
+}
+
+.inline-image--double {
+  display: block;
+  max-height: calc(100vh - 10vw);
+  max-width: calc(100vw - 10vw);
+}
+
+@media (min-width: 768px) {
+  .inline-image--double {
+    max-width: 42.5vw;
   }
 }
 
@@ -1288,12 +1275,6 @@ Projects recirculation link
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .coming-soon {
-    max-width: calc(100vw - 20%);
-  }
-}
-
 .coming-soon__logo {
   width: 685px;
   height: 66px;
@@ -1326,12 +1307,6 @@ Projects recirculation link
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: 768px) {
-  .coming-soon-contact {
-    max-width: calc(100vw - 20%);
-  }
 }
 
 .coming-soon-contact p {
