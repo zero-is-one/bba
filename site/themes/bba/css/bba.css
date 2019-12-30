@@ -698,12 +698,6 @@ Mobile nav hamburger icon
 
 @media (min-width: 768px) {
   .tease-wrapper {
-    max-width: calc(100vw - 10vw);
-  }
-}
-
-@media (min-width: 768px) {
-  .tease-wrapper {
     margin-top: 6rem;
     margin-bottom: 6rem;
   }
@@ -972,12 +966,6 @@ hr {
   min-height: calc(100vh - 164px);
 }
 
-@media (min-width: 768px) {
-  .contact-info {
-    max-width: calc(100vw - 10vw);
-  }
-}
-
 .contact-info__email {
   margin-bottom: 4.25rem;
 }
@@ -999,12 +987,6 @@ hr {
   max-width: calc(100vw - 10vw);
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .studio-intro {
-    max-width: calc(100vw - 10vw);
-  }
 }
 
 @media (min-width: 0) and (max-width: 767px) {
@@ -1060,12 +1042,6 @@ hr {
 
 @media (min-width: 768px) {
   .person__img {
-    max-width: calc(100vw - 10vw);
-  }
-}
-
-@media (min-width: 768px) {
-  .person__img {
     margin-top: -4.25rem;
   }
 }
@@ -1076,12 +1052,6 @@ hr {
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .person__bio {
-    max-width: calc(100vw - 10vw);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1123,12 +1093,6 @@ Page sections
   margin-left: auto;
   margin-right: auto;
   min-height: 25vh;
-}
-
-@media (min-width: 768px) {
-  .page-section--text {
-    max-width: calc(100vw - 10vw);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1208,18 +1172,6 @@ Inline images -- single
   max-height: calc(100vh - 10vw);
 }
 
-@media (min-width: 768px) {
-  .inline-image {
-    max-width: calc(100vw - 10vw);
-  }
-}
-
-@media (min-width: 768px) {
-  .inline-image {
-    max-height: calc(100vh - 10vw);
-  }
-}
-
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Inline images -- double
@@ -1246,12 +1198,6 @@ Inline images -- double
   display: block;
   max-height: calc(100vh - 10vw);
   max-width: calc(100vw - 10vw);
-}
-
-@media (min-width: 768px) {
-  .inline-image--double {
-    max-height: calc(100vh - 10vw);
-  }
 }
 
 @media (min-width: 768px) {
@@ -1329,12 +1275,6 @@ Projects recirculation link
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .coming-soon {
-    max-width: calc(100vw - 10vw);
-  }
-}
-
 .coming-soon__logo {
   width: 685px;
   height: 66px;
@@ -1367,12 +1307,6 @@ Projects recirculation link
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-@media (min-width: 768px) {
-  .coming-soon-contact {
-    max-width: calc(100vw - 10vw);
-  }
 }
 
 .coming-soon-contact p {
