@@ -43,3 +43,4 @@ redactor:
 yaml_parser: symfony
 send_powered_by_header: true
 ensure_unique_ids: true
+use_https: true
