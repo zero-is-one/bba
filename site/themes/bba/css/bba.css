@@ -919,6 +919,8 @@ hr {
 .body--home {
   height: 100vh;
   overflow: hidden;
+  background: url("../img/bg--home.jpg") center no-repeat;
+  background-size: cover;
 }
 
 .homepage-video__playlist {
