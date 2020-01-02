@@ -21,7 +21,7 @@ $(document).ready(function() {
     }
 
 
-	if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 767 ){
+	if ( $( ".js-fullpage-container--studio" ).length && $(window).width() > 1024 ){
 		$('.js-fullpage-container--studio').fullpage({
 			licenseKey: '106A2C82-AFDC4C37-9D512023-000D61E1',
 			lazyLoading: false,
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	}
 
 
-	if ( $( ".js-fullpage-container--people" ).length && $(window).width() > 767 ){
+	if ( $( ".js-fullpage-container--people" ).length && $(window).width() > 1024 ){
 		$('.js-fullpage-container--people').fullpage({
 			licenseKey: '106A2C82-AFDC4C37-9D512023-000D61E1',
 			lazyLoading: false,
