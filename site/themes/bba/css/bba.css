@@ -696,6 +696,19 @@ Mobile nav hamburger icon
   margin-right: auto;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tease-wrapper {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .tease-wrapper {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 900px) {
   .tease-wrapper {
     margin-top: 6rem;
@@ -966,6 +979,19 @@ hr {
   min-height: calc(100vh - 164px);
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-info {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .contact-info {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
+}
+
 .contact-info__email {
   margin-bottom: 4.25rem;
 }
@@ -987,6 +1013,19 @@ hr {
   max-width: calc(100vw - 10vw);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .studio-intro {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .studio-intro {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 0) and (max-width: 899px) {
@@ -1045,6 +1084,19 @@ hr {
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .person__img {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .person__img {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: 900px) {
   .person__img {
     margin-top: -4.25rem;
@@ -1057,6 +1109,19 @@ hr {
   margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .person__bio {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .person__bio {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 900px) {
@@ -1104,6 +1169,19 @@ Page sections
   margin-left: auto;
   margin-right: auto;
   min-height: 25vh;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .page-section--text {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .page-section--text {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1183,6 +1261,31 @@ Inline images -- single
   max-height: calc(100vh - 10vh);
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inline-image {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .inline-image {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inline-image {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .inline-image {
+    max-height: calc(90vh - 10vh);
+  }
+}
+
 /* 
 ////////////////////////////////////////////////////////////////////////////
 Inline images -- double
@@ -1209,6 +1312,18 @@ Inline images -- double
   display: block;
   max-height: calc(100vh - 10vh);
   max-width: calc(100vw - 10vw);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .inline-image--double {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .inline-image--double {
+    max-height: calc(90vh - 10vh);
+  }
 }
 
 @media (min-width: 768px) {
@@ -1286,6 +1401,19 @@ Projects recirculation link
   align-items: center;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .coming-soon {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .coming-soon {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
+}
+
 .coming-soon__logo {
   width: 685px;
   height: 66px;
@@ -1318,6 +1446,19 @@ Projects recirculation link
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .coming-soon-contact {
+    /* tablet touchscreens */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (hover: none) and (pointer: coarse) {
+  .coming-soon-contact {
+    max-width: calc(90vw - 10vw);
+    margin: 0 auto;
+  }
 }
 
 .coming-soon-contact p {

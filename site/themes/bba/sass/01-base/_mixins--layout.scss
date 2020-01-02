@@ -25,10 +25,25 @@
 
 @mixin section-width {
   max-width: calc(100vw - #{$section-padding--horizontal});
+
+  @include mq($m, $l) {
+    /* tablet touchscreens */
+    @media (hover: none) and (pointer: coarse) {
+      max-width: calc(90vw - #{$section-padding--horizontal});
+      margin: 0 auto;
+    }
+  }
 }
 
 @mixin section-height {
   max-height: calc(100vh - #{$section-padding--vertical});
+
+  @include mq($m, $l) {
+    /* tablet touchscreens */
+    @media (hover: none) and (pointer: coarse) {
+      max-height: calc(90vh - #{$section-padding--vertical});
+    }
+  }
 }
 
 
