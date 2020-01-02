@@ -5,8 +5,8 @@
 		    nextVideo,
 		    videoObjects =
 		    [
-		        document.createElement('video'),
-		        document.createElement('video')
+		        document.getElementById('homepage-video-1'),
+		        document.getElementById('homepage-video-2')
 		    ],
 
 		    vidSources = [],
@@ -27,7 +27,6 @@
 		initVideoElement(videoObjects[0]);
 		initVideoElement(videoObjects[1]);
 
-		videoObjects[0].autoplay = 'autoplay';
 		videoObjects[0].src = vidSources[nextActiveVideo];
 		videoContainer.appendChild(videoObjects[0]);
 
@@ -36,8 +35,6 @@
 
 		function initVideoElement(video)
 		{
-		    video.playsinline = true;
-		    video.muted = true;
 		    video.preload = 'auto'; //but do not set autoplay, because it deletes preload
 
 		    //loadedmetadata is wrong because if we use it then we get endless loop
