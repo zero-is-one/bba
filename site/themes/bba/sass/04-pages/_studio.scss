@@ -3,11 +3,11 @@
 	@include section-width;
 	@include margin-auto;
 
-	@include mq(0, $nav-breakpoint) {
+	@include mq(0, $m2) {
 		@include vertical-space;
 	}
 
-	@include mq($nav-breakpoint) {
+	@include mq($m2) {
 		min-height: calc(100vh - #{$nav-height});
 	}
 }
@@ -15,5 +15,8 @@
 .studio-people {
 	@include flex-center;
     justify-content: space-between;
-	min-height: 100vh;
+
+	@include mq($m2) {
+		min-height: 100vh;
+	}
 }

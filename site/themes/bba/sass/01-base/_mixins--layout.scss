@@ -43,7 +43,7 @@
   margin-top: $spacing-lg;
   margin-bottom: $spacing-lg;  
 
-  @include mq($nav-breakpoint) {
+  @include mq($m2) {
     margin-top: $spacing-xxl;
     margin-bottom: $spacing-xxl;  
   }

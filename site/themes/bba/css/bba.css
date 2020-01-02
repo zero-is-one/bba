@@ -696,7 +696,7 @@ Mobile nav hamburger icon
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .tease-wrapper {
     margin-top: 6rem;
     margin-bottom: 6rem;
@@ -989,21 +989,21 @@ hr {
   margin-right: auto;
 }
 
-@media (min-width: 0) and (max-width: 767px) {
+@media (min-width: 0) and (max-width: 899px) {
   .studio-intro {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 }
 
-@media (min-width: 0) and (max-width: 767px) and (min-width: 768px) {
+@media (min-width: 0) and (max-width: 899px) and (min-width: 900px) {
   .studio-intro {
     margin-top: 6rem;
     margin-bottom: 6rem;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .studio-intro {
     min-height: calc(100vh - 164px);
   }
@@ -1015,7 +1015,12 @@ hr {
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  min-height: 100vh;
+}
+
+@media (min-width: 900px) {
+  .studio-people {
+    min-height: 100vh;
+  }
 }
 
 .person {
@@ -1025,7 +1030,7 @@ hr {
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .person {
     height: calc(100vh - 164px);
   }
@@ -1040,7 +1045,7 @@ hr {
   margin-bottom: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .person__img {
     margin-top: -4.25rem;
   }
@@ -1054,10 +1059,16 @@ hr {
   margin-right: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .person__bio {
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 0) and (max-width: 899px) {
+  .person__bio {
+    margin-bottom: 4.25rem;
   }
 }
 
