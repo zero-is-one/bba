@@ -86,8 +86,9 @@ $spacing-xl: 4.25rem;
 $spacing-xxl: 6rem;
 
 $grid-padding: 2%;
-$section-padding: 10vw;
-$body-padding: $section-padding/2;
+$section-padding--horizontal: 10vw;
+$section-padding--vertical: 10vh;
+$body-padding: $section-padding--horizontal/2;
 
 $font-margin--body-text: 0 0 $spacing-md;
 $font-margin--heading-text: 0 0 $spacing-sm;

@@ -1038,7 +1038,7 @@ hr {
 
 .person__img {
   max-width: calc(100vw - 10vw);
-  max-height: calc((100vh - 164px) - 10vw);
+  max-height: calc((100vh - 164px) - 10vh);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5rem;
@@ -1180,7 +1180,7 @@ Inline images -- single
 .inline-image {
   display: block;
   max-width: calc(100vw - 10vw);
-  max-height: calc(100vh - 10vw);
+  max-height: calc(100vh - 10vh);
 }
 
 /* 
@@ -1207,7 +1207,7 @@ Inline images -- double
 
 .inline-image--double {
   display: block;
-  max-height: calc(100vh - 10vw);
+  max-height: calc(100vh - 10vh);
   max-width: calc(100vw - 10vw);
 }
 

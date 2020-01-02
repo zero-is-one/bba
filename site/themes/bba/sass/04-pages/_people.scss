@@ -12,7 +12,7 @@
 
 .person__img {
 	@include section-width;
-	max-height: calc((100vh - #{$nav-height}) - #{$section-padding});
+	max-height: calc((100vh - #{$nav-height}) - #{$section-padding--vertical});
 	@include margin-auto;
 	margin-top: $spacing-lg;
 	margin-bottom: $spacing-lg;  
