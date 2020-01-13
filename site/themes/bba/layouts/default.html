@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/xao6dcs.css">
 </head>
 
-
-<body class="{{ if slug }}body--{{ slug }}{{ else }}body--home{{ /if }}">
-
 {{ if coming_soon }}
 
     {{ if logged_in }}
+        <body class="{{ if slug }}body--{{ slug }}{{ else }}body--home{{ /if }}">
         {{ template_content }}
     {{ else }}    
+        <body class="body--coming-soon">
         {{ partial:coming-soon }}    
     {{ /if }}
 
 {{ else }}
-
+    <body class="{{ if slug }}body--{{ slug }}{{ else }}body--home{{ /if }}">
     {{ template_content }}
 
 {{ /if }}
