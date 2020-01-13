@@ -20,6 +20,10 @@ Basic font style mixins
   @include font-regular;
 }
 
+@mixin fluid-text {
+  @include fluid-font-size(18px $s, 22.56px $xl);
+}
+
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
@@ -71,13 +75,25 @@ Block-level typographic elements
   @include heading-text;
 }
 
+
+
 @mixin paragraph {
   @include body-text;
+  @include fluid-text;
 }
 
 @mixin li {
   @include body-text;
 }
+
+
+
+@mixin nav-link {
+  font-family: $font-family-sans;
+  font-size: $font-size-base;
+  line-height: $line-height-sm;
+}
+
 
 
 /* 

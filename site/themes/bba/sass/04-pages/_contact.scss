@@ -1,0 +1,22 @@
+.body--contact {
+}
+
+.contact-info {
+	@include section-width;
+	@include margin-auto;
+	@include flex-center;
+	min-height: calc(100vh - #{$nav-height});
+}
+
+.contact-info__email {
+	margin-bottom: $spacing-xl;
+}
+
+.contact-info__phone, 
+.contact-info__street, 
+.contact-info__city-state-zip {
+	margin-bottom: 0;
+	font-family: $font-family-sans;
+	font-size: $font-size-sm;
+	line-height: $line-height-lg;
+}

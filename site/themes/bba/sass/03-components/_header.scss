@@ -1,12 +1,28 @@
 .site-header {
-	padding: $spacing-xl 0;
+	width: 100%;
+	padding: 3.5rem 0;
 	display: flex;
 	justify-content: center;
+
+	@include mq($nav-breakpoint) {
+		padding: $spacing-xl 0;
+	}
 }
 
 .logo-link {
 	color: $color-base;
-	margin-right: $spacing-xl;
+	line-height: 1;
+	z-index: $zIndex-2;
+	transform: scale(0.9);
+	transform-origin: left;
+
+	@include mq($nav-breakpoint) {
+		margin-right: 50px;
+	}
+
+	@include mq($m2) {
+		margin-right: 90px;
+	}
 
 	&:hover, &:focus {
 		color: $color-link;
@@ -14,32 +30,108 @@
 }
 
 .bba-logo {
-	width: 304px;
-	height: 24px;
+	width: 225px;
+	height: 18px;
+
+	@include mq($m) {
+		width: 304px;
+		height: 24px;
+	}
 }
 
 .site-nav {
 	@include container;
 	display: flex;
-	align-items: flex-end;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 $section-padding--horizontal/2;
+	position: relative;
+    z-index: $zIndex-2;
+	
+	@include mq($nav-breakpoint) {
+		justify-content: center;
+		align-items: flex-end;
+		padding: 0;
+	}
 }
 
+.menu-wrapper {
+	@include mq(0, $nav-breakpoint) {
+		display: flex;
+		justify-content: center;
+		align-items: stretch;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $color-white;
+		padding: 50vh $section-padding--horizontal/2 1.5rem;
+		@include animate;
+		opacity: 0;
+		z-index: $zIndex-n1;
+		pointer-events: none;
+
+		.nav-is-open & {
+			opacity: 1;
+			z-index: $zIndex-1;
+			pointer-events: auto;
+		}
+	}	
+}
 
 .site-menu {
 	@include ul-null;
 	display: flex;
+	transform: scale(0.9);
+	transform-origin: left;
+
+	@include mq(0, $nav-breakpoint) {
+		flex-direction: column;
+		justify-content: space-around;
+	    align-items: flex-start;
+	    width: 100%;
+	}
+
+	@include mq($nav-breakpoint) {
+		align-items: center;
+		transform-origin: right;
+	}
 }
 
 .site-menu__menu-item {
-	@include heading-3;
+	@include nav-link;
+    font-size: $font-size-base;
+	line-height: 1;
 	margin-bottom: 0;
 
-	&:not(:last-child) {
-		margin-right: $spacing-lg;
+	@include mq(0, $nav-breakpoint) {
+		opacity: 0;
+			
+		.nav-is-open & {
+			@for $i from 1 through 4 {
+				&:nth-child( #{$i} ) {
+					animation: slideIn .5s #{$i * 0.1}s ease 1 forwards;
+				}
+			}
+		}
+	}
+
+	@include mq($nav-breakpoint) {
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+
+	@include mq($m2) {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
 	}
 }
 
 .instagram {
-	width: 14px;
-	height: 14px;
+	width: 15px;
+	height: 15px;
 }

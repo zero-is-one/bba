@@ -1,0 +1,22 @@
+.studio-intro {
+	@include flex-center;
+	@include section-width;
+	@include margin-auto;
+
+	@include mq(0, $m2) {
+		@include vertical-space;
+	}
+
+	@include mq($m2) {
+		min-height: calc(100vh - #{$nav-height});
+	}
+}
+
+.studio-people {
+	@include flex-center;
+    justify-content: space-between;
+
+	@include mq($m2) {
+		min-height: 100vh;
+	}
+}

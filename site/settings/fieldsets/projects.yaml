@@ -11,6 +11,11 @@ sections:
       year:
         type: text
         display: Year
+      misc_intro_text:
+        restrict_assets: false
+        type: redactor
+        display: 'Misc Intro Text'
+        settings: Basic
       thumbnail_img:
         container: main
         folder: /
@@ -39,6 +44,7 @@ sections:
                 restrict: false
                 type: assets
                 display: 'Inline Image'
+                max_files: 2
           inline_text:
             display: 'Inline Text'
             fields:
@@ -46,15 +52,29 @@ sections:
                 restrict_assets: false
                 type: redactor
                 display: 'Inline Text'
+                settings: Basic
           things_we_learned:
             display: 'Things We Learned'
             fields:
               things_we_learned:
                 type: list
                 display: 'Things We Learned'
+          credits:
+            display: Credits
+            fields:
+              credits:
+                type: list
+                display: Credits
         type: replicator
         display: 'Content Blocks'
+  seo:
+    display: SEO
+    fields:
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
 taxonomies: false
 hide: true
-title: Projects
+title: Work
 create_title: 'New Project'

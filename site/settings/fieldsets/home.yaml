@@ -1,4 +1,13 @@
+sections:
+  main:
+    display: Main
+    fields:
+      background_videos:
+        container: main
+        folder: /
+        restrict: false
+        type: assets
+        display: 'Background Videos'
+taxonomies: true
 hide: true
-fields:
-  content:
-    type: markdown
+title: Home

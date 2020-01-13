@@ -1,52 +1,39 @@
 sections:
-  intro:
-    display: Intro
+  main:
+    display: Main
     fields:
-      practice_title:
+      title:
         type: text
-        instructions: 'Enter the company''s name'
-        display: 'Practice Title'
-      intro_text:
-        restrict_assets: false
-        type: redactor
-        display: 'Intro Text'
-      founder_name:
-        type: textarea
-        instructions: 'Founder''s name as you want it to appear on the page'
-        display: 'Founder Name'
-      founder_photo:
+        width: 50
+        display: Name
+        localizable: true
+      certification:
+        type: text
+        width: 50
+        display: Title/Certification
+        localizable: true
+      hero_img:
         container: main
         folder: /
         restrict: false
         type: assets
-        display: 'Founder photo'
-      founder_bio:
+        display: Image
+      link_to_bio:
+        type: toggle
+        display: 'Link to standalone bio page?'
+      bio:
         restrict_assets: false
         type: redactor
-        display: 'Founder Bio'
-  studio:
-    display: Studio
+        display: Bio
+        show_when:
+          link_to_bio: true
+  seo:
+    display: SEO
     fields:
-      studio_members:
-        sets:
-          member:
-            display: Member
-            fields:
-              name:
-                type: text
-                display: Name
-              photo:
-                container: main
-                folder: /
-                restrict: false
-                type: assets
-                display: Photo
-              bio:
-                restrict_assets: false
-                type: redactor
-                display: Bio
-        type: replicator
-        display: 'Studio Members'
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
 taxonomies: true
 hide: true
-title: Practice
+title: People

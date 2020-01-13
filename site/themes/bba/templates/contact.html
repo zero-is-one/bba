@@ -1,0 +1,24 @@
+<header class="page-header">
+	{{ partial:header }}
+</header>
+
+
+<address class="contact-info">
+	{{ if email_address }}
+		<p class="contact-info__email">
+			<a href="mailto:{{ email_address }}">{{ email_address }}</a>
+		</p>
+	{{ /if }}
+
+	{{ if phone_number }}
+		<p class="contact-info__phone">{{ phone_number }}</p>
+	{{ /if }}
+
+	{{ if street_address }}
+		<p class="contact-info__street">{{ street_address }}</p>
+	{{ /if }}
+
+	{{ if city and state and zip }}
+		<p class="contact-info__city-state-zip">{{ city }}, {{ state }} {{ zip }}</p>
+	{{ /if }}
+</address>	

@@ -1,0 +1,15 @@
+<figure class="image-wrapper {{ if inline_image|length == 2 }}image-wrapper--double{{ /if }}">
+  <img
+    src=""
+    data-src="{{ glide:url width='600' }}"
+    data-srcset="
+      {{ glide:url width='400' }} 400w,
+      {{ glide:url width='600' }} 600w,
+      {{ glide:url width='768' }} 768w,
+      {{ glide:url width='1024' }} 1024w,
+      {{ url }} 1400w
+    "
+    alt="{{ alt }}"
+    class="lazyload {{class}}"
+  />
+</figure>

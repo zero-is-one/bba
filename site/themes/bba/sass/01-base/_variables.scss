@@ -8,6 +8,7 @@ Color values
 $color-white: #fff;
 $color-gray: #686763;
 $color-gray-light: rgba($color-gray,.5);
+$color-gray-xlight: rgba($color-gray,.1);
 
 
 /* 
@@ -25,7 +26,7 @@ $color-heading: $color-text;
 $color-link: rgba($color-base,.5);
 $color-link--active: $color-base;
 
-$color-selection-bg: $color-gray-light;
+$color-selection-bg: $color-gray-xlight;
 $color-selection-text: $color-text;
 
 
@@ -47,8 +48,8 @@ $font-family-base: $font-family-serif;
 $font-family-heading: $font-family-serif;
 
 
-$font-size-base: 1.7rem;
-$font-size-sm: 1.125rem;
+$font-size-base: 1.41rem;
+$font-size-sm: 1.0125rem;
 $font-size-xs: .875rem;
 
 $font-size-p: $font-size-base;
@@ -57,7 +58,7 @@ $font-size-caption: $font-size-sm;
 
 $line-height-base: 1.75;
 $line-height-sm: 1.2;
-$line-height-lg: 2.5;
+$line-height-lg: 2.3;
 
 $line-height-body: $line-height-base;
 $line-height-p: $line-height-base;
@@ -67,6 +68,8 @@ $font-weight-bold: 700;
 $font-weight-regular: 400;
 $font-weight-light: 200;
 
+$letter-spacing-base: 0;
+$letter-spacing-lg: .05rem;
 
 
 /* 
@@ -75,19 +78,25 @@ Layout/spacing variables
 ////////////////////////////////////////////////////////////////////////////
 */
 
+$spacing-xs: .25rem;
 $spacing-sm: .5rem;
 $spacing-md: 1rem;
 $spacing-lg: 1.5rem;
 $spacing-xl: 4.25rem;
+$spacing-xxl: 6rem;
 
 $grid-padding: 2%;
-$section-padding: 20%;
-$body-padding: $section-padding/2;
+$section-padding--horizontal: 10vw;
+$section-padding--vertical: 10vh;
+$body-padding: $section-padding--horizontal/2;
 
 $font-margin--body-text: 0 0 $spacing-md;
 $font-margin--heading-text: 0 0 $spacing-sm;
 
 $text-max-width: 750px;
+$layout-max-width: 2200px;
+
+$nav-height: 164px;
 
 
 
@@ -100,10 +109,11 @@ Breakpoints
 
 $s: 600px;
 $m: 768px;
+$m2: 900px;
 $l: 1024px;
 $l2: 1200px;
 $xl: 1400px;
-$nav-breakpoint: $l;
+$nav-breakpoint: $m;
 
 
 
@@ -113,6 +123,7 @@ z-index
 ////////////////////////////////////////////////////////////////////////////
 */
 
+$zIndex-n1: -100;
 $zIndex-0: 1;
 $zIndex-1: 100;
 $zIndex-2: 200;

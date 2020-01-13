@@ -1,0 +1,53 @@
+.body--home {
+  height: 100vh;
+  overflow: hidden;
+  background: url('../img/bg--home.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.homepage-video__playlist {
+	display: none;
+}
+
+.homepage-video {
+  video {
+    // IE fallback, doesn't support object-fit or supports
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: $zIndex-n1;
+    transform: translateX(-50%) translateY(-50%);
+
+    // all browsers other than IE/Edge will override w/ object-fit
+    @supports (object-fit: cover) {
+      object-fit: cover;
+      top: -5vh;
+      left: -5vw;
+      width: 110vw;
+      height: 110vh;
+      transform: none;
+    }
+
+    // override for MS Edge styles, which supports object-fit but not for video
+    @supports (-ms-ime-align: auto) {
+      object-fit: none;
+      top: 50%;
+      left: 50%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - #{$nav-height});
+}

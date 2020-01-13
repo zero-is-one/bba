@@ -1,0 +1,18 @@
+<header class="page-header">
+	{{ partial:header }}
+</header>
+
+<div class="tease-wrapper">
+	<div class="teases teases--work">
+	{{ collection:works }}
+		<article class="tease">
+			<a href="{{ url }}" class="tease__link">
+				{{ assets:thumbnail_img }}
+					{{ partial:img-srcset--thumb class="tease__thumbnail-image" }}
+				{{ /assets:thumbnail_img }}		
+				<h2 class="tease__title">{{ title }}</h2>
+			</a>
+		</article>
+	{{ /collection:works }}
+	</div>
+</div>

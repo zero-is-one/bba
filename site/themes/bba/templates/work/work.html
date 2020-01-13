@@ -1,0 +1,41 @@
+<div class="js-fullpage-container--work">
+	
+	<header class="js-fullpage-section page-header fp-auto-height">
+		{{ partial:header }}
+
+		<section class="project-intro lazyload">
+		 	<h1 class="project-intro__title">{{title}}</h1>
+			{{ if location }}
+				<p class="project-intro__location">{{location}}</p>
+			{{ /if }}
+			{{ if photographer }}
+				<p class="project-intro__photographer">Photography by {{photographer}}</p>
+			{{ /if }}
+			{{ if year }}
+				<p class="project-intro__year">{{year}}</p>	
+			{{ /if }}
+			{{ if misc_intro_text }}
+				<div class="project-intro__misc">
+					{{ misc_intro_text }}
+				</div>
+			{{ /if }}
+		</section>
+	</header>
+
+	<section class="js-fullpage-section page-section page-section--project-hero">
+		{{ assets:hero_img }}
+			{{ partial:img-srcset class="inline-image" }}
+		{{ /assets:hero_img }}		
+	</section>
+
+	{{ content_blocks }}
+	  {{ partial src="blocks/{type}" }}
+	{{ /content_blocks }}
+
+	<footer class="js-fullpage-section page-footer">
+		<div class="page-section page-section--text page-section--recirc">
+			<a href="/work" class="link link--recirc">Work</a>
+		</div>	
+	</footer>
+
+</div>

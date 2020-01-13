@@ -10,27 +10,76 @@
 
 
 
-@mixin container($maxwidth: 75rem) {
+@mixin container($maxwidth: none) {
   position: relative;
   margin: auto;
   max-width: $maxwidth;
-  padding: 0 $grid-padding;
   clear: both;
 }
 
 
+// Section width/height
+// -------
+// FOR: providing consistent viewport-based padding across layouts
+// USE: @include section-width; @include section-height;
 
+@mixin section-width {
+  max-width: calc(100vw - #{$section-padding--horizontal});
 
-
-// Usage: @include center-vertical
-@mixin center-vertical {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    .lt-ie9 & {
-        top:auto;
+  @include mq($m, $l) {
+    /* tablet touchscreens */
+    @media (hover: none) and (pointer: coarse) {
+      max-width: calc(90vw - #{$section-padding--horizontal});
+      margin: 0 auto;
     }
+  }
 }
+
+@mixin section-height {
+  max-height: calc(100vh - #{$section-padding--vertical});
+
+  @include mq($m, $l) {
+    /* tablet touchscreens */
+    @media (hover: none) and (pointer: coarse) {
+      max-height: calc(90vh - #{$section-padding--vertical});
+    }
+  }
+}
+
+
+
+
+// Vertical space
+// -------
+// FOR: Consistently adding different vertical padding on different pages
+// USE: @include vertical-space;
+
+@mixin vertical-space {
+  margin-top: $spacing-lg;
+  margin-bottom: $spacing-lg;  
+
+  @include mq($m2) {
+    margin-top: $spacing-xxl;
+    margin-bottom: $spacing-xxl;  
+  }
+}
+
+
+
+
+// Flex centering
+// -------
+// FOR: centering a section vertically and horizontally using flexbox
+// FOR: defaults to flex-column but can be switched to row
+// USE: @include flex-center; @include flex-center(row);
+
+@mixin flex-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 

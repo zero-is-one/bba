@@ -1,0 +1,33 @@
+.person {
+	@include flex-center;
+
+	@include mq($m2) {
+		height: calc(100vh - #{$nav-height});
+	}
+}
+
+.person__name {
+	@extend %visuallyhidden;
+}
+
+.person__img {
+	@include section-width;
+	max-height: calc((100vh - #{$nav-height}) - #{$section-padding--vertical});
+	@include margin-auto;
+	margin-top: $spacing-lg;
+	margin-bottom: $spacing-lg;  
+
+	@include mq($m2) {
+		margin-top: -$spacing-xl;
+	}
+}
+
+.person__bio {
+	@include section-width;
+	@include vertical-space;
+	@include margin-auto;
+
+	@include mq(0, $m2) {
+		margin-bottom: $spacing-xl;
+	}
+}

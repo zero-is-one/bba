@@ -1,0 +1,20 @@
+.fp-tableCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+	.page-header &, .page-footer & {
+		flex-direction: column;
+	}
+}
+
+// applied only when mobile nav is open
+.nav-is-open .fullpage-wrapper {
+	position: fixed !important;
+	z-index: $zIndex-0;
+}
+
+// fixes display bugs in IE11
+.fp-scrollable {
+	width: 100%;
+}

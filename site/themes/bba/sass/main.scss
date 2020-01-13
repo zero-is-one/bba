@@ -28,13 +28,20 @@ In this file you should centralize your imports
 
 /* 03 -- individual components reused throughout multiple layouts: header, footer, navigation, sidebars, carousels, etc. */
 @import "03-components/header";
-@import "03-components/footer";
+@import "03-components/hamburger";
+@import "03-components/teases";
 
 
 /* 04 -- idividual page layouts, including global styles */
 @import "04-pages/global";
+@import "04-pages/home";
+@import "04-pages/contact";
+@import "04-pages/studio";
+@import "04-pages/people";
 @import "04-pages/work";
-@import "04-pages/projects-archive";
+@import "04-pages/coming-soon";
 
 
 /* 05 -- individual third-party components */
+@import "05-vendor/fullpage-core";
+@import "05-vendor/fullpage-overrides";

@@ -1,0 +1,19 @@
+sections:
+  main:
+    display: Main
+    fields:
+      about_the_studio:
+        restrict_assets: false
+        type: redactor
+        display: 'About the studio'
+        settings: Basic
+  seo:
+    display: SEO
+    fields:
+      meta_tags:
+        fieldset: meta_tags
+        type: partial
+        display: 'Meta Tags'
+taxonomies: false
+title: Studio
+hide: true

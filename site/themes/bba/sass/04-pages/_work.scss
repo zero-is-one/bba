@@ -1,36 +1,19 @@
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Intro section 
+CSS scroll snap fallback
+javascript-applied class if screen is under 768px
 ////////////////////////////////////////////////////////////////////////////
 */
 
-.work-intro {
-	height: calc(80vh - 150px);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
+// .fullpage-container--css-snap {
+// 	scroll-snap-type: y mandatory;
+// 	max-height: 100vh;
+// 	overflow-y: scroll;
 
-.work-intro__title, .work-intro__location, .work-intro__photographer, .work-intro__year {
-	font-size: $font-size-sm;
-	line-height: $line-height-lg;
-	letter-spacing: .05rem;
-	margin-bottom: 0;
-}
-
-.work-hero {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.hero-image {
-	max-width: calc(100vw - #{$section-padding});
-	max-height: calc(100vh - #{$section-padding});
-}
+// 	.js-fullpage-section {
+// 		scroll-snap-align: start;
+// 	}
+// }
 
 
 
@@ -41,17 +24,24 @@ Page sections
 */
 
 .page-section {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	@include flex-center;
+	width: 100%;
+	margin: 25vh 0;
+
+	@include mq($nav-breakpoint) {
+		height: 100vh;
+		margin: 0;
+	}
 }
 
 .page-section--text {
-	min-height: 100vh;
-	max-width: calc(100vw - #{$section-padding});
+	@include section-width;
 	@include margin-auto;
+	min-height: 25vh;
+
+	@include mq($nav-breakpoint) {
+		min-height: 100vh;
+	}
 }
 
 .page-section--things {
@@ -59,16 +49,101 @@ Page sections
 	font-style: italic;
 }
 
+.page-section--project-hero {
+	margin-top: 0;
+}
 
 /* 
 ////////////////////////////////////////////////////////////////////////////
-Work images
+Intro
 ////////////////////////////////////////////////////////////////////////////
 */
 
+.project-intro {
+	@include flex-center;
+	height: calc(90vh - 150px);
+
+	@include mq($nav-breakpoint) {
+		height: calc(80vh - 150px);
+	}
+}
+
+.project-intro__title, 
+.project-intro__location, 
+.project-intro__photographer, 
+.project-intro__year, 
+.project-intro__misc,
+.project-intro__misc p {
+	max-width: 36em;
+	font-family: $font-family-sans;
+	font-size: $font-size-sm;
+	line-height: $line-height-lg;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images -- single
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.image-wrapper {
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: calc(50% - 30px);
+		left: calc(50% - 30px);
+		width: 60px;
+		height: 60px;
+		background-color: $color-gray-light;
+		border-radius: 100%;  
+		animation: loading 1.25s infinite ease-in-out;
+	}
+}
+
 .inline-image {
-	max-width: calc(100vw - #{$section-padding});
-	max-height: calc(100vh - #{$section-padding});
+	display: block;
+	@include section-width;
+	@include section-height;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Inline images -- double
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.image-wrapper--double {
+	&:first-child {
+		margin: 0 0 12.5vh 0;
+	}
+	&:last-child {
+		margin: 12.5vh 0 0;
+	}
+
+	@include mq($nav-breakpoint) {
+		&:first-child {
+			margin: 0 2.5vw 0 0;
+		}
+		&:last-child {
+			margin: 0 0 0 2.5vw;
+		}
+	}
+}
+
+.inline-image--double {
+	display: block;
+	@include section-height;
+    max-width: calc(100vw - 10vw);
+
+	@include mq($nav-breakpoint) {
+		max-width: 42.5vw;
+	}
 }
 
 
@@ -80,6 +155,7 @@ Inline text
 
 .inline-text {
 	max-width: $text-max-width;
+	@include margin-auto;
 }
 
 
@@ -90,5 +166,35 @@ Inline text
 */
 
 .things__heading, .things__list-item {
+	@include fluid-text;
 	margin-bottom: 1.75em;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Credits list
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.credits__list-item {
+	@extend .project-intro__misc;
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////////////
+Projects recirculation link
+////////////////////////////////////////////////////////////////////////////
+*/
+
+.page-section--recirc {
+	@include nav-link;
+	min-height: 100vh;
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@include mq($nav-breakpoint) {
+		min-height: 0;
+	}
 }

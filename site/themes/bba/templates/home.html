@@ -1,0 +1,16 @@
+<header class="page-header">
+	{{ partial:header }}
+</header>
+
+<div class="homepage-wrapper">
+
+	<div id="homepage-video" class="homepage-video">
+		<video id="homepage-video-1" muted playsinline autoplay src=""></video>
+		<video id="homepage-video-2" muted playsinline autoplay src=""></video>
+		<div class="homepage-video__playlist">
+			{{ assets:background_videos sort="random"}}
+				<a href="{{ url }}"></a>
+			{{ /assets:background_videos }}	
+		</div>
+	</div>
+</div>
